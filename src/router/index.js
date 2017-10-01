@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Meta from 'vue-meta';
 
 import Home from '@/components/pages/Home';
 import Campground from '@/components/pages/Campground';
@@ -10,6 +11,7 @@ import Directions from '@/components/pages/Directions';
 import Booking from '@/components/pages/Booking';
 
 Vue.use(Router);
+Vue.use(Meta);
 
 export default new Router({
   routes: [

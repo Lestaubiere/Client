@@ -1,5 +1,7 @@
 {
-  "message": {
-    "hello": "Hallo"
+  "home": {
+    "meta": {
+      "title": "Home"
+    }
   }
 }
