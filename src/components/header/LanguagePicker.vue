@@ -26,6 +26,9 @@
 <style scoped>
   .language-picker {
     margin-left: 25px;
+    padding: 3px 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
   }
 
   .language-picker__item {
