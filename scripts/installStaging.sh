@@ -17,5 +17,5 @@ echo "### Installing Front-end depenencies for Vue ###"
 yarn
 
 # Build the staging environment
-echo "### Building the Staging environment for Angular ###"
+echo "### Building the Staging environment for Vue ###"
 npm run build
