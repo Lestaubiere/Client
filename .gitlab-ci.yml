@@ -6,12 +6,14 @@ stages:
 before_script:
   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
   - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
 
-production:
+deployment:
   stage: deploy
   script:
-    - ssh -o "StrictHostKeyChecking=no" $lestaubiere_user@$lestaubiere_host /var/www/lestaubiere/scripts/installStaging.sh
+    - ssh deploy@lestaubiere.bramvanosta.com /var/www/lestaubiere/scripts/installStaging.sh
   only:
     - master
   environment: staging
