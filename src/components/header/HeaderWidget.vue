@@ -19,16 +19,40 @@
     <div class="header-widget__weather">
       <span class="header-widget__weather-label">{{ $t('header.widget.weather') }}</span>
       <span class="header-widget__weather-value">
-        <span class="header-widget__weather-icon wi wi-day-sunny"></span>
-        <span>32° C</span>
+        <span :class="`header-widget__weather-icon wi wi-${isDay ? 'day' : 'night'}-${weatherCode}`"></span>
+        <span>{{ temperature }} ° C</span>
       </span>
     </div>
   </div>
 </template>
 
 <script>
+  import axios from 'axios';
+
+  import WeatherIcons from '@/config/weather-icons.json';
+  import { OPENWEATHERMAP_API_KEY } from '@/config/config';
+
   export default {
     name: 'l-header-widget',
+    data() {
+      return {
+        temperature: '-',
+        weatherCode: null,
+      };
+    },
+    computed: {
+      isDay() {
+        const currentHours = new Date().getHours();
+        return currentHours >= 7 && currentHours <= 20;
+      },
+    },
+    mounted() {
+      axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=44.992392&lon=0.598711&APPID=${OPENWEATHERMAP_API_KEY}&units=metric`)
+        .then((result) => {
+          this.temperature = Math.round(result.data.main.temp);
+          this.weatherCode = WeatherIcons[result.data.weather[0].id].icon;
+        });
+    },
   };
 </script>
 
