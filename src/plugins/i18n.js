@@ -22,9 +22,6 @@ Vue.prototype.$locale = {
   change(language) {
     i18n.locale = language;
   },
-  current() {
-    return i18n.locale;
-  },
 };
 
 export default i18n;

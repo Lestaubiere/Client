@@ -1,7 +1,59 @@
 {
+  "menu": {
+    "primary": {
+      "home": "Home",
+      "campground": "Camping",
+      "rentals": "Verhuuraccommodaties",
+      "surroundings": "Omgeving",
+      "photos": "Photos",
+      "directions": "Route"
+    },
+    "secondary": {
+      "campground": "De camping",
+      "rentals": "Verhuuraccommodaties",
+      "surroundings": "Omgeving",
+      "booking": "Reserveren"
+    }
+  },
+  "header": {
+    "widget": {
+      "opening": "Open vanaf",
+      "closing": "Gesloten vanaf",
+      "opening_day": "10",
+      "opening_month": "April",
+      "closing_day": "30",
+      "closing_month": "September",
+      "weather": "Het weer vandaag"
+    }
+  },
   "home": {
     "meta": {
       "title": "Home"
+    }
+  },
+  "campground": {
+    "meta": {
+      "title": "Camping"
+    }
+  },
+  "rentals": {
+    "meta": {
+      "title": "Verhuuraccommodaties"
+    }
+  },
+  "surroundings": {
+    "meta": {
+      "title": "Omgeving"
+    }
+  },
+  "photos": {
+    "meta": {
+      "title": "Photos"
+    }
+  },
+  "directions": {
+    "meta": {
+      "title": "Route"
     }
   }
 }

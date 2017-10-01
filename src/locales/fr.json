@@ -1,7 +1,59 @@
 {
+  "menu": {
+    "primary": {
+      "home": "Accueil",
+      "campground": "Camping",
+      "rentals": "Hébergements",
+      "surroundings": "Environs",
+      "photos": "Photos",
+      "directions": "Accès"
+    },
+    "secondary": {
+      "campground": "Le camping",
+      "rentals": "Hébergements",
+      "surroundings": "Environs",
+      "booking": "Réserver"
+    }
+  },
+  "header": {
+    "widget": {
+      "opening": "Ouverture",
+      "closing": "Fermeture",
+      "opening_day": "10",
+      "opening_month": "Avril",
+      "closing_day": "30",
+      "closing_month": "Septembre",
+      "weather": "Météo d'aujourd'hui"
+    }
+  },
   "home": {
     "meta": {
       "title": "Accueil"
+    }
+  },
+  "campground": {
+    "meta": {
+      "title": "Camping"
+    }
+  },
+  "rentals": {
+    "meta": {
+      "title": "Hébergements"
+    }
+  },
+  "surroundings": {
+    "meta": {
+      "title": "Environs"
+    }
+  },
+  "photos": {
+    "meta": {
+      "title": "Photos"
+    }
+  },
+  "directions": {
+    "meta": {
+      "title": "Accès"
     }
   }
 }

@@ -4,6 +4,11 @@
 <script>
   export default {
     name: 'l-campground',
+    metaInfo() {
+      return {
+        title: this.$i18n.t('campground.meta.title'),
+      };
+    },
   };
 </script>
 

@@ -25,4 +25,33 @@
 </script>
 
 <style>
+  @import '~reset-css/reset.css';
+
+  body {
+    font-family: 'Lato', 'Helvetica', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>

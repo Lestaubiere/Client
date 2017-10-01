@@ -1,7 +1,59 @@
 {
+  "menu": {
+    "primary": {
+      "home": "Home",
+      "campground": "Camping",
+      "rentals": "Rentals",
+      "surroundings": "Surroundings",
+      "photos": "Pictures",
+      "directions": "Directions"
+    },
+    "secondary": {
+      "campground": "The camping",
+      "rentals": "Rentals",
+      "surroundings": "Surroundings",
+      "booking": "Booking"
+    }
+  },
+  "header": {
+    "widget": {
+      "opening": "Open from",
+      "closing": "Closed from",
+      "opening_day": "10th",
+      "opening_month": "April",
+      "closing_day": "30th",
+      "closing_month": "September",
+      "weather": "Today's weather"
+    }
+  },
   "home": {
     "meta": {
       "title": "Home"
+    }
+  },
+  "campground": {
+    "meta": {
+      "title": "Camping"
+    }
+  },
+  "rentals": {
+    "meta": {
+      "title": "Rentals"
+    }
+  },
+  "surroundings": {
+    "meta": {
+      "title": "Surroundings"
+    }
+  },
+  "photos": {
+    "meta": {
+      "title": "Pictures"
+    }
+  },
+  "directions": {
+    "meta": {
+      "title": "Directions"
     }
   }
 }
