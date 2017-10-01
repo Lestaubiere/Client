@@ -47,7 +47,7 @@
       },
     },
     mounted() {
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=44.992392&lon=0.598711&APPID=${OPENWEATHERMAP_API_KEY}&units=metric`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=44.992392&lon=0.598711&APPID=${OPENWEATHERMAP_API_KEY}&units=metric`)
         .then((result) => {
           this.temperature = Math.round(result.data.main.temp);
           this.weatherCode = WeatherIcons[result.data.weather[0].id].icon;
