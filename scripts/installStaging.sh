@@ -17,6 +17,7 @@ echo "### Installing Front-end depenencies for Vue ###"
 yarn
 
 # Set the deployment time
+echo "### Set the deployment time in the config file ###"
 time=$(date +"%d/%m/%Y %H:%M")
 echo "{\"updated_at\": \"${time}\"}" > /var/www/lestaubiere/src/config/deployment.json
 
