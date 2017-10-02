@@ -49,6 +49,16 @@
     -ms-user-select: none;
   }
 
+  [id="app"] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
   .container {
     max-width: 1250px;
     margin-left: auto;
