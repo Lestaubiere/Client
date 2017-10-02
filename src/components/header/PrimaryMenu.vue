@@ -48,4 +48,33 @@
     width: 100%;
     left: 0;
   }
+
+  @media (max-width: 600px) {
+    .primary-menu {
+      display: none;
+    }
+
+    .header__primary-menu--mobile .primary-menu {
+      display: block;
+    }
+
+    .primary-menu__item {
+      display: block;
+      margin: 0;
+      padding: 25px;
+      color: #000000;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+      transition: background-color .3s ease, border-bottom .3s ease;
+    }
+
+    .primary-menu__item.router-link-exact-active {
+      background-color: rgba(0, 0, 0, .05);
+      border-bottom: 1px solid transparent;
+    }
+
+    .primary-menu__item.router-link-exact-active::after {
+      content: none;
+    }
+  }
 </style>

@@ -36,4 +36,22 @@
     color: #ffffff;
     cursor: pointer;
   }
+
+  @media (max-width: 960px) {
+    .language-picker {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+    .language-picker__item {
+      margin: 0 5px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .language-picker {
+      position: inherit;
+    }
+  }
 </style>

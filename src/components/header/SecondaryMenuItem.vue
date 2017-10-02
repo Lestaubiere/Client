@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     flex-basis: calc(25% - 30px);
+    flex-shrink: 0;
     padding: 50px 15px;
     z-index: 1;
     text-decoration: none;
@@ -55,5 +56,21 @@
 
   .secondary-menu-item:hover .secondary-menu-item__icon {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 960px) {
+    .secondary-menu-item {
+      flex-basis: calc(25% - 15px);
+    }
+
+    .secondary-menu-item__icon {
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+    }
+
+    .secondary-menu-item__label {
+      font-size: 0.8rem;
+    }
   }
 </style>

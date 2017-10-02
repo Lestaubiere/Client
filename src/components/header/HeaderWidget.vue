@@ -139,4 +139,14 @@
     margin-right: 15px;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 800px) {
+    .header-widget__label {
+      font-size: 0.7rem;
+    }
+
+    .header-widget__value span {
+      font-size: 1.2rem;
+    }
+  }
 </style>
