@@ -16,11 +16,10 @@ git reset origin/master --hard
 echo "### Installing Front-end depenencies for Vue ###"
 yarn
 
-# Build the staging environment
-echo "### Building the Staging environment for Vue ###"
-npm run build
-
 # Set the deployment time
 time=$(date +"%d/%m/%Y %H:%M")
 echo "{\"updated_at\": \"${time}\"}" > /var/www/lestaubiere/src/config/deployment.json
 
+# Build the staging environment
+echo "### Building the Staging environment for Vue ###"
+npm run build
