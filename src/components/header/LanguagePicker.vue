@@ -37,6 +37,19 @@
     cursor: pointer;
   }
 
+  .header__primary-menu--mobile .language-picker {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .header__primary-menu--mobile .language-picker button:first-of-type {
+    margin-left: 0;
+  }
+
+  .header__primary-menu--mobile .language-picker button:last-of-type {
+    margin-right: 0;
+  }
+
   @media (max-width: 960px) {
     .language-picker {
       position: absolute;
@@ -51,7 +64,7 @@
 
   @media (max-width: 600px) {
     .language-picker {
-      position: inherit;
+      position: initial;
     }
   }
 </style>

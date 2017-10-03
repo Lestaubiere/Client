@@ -2,6 +2,13 @@
   <header class="header">
     <div
       :class="`header__primary-menu--mobile ${menuIsOpen ? 'header__primary-menu--mobile--is-visible' : ''}`">
+      <div class="header__mobile-menu-header">
+        <l-language-picker></l-language-picker>
+        <button class="header__mobile-menu-button header__mobile-menu-button--closed" @click.prevent="closeMenu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <l-primary-menu></l-primary-menu>
     </div>
     <div class="header__top-bar">
@@ -136,9 +143,38 @@
     transform: translateY(50%);
   }
 
+  .header__primary-menu--mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 85%;
+    z-index: 3;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    transition: .5s ease;
+  }
+
+  .header__primary-menu--mobile.header__primary-menu--mobile--is-visible {
+    left: 0;
+  }
+
+  .header__mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
   .header__mobile-menu-button {
+    position: absolute;
+    left: 10px;
     display: flex;
     flex-direction: column;
+  }
+
+  .header__mobile-menu-button.header__mobile-menu-button--closed {
+    position: initial;
   }
 
   .header__mobile-menu-button span {
@@ -146,6 +182,20 @@
     height: 3px;
     margin: 2px 0;
     background-color: #ffffff;
+  }
+
+  .header__mobile-menu-button.header__mobile-menu-button--closed span {
+    background-color: #000000;
+  }
+
+  .header__mobile-menu-button.header__mobile-menu-button--closed span:first-of-type {
+    transform: rotate(45deg);
+    transform-origin: 10px 2px;
+  }
+
+  .header__mobile-menu-button.header__mobile-menu-button--closed span:last-of-type {
+    transform: rotate(-45deg);
+    transform-origin: 10px 2px;
   }
 
   @media (min-width: 601px) {
@@ -196,10 +246,19 @@
   @media (max-width: 600px) {
     .header__top-bar-container {
       flex-direction: row;
+      justify-content: center;
     }
 
     .header__logo-container {
       margin-bottom: 0;
+    }
+
+    .header__logo-container img {
+      max-width: 125px;
+    }
+
+    .header__primary-menu {
+      display: none;;
     }
 
     .header__main-container {
@@ -220,21 +279,6 @@
     .header__right-container {
       flex-basis: 100%;
       margin-left: 0;
-    }
-
-    .header__primary-menu--mobile {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: -100%;
-      z-index: 3;
-      background-color: #FFFFFF;
-      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-      transition: .3s ease;
-    }
-
-    .header__primary-menu--mobile.header__primary-menu--mobile--is-visible {
-      left: 0;
     }
   }
 </style>

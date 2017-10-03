@@ -1,17 +1,49 @@
 <template>
   <nav class="primary-menu">
-    <router-link to="/" class="primary-menu__item">{{ $t("menu.primary.home") }}</router-link>
-    <router-link to="/campground" class="primary-menu__item">{{ $t("menu.primary.campground") }}</router-link>
-    <router-link to="/rentals" class="primary-menu__item">{{ $t("menu.primary.rentals") }}</router-link>
-    <router-link to="/surroundings" class="primary-menu__item">{{ $t("menu.primary.surroundings") }}</router-link>
-    <router-link to="/photos" class="primary-menu__item">{{ $t("menu.primary.photos") }}</router-link>
-    <router-link to="/directions" class="primary-menu__item">{{ $t("menu.primary.directions") }}</router-link>
+    <router-link to="/"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.home") }}
+    </router-link>
+    <router-link to="/campground"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.campground") }}
+    </router-link>
+    <router-link to="/rentals"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.rentals") }}
+    </router-link>
+    <router-link to="/surroundings"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.surroundings") }}
+    </router-link>
+    <router-link to="/photos"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.photos") }}
+    </router-link>
+    <router-link to="/directions"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.primary.directions") }}
+    </router-link>
   </nav>
 </template>
 
 <script>
+  import { mapActions } from 'vuex';
+
+  import { CLOSE_MOBILE_MENU } from '@/store/modules/menu/mutation-types';
+
   export default {
     name: 'l-primary-menu',
+
+    methods: mapActions({
+      closeMenu: CLOSE_MOBILE_MENU,
+    }),
   };
 </script>
 
