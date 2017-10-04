@@ -43,7 +43,7 @@
   @import '~reset-css/reset.css';
 
   body {
-    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
   }
 
   * {
@@ -96,5 +96,17 @@
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .paragraph {
+    line-height: 1.5rem;
+  }
+
+  .paragraph:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
   }
 </style>
