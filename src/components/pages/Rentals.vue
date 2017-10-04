@@ -6,8 +6,14 @@
     name: 'l-rentals',
     metaInfo() {
       return {
-        title: this.$i18n.t('rentals.meta.title'),
+        title: this.metaTitle,
       };
+    },
+
+    computed: {
+      metaTitle() {
+        return this.$i18n.t('rentals.meta.title');
+      },
     },
   };
 </script>

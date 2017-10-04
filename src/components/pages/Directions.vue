@@ -6,8 +6,14 @@
     name: 'l-directions',
     metaInfo() {
       return {
-        title: this.$i18n.t('directions.meta.title'),
+        title: this.metaTitle,
       };
+    },
+
+    computed: {
+      metaTitle() {
+        return this.$i18n.t('directions.meta.title');
+      },
     },
   };
 </script>

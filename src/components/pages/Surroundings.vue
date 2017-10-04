@@ -6,8 +6,14 @@
     name: 'l-surroundings',
     metaInfo() {
       return {
-        title: this.$i18n.t('surroundings.meta.title'),
+        title: this.metaTitle,
       };
+    },
+
+    computed: {
+      metaTitle() {
+        return this.$i18n.t('surroundings.meta.title');
+      },
     },
   };
 </script>

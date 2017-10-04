@@ -6,8 +6,14 @@
     name: 'l-photos',
     metaInfo() {
       return {
-        title: this.$i18n.t('photos.meta.title'),
+        title: this.metaTitle,
       };
+    },
+
+    computed: {
+      metaTitle() {
+        return this.$i18n.t('photos.meta.title');
+      },
     },
   };
 </script>
