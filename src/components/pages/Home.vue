@@ -1,20 +1,18 @@
 <template>
   <div class="home container">
-    <div class="home__row home__image-content-row">
-      <div class="home__image-container">
-        <div class="home__image">
-          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
-        </div>
-      </div>
-      <div class="home__content-container">
-        <p class="paragraph" 
-          v-for="(paragraph, index) in mainContentOne" 
-          :key="index">
-          {{ paragraph }}
-        </p>
+    <div class="home__image-container">
+      <div class="home__image">
+        <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
       </div>
     </div>
-    <div class="home__row">
+    <div class="home__content-container">
+      <p class="paragraph" 
+        v-for="(paragraph, index) in mainContentOne" 
+        :key="index">
+        {{ paragraph }}
+      </p>
+    </div>
+    <div class="home__paragraph-container">
       <p class="paragraph" 
           v-for="(paragraph, index) in mainContentTwo" 
           :key="index">
@@ -50,20 +48,21 @@
 
 <style scoped>
   .home {
-    padding: 0 25px;
-  }
-
-  .home__row:not(:last-of-type) {
-    margin-bottom: 35px;
-  }
-
-  .home__image-content-row {
     display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
   }
 
   .home__image-container,
   .home__content-container {
+    order: 1;
     flex-basis: 50%;
+  }
+
+  .home__paragraph-container {
+    order: 2;
+    flex-basis: 100%;
+    margin-top: 35px;
   }
 
   .home__image-container {
@@ -91,8 +90,12 @@
   }
 
   @media (max-width: 960px) {
-    .home__image-content-row {
-      flex-direction: column-reverse;
+    .home {
+      flex-direction: column;
+    }
+
+    .home__image-container {
+      order: 10;
     }
 
     .home__image > img {
@@ -106,7 +109,12 @@
     }
 
     .home__content-container {
-      padding-left: 0;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    .home__paragraph-container {
+      margin-top: 0;
     }
   }
 </style>
