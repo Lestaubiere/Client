@@ -132,4 +132,10 @@
       margin-top: 0;
     }
   }
+
+  @media (max-width: 600px) {
+    .home {
+      padding: 0 10px;
+    }
+  }
 </style>

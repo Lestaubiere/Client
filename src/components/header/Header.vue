@@ -29,7 +29,7 @@
     </div>
     <div class="header__main-container container">
       <div class="header__left-container">
-        <h2>Bienvenue au Camping Lestaubière</h2>
+        <p>Bienvenue au Camping Lestaubière</p>
       </div>
       <div class="header__right-container">
         <l-header-widget></l-header-widget>
@@ -132,7 +132,7 @@
     justify-content: flex-end;
   }
 
-  .header__left-container h2 {
+  .header__left-container p {
     color: #ffffff;
     font-size: 2.5rem;
     line-height: 3.5rem;
@@ -215,7 +215,7 @@
       margin-bottom: 15px;
     }
 
-    .header__left-container h2 {
+    .header__left-container p {
       font-size: 2rem;
       line-height: 3rem;
     }
@@ -230,15 +230,11 @@
       margin-bottom: 0;
     }
 
-    .header__top-bar-container {
-      padding: 10px;
-    }
-
     .header__main-container {
-      padding: 40px 10px;
+      padding: 40px 25px;
     }
 
-    .header__left-container h2 {
+    .header__left-container p {
       font-size: 1.5rem;
       line-height: 2.2rem;
     }

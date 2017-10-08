@@ -91,7 +91,55 @@
   "surroundings": {
     "meta": {
       "title": "Omgeving"
-    }
+    },
+    "subtitle": "Hieronder een aantal suggesties",
+    "content": [
+      "De Périgord als onderdeel van de Dordogne staat bekend om zijn kastelen, grotten, oude steden, wijnen, rivieren en markten.",
+      "De toeristische centra Le Bugue en Lalinde (30min), Beynac en Sarlat liggen oostelijk, terwijl de steden Bergerac en Périgueux (met de hypermarchés en oude binnensteden) binnen 20 minuten bereikbaar zijn.",
+      "Aanraders zijn natuurlijk de vele grotten, een boot/kanotocht op de Dordogne of de Vézère, of een bezoek aan de ochtendmarkten van Issigeac, Lalinde, Vergt,le Bugue of die van Bergerac/Périgueux.",
+      "De vele restaurants van eenvoudig tot haute cuisine bieden u alle gelegenheid om van de lokale én andere Franse specialiteiten te genieten.",
+      "Voor de wijnliefhebbers is een proeverij bij een van de 80 wijnchateaux een must.",
+      "Er zijn enkele wandeltochten in de buurt uitgezet en voor de sportieve fietser liggen er uitdagende routes in het mooie glooiende landschap.",
+      "Een meer voor zwem- en kanoplezier, Lac de Neufont, vindt u op korte afstand in Vergt."
+    ],
+    "cards": [
+      {
+        "name": "Issigeac",
+        "content": "Dit middeleeuwse dorp , 20 km ten zuiden van Bergerac, staat bekend om zijn wekelijkse (toeristische) markt op zondagochtend. Zeker de moeite van een bezoekje waard!",
+        "image_path": "static/img/surroundings/Issigeac.jpg",
+        "color": "#78BF45"
+      },
+      {
+        "name": "Le Bournat",
+        "content": "Een themapark/openlucht museum, met oude ambachten en diverse workshops. De tijd is hier stil blijven staan in het jaar 1900. Hier krijg je een goed beeld van het Frankrijk van weleer.",
+        "image_path": "static/img/surroundings/Bournat.jpg",
+        "color": "#D9237F"
+      },
+      {
+        "name": "Monbazillac",
+        "content": "In het Chateau de Monbazillac maak je kennis maken met de typische zoete dessertwijn uit deze streek. Daarnaast is een rondleiding in het kasteel en wandeling door de tuinen zeker de moeite waard.",
+        "image_path": "static/img/surroundings/Monbazillac.jpg",
+        "color": "#5AB5BF"
+      },
+      {
+        "name": "Aquarium",
+        "content": "Het Aquarium in Le Bugue ligt op ruim een half uur rijden van de camping. Een erg mooi en goed verzorgd aquarium; 6000 vissen verdeeld over 30 verschillende bassins met een inhoud van in totaal 3 miljoen liter water.",
+        "image_path": "static/img/surroundings/Aquarium.jpg",
+        "color": "#4E35B4"
+      },
+      {
+        "name": "Kanovaren",
+        "content": "In de omgeving van de camping (op ca. 30 minuten rijden) zijn er verschillende mogelijkheden om kano te varen. Dit kan in de rivier de Dordogne of la Vézère. Je kan tochten maken vanaf 1 uur tot een hele dag.",
+        "image_path": "static/img/surroundings/Canoe.jpg",
+        "color": "#78BF45"
+      },
+      {
+        "name": "Klimpark",
+        "content": "Op 25 km van de camping ligt dit uitdagende klimparcours met verschillende niveaus voor alle leeftijden.",
+        "image_path": "static/img/surroundings/Climbing.jpg",
+        "color": "#D9237F"
+      }
+    ]
   },
   "photos": {
     "meta": {

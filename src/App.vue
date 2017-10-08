@@ -113,10 +113,11 @@
   }
 
   h1 {
-    font-size: 2.25rem;
-    margin-bottom: 35px;
-    padding-bottom: 10px;
     position: relative;
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+    padding-bottom: 10px;
+    font-size: 2.25rem;
   }
 
   h1::after {
@@ -129,9 +130,38 @@
     background-color: #D9237F;
   }
 
+  h2 {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #D9237F;
+  }
+
+  .separator {
+    max-width: 800px;
+    margin: 50px auto;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .1);
+  }
+
   @media (max-width: 600px) {
     h1 {
       font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
     }
   }
 </style>
