@@ -3,7 +3,9 @@
             :perPage="1"
             :perPageCustom="[[600, 2], [800, 3], [960, 4]]"
             :navigationEnabled="true"
-            :paginationEnabled="false">
+            :paginationEnabled="false"
+            :navigationNextLabel="nextLabel"
+            :navigationPrevLabel="previousLabel">
     <slide v-for="(item, index) in carouselItems" :key="index">
       <carousel-item :item="item"></carousel-item>
     </slide>
@@ -20,7 +22,8 @@
 
     data() {
       return {
-        maxItems: 10,
+        nextLabel: '<span class="carousel__prev-label"></span>',
+        previousLabel: '<span class="carousel__next-label"></span>',
       };
     },
 
@@ -38,10 +41,24 @@
   };
 </script>
 
-<style scoped>
+<style>
   .carousel {
     display: flex;
-    width: 100%;
-    margin-top: 100px;
+    width: calc(100% - 64px);
+    margin: 100px 0 0 32px;
+  }
+
+  .carousel__next-label {
+    display: block;
+    background: url(../../assets/icons/chevron-left.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
+  }
+
+  .carousel__prev-label {
+    display: block;
+    background: url(../../assets/icons/chevron-right.svg) no-repeat center;
+    width: 16px;
+    height: 16px;
   }
 </style>
