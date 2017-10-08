@@ -109,4 +109,21 @@
   img {
     max-width: 100%;
   }
+
+  h1 {
+    font-size: 2.25rem;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #D9237F;
+  }
 </style>

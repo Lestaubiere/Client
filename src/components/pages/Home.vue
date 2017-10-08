@@ -7,15 +7,16 @@
         </div>
       </div>
       <div class="home__content-container">
-        <p class="paragraph" 
-          v-for="(paragraph, index) in mainContentOne" 
+        <h1>{{ title }}</h1>
+        <p class="paragraph"
+          v-for="(paragraph, index) in mainContentOne"
           :key="index">
           {{ paragraph }}
         </p>
       </div>
       <div class="home__paragraph-container">
-        <p class="paragraph" 
-            v-for="(paragraph, index) in mainContentTwo" 
+        <p class="paragraph"
+            v-for="(paragraph, index) in mainContentTwo"
             :key="index">
             {{ paragraph }}
           </p>
@@ -35,12 +36,12 @@
 
     metaInfo() {
       return {
-        title: this.metaTitle,
+        title: this.title,
       };
     },
 
     computed: {
-      metaTitle() {
+      title() {
         return this.$i18n.t('home.meta.title');
       },
       mainContentOne() {
