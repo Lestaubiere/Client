@@ -20,4 +20,9 @@
 </script>
 
 <style scoped>
+  .carousel__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

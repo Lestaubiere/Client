@@ -1,14 +1,28 @@
 <template>
-    <div class="carousel">
-        <carousel-item v-for="(item, index) in carouselItems" :key="index" :item="item"></carousel-item>
-    </div>
+  <carousel class="carousel"
+            :perPage="1"
+            :perPageCustom="[[600, 2], [800, 3], [960, 4]]"
+            :navigationEnabled="true"
+            :paginationEnabled="false">
+    <slide v-for="(item, index) in carouselItems" :key="index">
+      <carousel-item :item="item"></carousel-item>
+    </slide>
+  </carousel>
 </template>
 
 <script>
+  import { Carousel, Slide } from 'vue-carousel';
+
   import CarouselItem from '@/components/core/CarouselItem';
 
   export default {
     name: 'l-carousel',
+
+    data() {
+      return {
+        maxItems: 10,
+      };
+    },
 
     computed: {
       carouselItems() {
@@ -17,6 +31,8 @@
     },
 
     components: {
+      Carousel,
+      Slide,
       CarouselItem,
     },
   };
@@ -25,6 +41,7 @@
 <style scoped>
   .carousel {
     display: flex;
+    width: 100%;
     margin-top: 100px;
   }
 </style>
