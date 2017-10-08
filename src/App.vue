@@ -126,4 +126,10 @@
     height: 3px;
     background-color: #D9237F;
   }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
 </style>
