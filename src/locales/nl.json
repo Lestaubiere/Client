@@ -43,6 +43,35 @@
         "We begroeten u graag op Lestaubière, een pareltje in de Dordogne met Nederlandse eigenaren.",
         "Familie van Osta"
       ]
+    },
+    "carousel": {
+      "items": [
+        {
+          "name": "MiniCampingCard",
+          "image_path": "static/img/carousel/nl/miniCampingCard_2017.png",
+          "url": "http://www.minicampingcard.eu/camping/camping-lestaubiere/#info"
+        },
+        {
+          "name": "CampingKey",
+          "image_path": "static/img/carousel/nl/CampingKey_2015.png",
+          "url": "http://www.campingkey.com/nl/"
+        },
+        {
+          "name": "CampingCard",
+          "image_path": "static/img/carousel/nl/ACSICampingCard_2017.png",
+          "url": "http://www.campingcard.nl/nl/nl/europa/frankrijk/aquitanie/dordogne/camping-lestaubiere-109670/"
+        },
+        {
+          "name": "Charme Camping",
+          "image_path": "static/img/carousel/nl/CharmeCamping_2017.png",
+          "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
+        },
+        {
+          "name": "ANWB Erkende Camping",
+          "image_path": "static/img/carousel/nl/ANWB_ErkendeCamping_2017.png",
+          "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
+        }
+      ]
     }
   },
   "campground": {

@@ -8,7 +8,21 @@
 <script>
   export default {
     name: 'l-secondary-menu-item',
-    props: ['label', 'name', 'color'],
+
+    props: {
+      label: {
+        type: String,
+        required: true,
+      },
+      name: {
+        type: String,
+        required: true,
+      },
+      color: {
+        type: String,
+        required: true,
+      },
+    },
   };
 </script>
 

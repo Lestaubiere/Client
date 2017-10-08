@@ -1,28 +1,35 @@
 <template>
   <div class="home container">
-    <div class="home__image-container">
-      <div class="home__image">
-        <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
+    <div class="home__row">
+      <div class="home__image-container">
+        <div class="home__image">
+          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
+        </div>
       </div>
-    </div>
-    <div class="home__content-container">
-      <p class="paragraph" 
-        v-for="(paragraph, index) in mainContentOne" 
-        :key="index">
-        {{ paragraph }}
-      </p>
-    </div>
-    <div class="home__paragraph-container">
-      <p class="paragraph" 
-          v-for="(paragraph, index) in mainContentTwo" 
+      <div class="home__content-container">
+        <p class="paragraph" 
+          v-for="(paragraph, index) in mainContentOne" 
           :key="index">
           {{ paragraph }}
         </p>
+      </div>
+      <div class="home__paragraph-container">
+        <p class="paragraph" 
+            v-for="(paragraph, index) in mainContentTwo" 
+            :key="index">
+            {{ paragraph }}
+          </p>
+      </div>
+    </div>
+    <div class="home__row">
+      <carousel></carousel>
     </div>
   </div>
 </template>
 
 <script>
+  import Carousel from '@/components/core/Carousel';
+
   export default {
     name: 'l-home',
 
@@ -43,14 +50,21 @@
         return this.$i18n.t('home.content.main_two');
       },
     },
+
+    components: {
+      Carousel,
+    },
   };
 </script>
 
 <style scoped>
   .home {
+    padding: 0 25px;
+  }
+
+  .home__row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 25px;
   }
 
   .home__image-container,
@@ -90,7 +104,7 @@
   }
 
   @media (max-width: 960px) {
-    .home {
+    .home__row {
       flex-direction: column;
     }
 
