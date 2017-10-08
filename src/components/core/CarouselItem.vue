@@ -1,9 +1,9 @@
 <template>
   <div class="carousel__item">
-    <a v-if="item.url" :href="item.url" target="_blank">
-      <img :src="`../../${item.image_path}`" :alt="`Logo ${item.name}`">
+    <a v-if="url" :href="url" target="_blank">
+      <img :src="`../../${imagePath}`" :alt="`Logo ${name}`">
     </a>
-    <img v-else :src="`../../${item.image_path}`" :alt="`Logo ${item.name}`">
+    <img v-else :src="`../../${imagePath}`" :alt="`Logo ${name}`">
   </div>
 </template>
 
@@ -12,8 +12,16 @@
     name: 'l-carousel-item',
 
     props: {
-      item: {
-        type: Object,
+      name: {
+        type: String,
+        required: true,
+      },
+      url: {
+        type: String,
+        required: false,
+      },
+      imagePath: {
+        type: String,
         required: true,
       },
     },

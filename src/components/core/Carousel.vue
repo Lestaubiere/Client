@@ -7,7 +7,10 @@
             :navigationNextLabel="nextLabel"
             :navigationPrevLabel="previousLabel">
     <slide v-for="(item, index) in carouselItems" :key="index">
-      <carousel-item :item="item"></carousel-item>
+      <carousel-item :name="item.name"
+                     :url="item.url"
+                     :imagePath="item.image_path">
+      </carousel-item>
     </slide>
   </carousel>
 </template>
