@@ -99,7 +99,9 @@
   }
 
   .paragraph {
-    line-height: 1.5rem;
+    line-height: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .paragraph:not(:last-of-type) {

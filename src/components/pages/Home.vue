@@ -77,7 +77,7 @@
   .home__paragraph-container {
     order: 2;
     flex-basis: 100%;
-    margin-top: 35px;
+    margin-top: 75px;
   }
 
   .home__image-container {
