@@ -47,6 +47,10 @@
     "carousel": {
       "items": [
         {
+          "name": "Classement étoiles",
+          "image_path": "static/img/carousel/nl/Classement_Etoiles_2017.png"
+        },
+        {
           "name": "MiniCampingCard",
           "image_path": "static/img/carousel/nl/miniCampingCard_2017.png",
           "url": "http://www.minicampingcard.eu/camping/camping-lestaubiere/#info"

@@ -42,6 +42,29 @@
         "Nous nous ferons un plaisir de vous faire passer des vacances bien reposantes, afin de vous faire rentrer chez vous avec le plein d’énergie.",
         "Famille van Osta"
       ]
+    },
+    "carousel": {
+      "items": [
+        {
+          "name": "Classement étoiles",
+          "image_path": "static/img/carousel/fr/Classement_Etoiles_2017.png"
+        },
+        {
+          "name": "Perigord",
+          "image_path": "static/img/carousel/fr/Perigord_2017.png",
+          "url": "http://www.dordogne-perigord-tourisme.fr/"
+        },
+        {
+          "name": "CampingCard",
+          "image_path": "static/img/carousel/fr/ACSICampingCard_2017.png",
+          "url": "http://www.campingcard.fr/fr/fr/europe/france/aquitaine/dordogne/camping-lestaubiere-109670/?campName=lestaubiere"
+        },
+        {
+          "name": "ANWB Erkende Camping",
+          "image_path": "static/img/carousel/fr/ANWB_ErkendeCamping_2017.png",
+          "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
+        }
+      ]
     }
   },
   "campground": {

@@ -1,8 +1,9 @@
 <template>
   <div class="carousel__item">
-    <a :href="item.url" target="_blank">
+    <a v-if="item.url" :href="item.url" target="_blank">
       <img :src="`../../${item.image_path}`" :alt="`Logo ${item.name}`">
     </a>
+    <img v-else :src="`../../${item.image_path}`" :alt="`Logo ${item.name}`">
   </div>
 </template>
 

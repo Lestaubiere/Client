@@ -43,6 +43,29 @@
         "We are pleased to welcome you at Lestaubière; a jewel in the Dordogne by Dutch owners.",
         "Family van Osta"
       ]
+    },
+    "carousel": {
+      "items": [
+        {
+          "name": "Classement étoiles",
+          "image_path": "static/img/carousel/en/Classement_Etoiles_2017.png"
+        },
+        {
+          "name": "Perigord",
+          "image_path": "static/img/carousel/en/Perigord_2017.png",
+          "url": "http://www.dordogne-perigord-tourisme.fr/"
+        },
+        {
+          "name": "CampingCard",
+          "image_path": "static/img/carousel/en/ACSICampingCard_2017.png",
+          "url": "http://www.campingcard.co.uk/gb/en/europe/france/aquitaine/dordogne/campsite-lestaubiere-109670/"
+        },
+        {
+          "name": "ANWB Erkende Camping",
+          "image_path": "static/img/carousel/en/ANWB_ErkendeCamping_2017.png",
+          "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
+        }
+      ]
     }
   },
   "campground": {
