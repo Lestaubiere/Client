@@ -60,8 +60,8 @@
     background-image: url('../../assets/icons/rentals-icon.png');
   }
 
-  .secondary-menu-item__icon.secondary-menu-item__icon--surroundings {
-    background-image: url('../../assets/icons/surroundings-icon.png');
+  .secondary-menu-item__icon.secondary-menu-item__icon--prices {
+    background-image: url('../../assets/icons/prices-icon.png');
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--booking {

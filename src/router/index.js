@@ -4,11 +4,14 @@ import Meta from 'vue-meta';
 
 import Home from '@/components/pages/Home';
 import Campground from '@/components/pages/Campground';
+import Leisure from '@/components/pages/Leisure';
+import Facilities from '@/components/pages/Facilities';
 import Rentals from '@/components/pages/Rentals';
 import Surroundings from '@/components/pages/Surroundings';
-import Photos from '@/components/pages/Photos';
-import Directions from '@/components/pages/Directions';
+import Prices from '@/components/pages/Prices';
 import Booking from '@/components/pages/Booking';
+import Vacatures from '@/components/pages/Vacatures';
+import Directions from '@/components/pages/Directions';
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -27,6 +30,16 @@ export default new Router({
       component: Campground,
     },
     {
+      path: '/leisure',
+      name: 'Leisure',
+      component: Leisure,
+    },
+    {
+      path: '/facilities',
+      name: 'Facilities',
+      component: Facilities,
+    },
+    {
       path: '/rentals',
       name: 'Rentals',
       component: Rentals,
@@ -37,19 +50,24 @@ export default new Router({
       component: Surroundings,
     },
     {
-      path: '/photos',
-      name: 'Photos',
-      component: Photos,
-    },
-    {
-      path: '/directions',
-      name: 'Directions',
-      component: Directions,
+      path: '/prices',
+      name: 'Prices',
+      component: Prices,
     },
     {
       path: '/booking',
       name: 'Booking',
       component: Booking,
+    },
+    {
+      path: '/vacatures',
+      name: 'Vacatures',
+      component: Vacatures,
+    },
+    {
+      path: '/directions',
+      name: 'Directions',
+      component: Directions,
     },
   ],
 });

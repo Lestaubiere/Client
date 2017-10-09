@@ -14,9 +14,11 @@
 
   export default {
     name: 'l-language-picker',
+
     computed: mapState({
       locales: state => state.i18n.locales,
     }),
+
     methods: mapActions({
       changeLocale: SET_LANGUAGE,
     }),

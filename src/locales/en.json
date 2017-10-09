@@ -2,16 +2,15 @@
   "menu": {
     "primary": {
       "home": "Home",
-      "campground": "Camping",
-      "rentals": "Rentals",
+      "leisure": "Leisure",
+      "facilities": "Facilities",
       "surroundings": "Surroundings",
-      "photos": "Pictures",
       "directions": "Directions"
     },
     "secondary": {
       "campground": "The camping",
       "rentals": "Rentals",
-      "surroundings": "Surroundings",
+      "prices": "Prices",
       "booking": "Booking"
     }
   },
@@ -70,7 +69,17 @@
   },
   "campground": {
     "meta": {
-      "title": "Camping"
+      "title": "Campground"
+    }
+  },
+  "leisure": {
+    "meta": {
+      "title": "Leisure"
+    }
+  },
+  "facilities": {
+    "meta": {
+      "title": "Facilities"
     }
   },
   "rentals": {
@@ -131,9 +140,14 @@
       }
     ]
   },
-  "photos": {
+  "prices": {
     "meta": {
-      "title": "Pictures"
+      "title": "Prices"
+    }
+  },
+  "booking": {
+    "meta": {
+      "title": "Booking"
     }
   },
   "directions": {

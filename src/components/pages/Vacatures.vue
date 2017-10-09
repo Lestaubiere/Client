@@ -3,7 +3,7 @@
 
 <script>
   export default {
-    name: 'l-photos',
+    name: 'l-vacatures',
     metaInfo() {
       return {
         title: this.metaTitle,
@@ -12,7 +12,7 @@
 
     computed: {
       metaTitle() {
-        return this.$i18n.t('photos.meta.title');
+        return this.$i18n.t('vacatures.meta.title');
       },
     },
   };

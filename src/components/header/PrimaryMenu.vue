@@ -5,25 +5,26 @@
                  @click.native="closeMenu">
       {{ $t("menu.primary.home") }}
     </router-link>
-    <router-link to="/campground"
+    <router-link to="/leisure"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.campground") }}
+      {{ $t("menu.primary.leisure") }}
     </router-link>
-    <router-link to="/rentals"
+    <router-link to="/facilities"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.rentals") }}
+      {{ $t("menu.primary.facilities") }}
     </router-link>
     <router-link to="/surroundings"
                  class="primary-menu__item"
                  @click.native="closeMenu">
       {{ $t("menu.primary.surroundings") }}
     </router-link>
-    <router-link to="/photos"
+    <router-link v-if="lang === 'nl'"
+                 to="/vacatures"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.photos") }}
+      {{ $t("menu.primary.vacatures") }}
     </router-link>
     <router-link to="/directions"
                  class="primary-menu__item"
@@ -34,12 +35,16 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex';
+  import { mapState, mapActions } from 'vuex';
 
   import { CLOSE_MOBILE_MENU } from '@/store/modules/menu/mutation-types';
 
   export default {
     name: 'l-primary-menu',
+
+    computed: mapState({
+      lang: state => state.i18n.lang,
+    }),
 
     methods: mapActions({
       closeMenu: CLOSE_MOBILE_MENU,

@@ -2,16 +2,16 @@
   "menu": {
     "primary": {
       "home": "Home",
-      "campground": "Camping",
-      "rentals": "Verhuuraccommodaties",
+      "leisure": "Ontspanning",
+      "facilities": "Voorieningen",
       "surroundings": "Omgeving",
-      "photos": "Photos",
+      "vacatures": "Vacatures",
       "directions": "Route"
     },
     "secondary": {
       "campground": "De camping",
       "rentals": "Verhuuraccommodaties",
-      "surroundings": "Omgeving",
+      "prices": "Tarieven",
       "booking": "Reserveren"
     }
   },
@@ -83,6 +83,16 @@
       "title": "Camping"
     }
   },
+  "leisure": {
+    "meta": {
+      "title": "Ontspanning"
+    }
+  },
+  "facilities": {
+    "meta": {
+      "title": "Voorzieningen"
+    }
+  },
   "rentals": {
     "meta": {
       "title": "Verhuuraccommodaties"
@@ -141,9 +151,19 @@
       }
     ]
   },
-  "photos": {
+  "prices": {
     "meta": {
-      "title": "Photos"
+      "title": "Tarieven"
+    }
+  },
+  "booking": {
+    "meta": {
+      "title": "Reserveren"
+    }
+  },
+  "vacatures": {
+    "meta": {
+      "title": "Vacatures"
     }
   },
   "directions": {

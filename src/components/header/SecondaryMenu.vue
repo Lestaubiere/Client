@@ -6,8 +6,8 @@
     <l-secondary-menu-item :label="$t('menu.secondary.rentals')"
                            :name="'rentals'"
                            :color="'#D9237F'"></l-secondary-menu-item>
-    <l-secondary-menu-item :label="$t('menu.secondary.surroundings')"
-                           :name="'surroundings'"
+    <l-secondary-menu-item :label="$t('menu.secondary.prices')"
+                           :name="'prices'"
                            :color="'#5AB5BF'"></l-secondary-menu-item>
     <l-secondary-menu-item :label="$t('menu.secondary.booking')"
                            :name="'booking'"
