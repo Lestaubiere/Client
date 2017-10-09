@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="menuIsOpen ? 'no-scroll' : ''">
     <l-header></l-header>
     <main>
       <router-view></router-view>
@@ -76,6 +76,7 @@
 
   .no-scroll {
     overflow-y: hidden;
+    max-height: 100vh;
   }
 
   .overlay {
