@@ -97,7 +97,7 @@
 
   @media (max-width: 420px) {
     .card {
-      margin: 50px 10px;
+      margin: 50px 20px;
     }
   }
 </style>

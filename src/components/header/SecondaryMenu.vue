@@ -1,15 +1,15 @@
 <template>
   <div class="secondary-menu">
-    <l-secondary-menu-item :label="$t('menu.secondary.campground')"
+    <l-secondary-menu-item :label="$t('menu.campground')"
                            :name="'campground'"
                            :color="'#78BF45'"></l-secondary-menu-item>
-    <l-secondary-menu-item :label="$t('menu.secondary.rentals')"
+    <l-secondary-menu-item :label="$t('menu.rentals')"
                            :name="'rentals'"
                            :color="'#D9237F'"></l-secondary-menu-item>
-    <l-secondary-menu-item :label="$t('menu.secondary.prices')"
+    <l-secondary-menu-item :label="$t('menu.prices')"
                            :name="'prices'"
                            :color="'#5AB5BF'"></l-secondary-menu-item>
-    <l-secondary-menu-item :label="$t('menu.secondary.booking')"
+    <l-secondary-menu-item :label="$t('menu.booking')"
                            :name="'booking'"
                            :color="'#4E35B4'"></l-secondary-menu-item>
   </div>

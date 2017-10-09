@@ -3,33 +3,57 @@
     <router-link to="/"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.home") }}
+      {{ $t("menu.home") }}
+    </router-link>
+    <router-link v-if="isMobile"
+                 to="/campground"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.campground") }}
     </router-link>
     <router-link to="/leisure"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.leisure") }}
+      {{ $t("menu.leisure") }}
     </router-link>
     <router-link to="/facilities"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.facilities") }}
+      {{ $t("menu.facilities") }}
+    </router-link>
+    <router-link v-if="isMobile"
+                 to="/rentals"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.rentals") }}
     </router-link>
     <router-link to="/surroundings"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.surroundings") }}
+      {{ $t("menu.surroundings") }}
+    </router-link>
+    <router-link v-if="isMobile"
+                 to="/prices"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.prices") }}
+    </router-link>
+    <router-link v-if="isMobile"
+                 to="/booking"
+                 class="primary-menu__item"
+                 @click.native="closeMenu">
+      {{ $t("menu.booking") }}
     </router-link>
     <router-link v-if="lang === 'nl'"
                  to="/vacatures"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.vacatures") }}
+      {{ $t("menu.vacatures") }}
     </router-link>
     <router-link to="/directions"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.primary.directions") }}
+      {{ $t("menu.directions") }}
     </router-link>
   </nav>
 </template>
@@ -41,6 +65,13 @@
 
   export default {
     name: 'l-primary-menu',
+
+    props: {
+      isMobile: {
+        type: Boolean,
+        required: false,
+      },
+    },
 
     computed: mapState({
       lang: state => state.i18n.lang,

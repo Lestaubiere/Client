@@ -74,6 +74,10 @@
     flex-grow: 1;
   }
 
+  .no-scroll {
+    overflow-y: hidden;
+  }
+
   .overlay {
     position: fixed;
     top: 0;

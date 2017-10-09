@@ -9,7 +9,7 @@
           <span></span>
         </button>
       </div>
-      <l-primary-menu></l-primary-menu>
+      <l-primary-menu :isMobile="true"></l-primary-menu>
     </div>
     <div class="header__top-bar">
       <div class="header__top-bar-container container">
@@ -151,6 +151,7 @@
     left: -100%;
     width: 85%;
     z-index: 3;
+    overflow-y: scroll;
     background-color: #FFFFFF;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
     transition: .5s ease;

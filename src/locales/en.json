@@ -1,18 +1,14 @@
 {
   "menu": {
-    "primary": {
-      "home": "Home",
-      "leisure": "Leisure",
-      "facilities": "Facilities",
-      "surroundings": "Surroundings",
-      "directions": "Directions"
-    },
-    "secondary": {
-      "campground": "The camping",
-      "rentals": "Rentals",
-      "prices": "Prices",
-      "booking": "Booking"
-    }
+    "home": "Home",
+    "campground": "The camping",
+    "leisure": "Leisure",
+    "facilities": "Facilities",
+    "rentals": "Rentals",
+    "surroundings": "Surroundings",
+    "prices": "Prices",
+    "booking": "Booking",
+    "directions": "Directions"
   },
   "header": {
     "widget": {
