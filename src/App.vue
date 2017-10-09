@@ -75,8 +75,8 @@
   }
 
   .no-scroll {
+    position: fixed;
     overflow-y: hidden;
-    max-height: 100vh;
   }
 
   .overlay {
