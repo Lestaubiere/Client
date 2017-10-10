@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   main {
@@ -111,6 +112,10 @@
 
   .paragraph:not(:last-of-type) {
     margin-bottom: 15px;
+  }
+
+  .paragraph + ul {
+    margin-top: 15px;
   }
 
   img {
@@ -158,6 +163,21 @@
     margin: 50px auto;
     height: 1px;
     background-color: rgba(0, 0, 0, .1);
+  }
+
+  .list {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: disc;
+  }
+
+  .list__item {
+    margin-left: 25px;
+    line-height: 1.5rem;
+  }
+
+  .list__item:not(:last-of-type) {
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
