@@ -193,6 +193,95 @@
   "facilities": {
     "meta": {
       "title": "Voorzieningen"
+    },
+    "sections": {
+      "food": {
+        "title": "Eten en Drinken",
+        "content": [
+          "Het schaduwrijke terras onder de platanen is het middelpunt van de camping. Vanaf het terras is er prachtig zicht op het zwembad, het meertje, het strandje, de speeltuin en op de zonne weide. Het terras is het centrum en verzamelpunt van alle activiteiten die op de camping worden georganiseerd.",
+          "Bij de bar en op het terras kunt u terecht voor heerlijke verse kop koffie of een cappucino, espresso, bier en frisdranken. ´s Middags worden er diverse snacks geserveerd.",
+          "Een aantal keer per week worden er op het terras gevarieerde menu’s geserveerd, en in het hoogseizoen kunt u hier dagelijks terecht voor vers gebakken pizza’s. Ook is onze snackbar, voor afhaal van friet en diverse snacks, in het hoogseizoen dagelijks geopend. Buiten het hoogseizoen kunnen er overigens ook op bestelling friet en/of snacks worden besteld.",
+          "Zowel in voor-, hoofd- als naseizoen kunt u dagelijks vers brood bestellen."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Playground.jpg",
+            "name": "Snackbar",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Table_tennis.jpg",
+            "name": "Terras",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Football.jpg",
+            "name": "Winkeltje",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Volleyball.jpg",
+            "name": "Bar",
+            "description": ""
+          }
+        ]
+      },
+      "sanitary": {
+        "title": "Sanitair",
+        "content": [
+          "Er zijn 3 sanitair gebouwen op de camping met moderne toilet en douche voorzieningen, babybadjes, afwasbakken, een gehandicapten ruimte en 2 chemische toiletten. Het centrale santitair gebouw beschikt over 2 wasmachines en 2 wasdrogers, die bij de bar te reserveren zijn, zodat onnodig wachten voorkomen wordt.Uiteraard is het gebruik van warm water gratis, en is er toiletpapier aanwezig op de wc’s."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Lake_1.jpg",
+            "name": "Afwashoek",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Lake_2.jpg",
+            "name": "Bosgebouw",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Pool_1.jpg",
+            "name": "Hoofdgebouw",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Pool_2.jpg",
+            "name": "Wasmachines",
+            "description": ""
+          }
+        ]
+      },
+      "diverse": {
+        "title": "Diverse",
+        "content": [
+          "In de bar en op het terras kunt u via onze Wifi-verbinding gebruik maken van het internet. Ook hebben we een TV in de bar én een beamer met groot scherm waarop voor geinteresseerden belangrijke (sport)evenementen kunnen worden gevolgd. In onze bibliotheekhoek kunt u boeken en tijdschriften lenen. Tenslotte staan er in het jeugdhonk diverse speelapparaten."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Campfire.jpg",
+            "name": "Bibliotheek",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Karaoke.jpg",
+            "name": "Recreatie",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Handcraft.jpg",
+            "name": "TV",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Petanque.jpg",
+            "name": "Wifi",
+            "description": ""
+          }
+        ]
+      }
     }
   },
   "rentals": {

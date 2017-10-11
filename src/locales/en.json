@@ -182,6 +182,96 @@
   "facilities": {
     "meta": {
       "title": "Facilities"
+    },
+    "sections": {
+      "food": {
+        "title": "Food and Beverage",
+        "content": [
+          "The shady terrace under the planet-trees is the centre of Camping Lestaubière. Here you have a beautiful view of the pool, the lake, the beach and the playground. This central terrace will be the starting point for all organised activities.",
+          "In the bar and on the terrace you can order a delicious coffee, espresso, beer and soft drinks. In the afternoon several snacks will be served on the terrace.",
+          "Several times a week we serve a variety of menus on the terrace. In the season period our famous, freshly served pizzas can be ordered daily. The snack bar is then open for take away fries and snacks. Offseason French fries and/or snacks are available on demand.",
+          "At all seasons you can order your daily fresh bread."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Playground.jpg",
+            "name": "Snack",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Table_tennis.jpg",
+            "name": "Terrace",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Football.jpg",
+            "name": "Shop",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Volleyball.jpg",
+            "name": "Bar",
+            "description": ""
+          }
+        ]
+      },
+      "sanitary": {
+        "title": "Sanitary",
+        "content": [
+          "There are 3 sanitary blocks equipped with modern toilet and shower facilities, baby baths, dishwashing bowls, a dedicated “disabled room” and 2 dumps for chemical toilets.",
+          "In the central sanitary block you’ll find 2 washing machines and 2 dryers. In order to minimise waiting times this equipment can be booked in advance. Of coarse the use of warm water is free and lavatory paper is available at the toilets."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Lake_1.jpg",
+            "name": "Dish washing",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Lake_2.jpg",
+            "name": "Sanitary block",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Pool_1.jpg",
+            "name": "Main building",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Pool_2.jpg",
+            "name": "Laundry",
+            "description": ""
+          }
+        ]
+      },
+      "diverse": {
+        "title": "Diverse",
+        "content": [
+          "In de bar en op het terras kunt u via onze Wifi-verbinding gebruik maken van het internet. Ook hebben we een TV in de bar én een beamer met groot scherm waarop voor geinteresseerden belangrijke (sport)evenementen kunnen worden gevolgd. In onze bibliotheekhoek kunt u boeken en tijdschriften lenen. Tenslotte staan er in het jeugdhonk diverse speelapparaten."
+        ],
+        "slider": [
+          {
+            "image_path": "static/img/leisure/Campfire.jpg",
+            "name": "Library",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Karaoke.jpg",
+            "name": "Games",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Handcraft.jpg",
+            "name": "TV",
+            "description": ""
+          },
+          {
+            "image_path": "static/img/leisure/Petanque.jpg",
+            "name": "Wifi",
+            "description": ""
+          }
+        ]
+      }
     }
   },
   "rentals": {

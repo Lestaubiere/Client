@@ -27,6 +27,7 @@
 
   export default {
     name: 'l-leisure',
+
     metaInfo() {
       return {
         title: this.title,
