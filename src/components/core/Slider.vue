@@ -1,17 +1,18 @@
 <template>
   <div class="slider">
     <transition name="fade" mode="out-in">
-      <img 
+      <img
         class="slider__image"
         v-for="(image, index) in images"
         v-if="index === activeImageIndex"
-        :key="index" 
-        :src="image.image_path" 
+        :key="index"
+        :src="image.image_path"
         :alt="image.description">
     </transition>
     <div class="slider__navigation">
       <span
         v-for="(image, index) in images"
+        :key="index"
         @click="setCurrentImage(index)"
         :class="`slider__bullet ${index === activeImageIndex ? 'slider__bullet--active' : ''}`"></span>
     </div>
@@ -71,7 +72,7 @@
     display: flex;
   }
 
-  .leisure__row--right .slider {
+  .section--right .slider {
     flex-direction: row-reverse;
   }
 
@@ -103,7 +104,7 @@
   .fade-enter-active, .fade-leave-active {
     transition: opacity .3s
   }
-  
+
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0
   }
