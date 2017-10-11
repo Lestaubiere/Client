@@ -88,24 +88,24 @@
           "2 karting tracks (Bergerac and la Douze)",
           "Paint ball facilities in Douville"
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Playground.jpg",
             "name": "Playground",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Table_tennis.jpg",
             "name": "Table tennis",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Football.jpg",
             "name": "Football",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Volleyball.jpg",
             "name": "Volleyball",
             "description": ""
           }
@@ -120,24 +120,24 @@
           "A swimming pool with separate toddler’s pool and sun lawn.",
           "A swimming lake with sun lawn and small child’s beach. In the lake is a wooden platform for more fun."
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Lake_1.jpg",
             "name": "Lake",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Lake_2.jpg",
             "name": "Lake",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Pool_1.jpg",
             "name": "Swimming pool",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Pool_2.jpg",
             "name": "Swimming pool",
             "description": ""
           }
@@ -154,24 +154,24 @@
           "Special days are the 14th of July (French national holiday) and the Lestaubiere Day (simply one of the sunny days in the 1st week of August). Those days a multi-games event and a lantern parade will be organised, that will be finished by superb fireworks.",
           "A dedicated place for the older youth is available in order to let them exchange their minds in an undisturbed way. A campfire is possible here (under supervision)."
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Campfire.jpg",
             "name": "Campfire",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Karaoke.jpg",
             "name": "Karaoke",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Handcraft.jpg",
             "name": "Handcraft",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Petanque.jpg",
             "name": "Pétanque",
             "description": ""
           }

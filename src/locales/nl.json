@@ -100,24 +100,24 @@
           "2 kartbanen (Bergerac en la Douze)",
           "Paintball in Douville"
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Playground.jpg",
             "name": "Speeltuin",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Table_tennis.jpg",
             "name": "Tafeltennis",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Football.jpg",
             "name": "Voetbal",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Volleyball.jpg",
             "name": "Volleybal",
             "description": ""
           }
@@ -132,24 +132,24 @@
           "Een zwembad met peuterbad en ligweide (het dragen van normale boxershorts is toegestaan).",
           "Een zwemmeer met ligweide en kinderstrandje. In het meer ligt een vlonder waar de kinderen op kunnen zonnen en vanaf kunnen springen."
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Lake_1.jpg",
             "name": "Meer",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Lake_2.jpg",
             "name": "Meer",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Pool_1.jpg",
             "name": "Zwembad",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Pool_2.jpg",
             "name": "Zwembad",
             "description": ""
           }
@@ -165,24 +165,24 @@
           "Voor de oudere kinderen en ouders wordt elke week (bij voldoende deelname) de gelegenheid gegeven om mee te doen aan een paintball-evenement, karting of een golfclinic.",
           "Voor de oudere jeugd is er een verzamelplaats waar ze ’s avonds ongestoord bij elkaar kunnen zijn. Daar kan ook (onder begeleiding) een kampvuur worden gemaakt."
         ],
-        "carousel": [
+        "slider": [
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Campfire.jpg",
             "name": "Kampvuur",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Karaoke.jpg",
             "name": "Karaoke",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Handcraft.jpg",
             "name": "Knutselen",
             "description": ""
           },
           {
-            "image_path": "",
+            "image_path": "static/img/leisure/Petanque.jpg",
             "name": "Pétanque",
             "description": ""
           }

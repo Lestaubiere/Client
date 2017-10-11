@@ -3,7 +3,7 @@
     <div class="leisure__row leisure__row--left">
       <div class="leisure__image-container">
         <div class="leisure__image">
-          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
+          <slider class="leisure__slider" :images="sportsSectionSlider"></slider>
         </div>
       </div>
       <div class="leisure__content-container">
@@ -41,7 +41,7 @@
       </div>
       <div class="leisure__image-container">
         <div class="leisure__image">
-          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
+          <slider class="leisure__slider" :images="swimmingSectionSlider"></slider>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
     <div class="leisure__row leisure__row--left">
       <div class="leisure__image-container">
         <div class="leisure__image">
-          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
+          <slider class="leisure__slider" :images="animationSectionSlider"></slider>
         </div>
       </div>
       <div class="leisure__content-container">
@@ -72,6 +72,8 @@
 </template>
 
 <script>
+  import Slider from '@/components/core/Slider';
+
   export default {
     name: 'l-leisure',
     metaInfo() {
@@ -93,8 +95,8 @@
       sportsSectionList() {
         return this.$i18n.t('leisure.sections.sports.list');
       },
-      sportsSectionCarousel() {
-        return this.$i18n.t('leisure.sections.sports.carousel');
+      sportsSectionSlider() {
+        return this.$i18n.t('leisure.sections.sports.slider');
       },
       swimmingSectionTitle() {
         return this.$i18n.t('leisure.sections.swimming.title');
@@ -105,8 +107,8 @@
       swimmingSectionList() {
         return this.$i18n.t('leisure.sections.swimming.list');
       },
-      swimmingSectionCarousel() {
-        return this.$i18n.t('leisure.sections.swimming.carousel');
+      swimmingSectionSlider() {
+        return this.$i18n.t('leisure.sections.swimming.slider');
       },
       animationSectionTitle() {
         return this.$i18n.t('leisure.sections.animation.title');
@@ -117,9 +119,13 @@
       animationSectionList() {
         return this.$i18n.t('leisure.sections.animation.list');
       },
-      animationSectionCarousel() {
-        return this.$i18n.t('leisure.sections.animation.carousel');
+      animationSectionSlider() {
+        return this.$i18n.t('leisure.sections.animation.slider');
       },
+    },
+
+    components: {
+      Slider,
     },
   };
 </script>
@@ -178,18 +184,16 @@
     height: 500px;
   }
 
-  .leisure__image > img {
+  .leisure__slider {
     position: absolute;
-    max-height: 100%;
-    max-width: none;
-    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    height: 500px;
   }
 
-  .leisure__row--left .leisure__image > img {
+  .leisure__row--left .leisure__slider {
     right: 0;
   }
 
-  .leisure__row--right .leisure__image > img {
+  .leisure__row--right .leisure__slider {
     left: 0;
   }
 
@@ -222,9 +226,9 @@
       height: auto;
     }
 
-    .leisure__image > img {
+    .leisure__slider {
       position: initial;
-      max-width: 100%;
+      height: auto;
     }
 
     .leisure__row--left .leisure__content-container {

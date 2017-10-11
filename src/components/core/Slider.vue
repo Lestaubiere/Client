@@ -1,0 +1,129 @@
+<template>
+  <div class="slider">
+    <transition name="fade" mode="out-in">
+      <img 
+        class="slider__image"
+        v-for="(image, index) in images"
+        v-if="index === activeImageIndex"
+        :key="index" 
+        :src="image.image_path" 
+        :alt="image.description">
+    </transition>
+    <div class="slider__navigation">
+      <span
+        v-for="(image, index) in images"
+        @click="setCurrentImage(index)"
+        :class="`slider__bullet ${index === activeImageIndex ? 'slider__bullet--active' : ''}`"></span>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'l-slider',
+
+    props: {
+      images: {
+        type: Array,
+        required: true,
+      },
+      delay: {
+        type: Number,
+        required: false,
+        default: 1000,
+      },
+      automated: {
+        type: Boolean,
+        required: false,
+        default: false,
+      },
+    },
+
+    data() {
+      return {
+        activeImageIndex: 0,
+      };
+    },
+
+    mounted() {
+      if (this.automated) {
+        setInterval(this.changeCurrentImage, this.delay);
+      }
+    },
+
+    methods: {
+      changeCurrentImage() {
+        if (this.activeImageIndex === this.images.length - 1) {
+          this.activeImageIndex = 0;
+        } else {
+          this.activeImageIndex += 1;
+        }
+      },
+      setCurrentImage(index) {
+        this.activeImageIndex = index;
+      },
+    },
+  };
+</script>
+
+<style scoped>
+  .slider {
+    display: flex;
+  }
+
+  .leisure__row--right .slider {
+    flex-direction: row-reverse;
+  }
+
+  .slider__image {
+    max-width: none;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .slider__navigation {
+    margin: auto 10px;
+  }
+
+  .slider__bullet {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 10px 0;
+    background-color: #000000;
+    opacity: 0.25;
+    border-radius: 50%;
+    transition: opacity .3s ease;
+    cursor: pointer;
+  }
+
+  .slider__bullet.slider__bullet--active {
+    opacity: .8;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s
+  }
+  
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
+  }
+
+  @media (max-width: 960px) {
+    .slider {
+      flex-direction: column !important;
+    }
+
+    .slider__image {
+      max-width: 100%;
+    }
+
+    .slider__navigation {
+      display: flex;
+      margin: 10px auto;
+    }
+
+    .slider__bullet {
+      margin: 0 10px;
+    }
+  }
+</style>
