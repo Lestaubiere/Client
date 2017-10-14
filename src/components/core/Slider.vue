@@ -1,13 +1,15 @@
 <template>
-  <div class="slider" ref="slider" :style="sliderHeightStyle">
+  <div class="slider">
     <transition name="fade" mode="out-in">
-      <img
-        class="slider__image"
-        v-for="(image, index) in images"
-        v-if="index === activeImageIndex"
-        :key="index"
-        :src="image.image_path"
-        :alt="image.description">
+      <div class="slider__image-container" ref="image" :style="imageStyle">
+        <img
+          class="slider__image"
+          v-for="(image, index) in images"
+          v-if="index === activeImageIndex"
+          :key="index"
+          :src="image.image_path"
+          :alt="image.description">
+        </div>
     </transition>
     <div class="slider__navigation">
       <span
@@ -43,13 +45,13 @@
     data() {
       return {
         activeImageIndex: 0,
-        sliderHeight: null,
+        imageHeight: null,
       };
     },
 
     computed: {
-      sliderHeightStyle() {
-        return this.sliderHeight ? { height: `${this.sliderHeight}px` } : null;
+      imageStyle() {
+        return this.imageHeight ? { height: `${this.imageHeight}px` } : null;
       },
     },
 
@@ -62,7 +64,7 @@
     },
 
     beforeUpdate() {
-      this.sliderHeight = this.$refs.slider.clientHeight;
+      this.imageHeight = this.$refs.image.clientHeight;
     },
 
     beforeDestroy() {
@@ -83,8 +85,7 @@
       },
 
       handleResize() {
-        this.sliderHeight = this.$refs.slider.clientHeight;
-        console.log('handleResize');
+        this.imageHeight = this.$refs.image.clientHeight;
       },
     },
   };
