@@ -8,7 +8,9 @@
           v-if="index === activeImageIndex"
           :key="index"
           :src="image.image_path"
-          :alt="image.description">
+          :alt="image.description"
+          @touchstart="handleTouchStart"
+          @touchend="handleTouched">
         </div>
     </transition>
     <div class="slider__navigation">
@@ -46,6 +48,8 @@
       return {
         activeImageIndex: 0,
         imageHeight: null,
+        swipeStartX: null,
+        swipeStartTime: null,
       };
     },
 
@@ -80,12 +84,38 @@
         }
       },
 
+      setNextImage() {
+        if (this.activeImageIndex !== this.images.length - 1) {
+          this.activeImageIndex += 1;
+        }
+      },
+
+      setPreviousImage() {
+        if (this.activeImageIndex !== 0) {
+          this.activeImageIndex -= 1;
+        }
+      },
+
       setCurrentImage(index) {
         this.activeImageIndex = index;
       },
 
       handleResize() {
         this.imageHeight = this.$refs.image.clientHeight;
+      },
+
+      handleTouchStart(e) {
+        this.swipeStartX = e.changedTouches[0].pageX;
+      },
+
+      handleTouched(e) {
+        const swipeDistance = e.changedTouches[0].pageX - this.swipeStartX;
+
+        if (swipeDistance <= -50) {
+          this.setNextImage();
+        } else if (swipeDistance >= 50) {
+          this.setPreviousImage();
+        }
       },
     },
   };
