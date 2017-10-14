@@ -1,5 +1,5 @@
 <template>
-  <div class="slider">
+  <div class="slider" ref="slider" :style="sliderHeightStyle">
     <transition name="fade" mode="out-in">
       <img
         class="slider__image"
@@ -43,13 +43,30 @@
     data() {
       return {
         activeImageIndex: 0,
+        sliderHeight: null,
       };
     },
 
+    computed: {
+      sliderHeightStyle() {
+        return this.sliderHeight ? { height: `${this.sliderHeight}px` } : null;
+      },
+    },
+
     mounted() {
+      window.addEventListener('resize', this.handleResize);
+
       if (this.automated) {
         setInterval(this.changeCurrentImage, this.delay);
       }
+    },
+
+    beforeUpdate() {
+      this.sliderHeight = this.$refs.slider.clientHeight;
+    },
+
+    beforeDestroy() {
+      window.removeEventListener('resize', this.handleResize);
     },
 
     methods: {
@@ -60,8 +77,14 @@
           this.activeImageIndex += 1;
         }
       },
+
       setCurrentImage(index) {
         this.activeImageIndex = index;
+      },
+
+      handleResize() {
+        this.sliderHeight = this.$refs.slider.clientHeight;
+        console.log('handleResize');
       },
     },
   };
