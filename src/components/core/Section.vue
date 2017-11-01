@@ -19,6 +19,24 @@
           {{ item }}
         </li>
       </ul>
+      <div class="section__actions-container" v-if="Array.isArray(actions)">
+        <p class="section__action"
+           v-for="(action, index) in actions"
+           :key="index">
+          <a v-if="action.url"
+             class="button"
+             :href="action.url"
+             target="_blank" >
+            {{ action.title }}
+          </a>
+
+          <router-link v-if="action.page"
+                       class="button"
+                       :to="`/${action.page}`" >
+            {{ action.title }}
+          </router-link>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -47,6 +65,10 @@
         required: true,
       },
       list: {
+        type: Array,
+        required: false,
+      },
+      actions: {
         type: Array,
         required: false,
       },
@@ -131,6 +153,19 @@
     left: 0;
   }
 
+  .section__actions-container {
+    display: flex;
+    margin: 25px 0;
+  }
+
+  .section__action {
+    display: flex;
+  }
+
+  .section__action:not(:last-of-type) {
+    margin-right: 15px;
+  }
+
   @media (max-width: 960px) {
     .section.section--left,
     .section.section--right {
@@ -165,6 +200,20 @@
 
     .section--right .section__content-container {
       padding: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section__actions-container {
+      flex-direction: column
+    }
+
+    .section__action {
+      margin: 10px 0;
+    }
+
+    .section__action:not(:last-of-type) {
+      margin-right: 0;
     }
   }
 </style>

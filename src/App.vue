@@ -180,6 +180,20 @@
     margin-bottom: 10px;
   }
 
+  .button {
+    padding: 25px 25px;
+    background-color: #D9237F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .3s ease;
+  }
+
+  .button:hover {
+    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 16px 0 rgba(0, 0, 0, 0.12);
+  }
+
   @media (max-width: 600px) {
     h1 {
       font-size: 1.75rem;
@@ -187,6 +201,11 @@
 
     h2 {
       font-size: 1.25rem;
+    }
+
+    .button {
+      text-align: center;
+      width: 100%;
     }
   }
 </style>
