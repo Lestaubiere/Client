@@ -4,6 +4,7 @@
     <main>
       <router-view></router-view>
       <div :class="`overlay ${menuIsOpen ? 'overlay--is-active' : ''}`" @click.prevent="closeMenu"></div>
+      <ImageModal />
     </main>
     <l-footer></l-footer>
   </div>
@@ -16,6 +17,7 @@
 
   import LHeader from '@/components/header/Header';
   import LFooter from '@/components/footer/Footer';
+  import ImageModal from '@/components/core/ImageModal';
 
   export default {
     name: 'app',
@@ -35,6 +37,7 @@
     components: {
       LFooter,
       LHeader,
+      ImageModal,
     },
   };
 </script>

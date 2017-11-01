@@ -1,0 +1,18 @@
+[
+  {
+    "transform": "matrix(0.7578 -0.6524 0.6524 0.7578 -88.5405 227.3761)",
+    "cx": "262",
+    "cy": "233",
+    "rx": "12",
+    "ry": "9.9",
+    "image": "static/img/phototour/pictures/Photo-6.jpg"
+  },
+  {
+    "transform": "matrix(0.9855 -0.1696 0.1696 0.9855 -24.0594 42.1985)",
+    "cx": "235",
+    "cy": "162",
+    "rx": "9.9",
+    "ry": "12",
+    "image": "static/img/phototour/pictures/Photo-5.jpg"
+  }
+]

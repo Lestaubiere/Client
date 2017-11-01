@@ -33,18 +33,21 @@
 
   export default {
     name: 'l-header-widget',
+
     data() {
       return {
         temperature: '-',
         weatherCode: null,
       };
     },
+
     computed: {
       isDay() {
         const currentHours = new Date().getHours();
         return currentHours >= 7 && currentHours <= 20;
       },
     },
+
     mounted() {
       axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=44.992392&lon=0.598711&APPID=${OPENWEATHERMAP_API_KEY}&units=metric`)
         .then((result) => {
