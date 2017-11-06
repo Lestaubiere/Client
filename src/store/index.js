@@ -5,6 +5,7 @@ import i18n from './modules/i18n';
 import menu from './modules/menu';
 import modal from './modules/modal';
 import map from './modules/map';
+import weather from './modules/weather';
 
 Vue.use(Vuex);
 
@@ -16,6 +17,7 @@ export default new Vuex.Store({
     menu,
     modal,
     map,
+    weather,
   },
   strict: debug,
 });

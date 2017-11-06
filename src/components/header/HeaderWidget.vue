@@ -19,41 +19,38 @@
     <div class="header-widget__weather">
       <span class="header-widget__weather-label">{{ $t('header.widget.weather') }}</span>
       <span class="header-widget__weather-value">
-        <span :class="`header-widget__weather-icon wi wi-owm-${isDay ? 'day' : 'night'}-${weatherCode}`"></span>
-        <span>{{ temperature }} ° C</span>
+        <span :class="`header-widget__weather-icon wi wi-owm-${isDay ? 'day' : 'night'}-${code}`"></span>
+        <span>{{ temperature || '-' }} ° C</span>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-  import axios from 'axios';
-
-  import { OPENWEATHERMAP_API_URL, OPENWEATHERMAP_API_KEY } from '@/config/config';
+  import { mapState, mapActions } from 'vuex';
 
   export default {
     name: 'l-header-widget',
-
-    data() {
-      return {
-        temperature: '-',
-        weatherCode: null,
-      };
-    },
 
     computed: {
       isDay() {
         const currentHours = new Date().getHours();
         return currentHours >= 7 && currentHours <= 20;
       },
+      ...mapState({
+        temperature: state => state.weather.temperature,
+        code: state => state.weather.code,
+      }),
     },
 
     mounted() {
-      axios.get(`${OPENWEATHERMAP_API_URL}/weather?lat=44.992392&lon=0.598711&APPID=${OPENWEATHERMAP_API_KEY}&units=metric`)
-        .then((result) => {
-          this.temperature = Math.round(result.data.main.temp);
-          this.weatherCode = result.data.weather[0].id;
-        });
+      this.fetchCurrentWeather();
+    },
+
+    methods: {
+      ...mapActions({
+        fetchCurrentWeather: 'fetchCurrentWeather',
+      }),
     },
   };
 </script>
