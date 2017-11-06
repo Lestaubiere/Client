@@ -14,7 +14,8 @@
 
         <gmap-polyline
           v-if="line.length > 0"
-          :path="decodedPath" />
+          :path="decodedPath"
+          :options="{ strokeColor: '#34b3fe', strokeWeight: 5 }" />
       </gmap-map>
     </div>
     <l-directions />
