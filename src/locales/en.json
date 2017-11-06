@@ -8,7 +8,7 @@
     "surroundings": "Surroundings",
     "prices": "Prices",
     "booking": "Booking",
-    "directions": "Directions"
+    "contact": "Contact"
   },
   "header": {
     "widget": {
@@ -385,9 +385,9 @@
       "title": "Booking"
     }
   },
-  "directions": {
+  "contact": {
     "meta": {
-      "title": "Directions"
+      "title": "Contact"
     }
   }
 }

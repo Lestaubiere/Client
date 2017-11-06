@@ -50,10 +50,10 @@
                  @click.native="closeMenu">
       {{ $t("menu.vacatures") }}
     </router-link>
-    <router-link to="/directions"
+    <router-link to="/contact"
                  class="primary-menu__item"
                  @click.native="closeMenu">
-      {{ $t("menu.directions") }}
+      {{ $t("menu.contact") }}
     </router-link>
   </nav>
 </template>

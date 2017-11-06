@@ -1,6 +1,6 @@
 <template>
   <div class="language-picker">
-    <button class="language-picker__item" v-for="locale in locales" @click="changeLocale(locale)">
+    <button class="language-picker__item" v-for="locale in locales" :key="locale" @click="changeLocale(locale)">
       <img :src="require(`../../assets/icons/${locale}.png`)" :alt="locale">
       <span :class="`language-picker__icon language-picker__icon--${locale}`"></span>
     </button>

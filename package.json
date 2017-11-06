@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "decode-google-map-polyline": "^1.0.1",
     "reset-css": "^2.2.1",
     "vue": "^2.3.3",
     "vue-analytics": "^5.1.1",
@@ -19,6 +20,8 @@
     "vue-i18n": "^7.3.0",
     "vue-meta": "^1.2.0",
     "vue-router": "^2.3.1",
+    "vue-spinner": "^1.0.3",
+    "vue2-google-maps": "^0.8.4",
     "vuex": "^2.4.1",
     "weathericons": "^2.1.0"
   },

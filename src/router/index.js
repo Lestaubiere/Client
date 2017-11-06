@@ -11,7 +11,7 @@ import Surroundings from '@/components/pages/Surroundings';
 import Prices from '@/components/pages/Prices';
 import Booking from '@/components/pages/Booking';
 import Vacatures from '@/components/pages/Vacatures';
-import Directions from '@/components/pages/Directions';
+import Contact from '@/components/pages/Contact';
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -65,9 +65,9 @@ export default new Router({
       component: Vacatures,
     },
     {
-      path: '/directions',
-      name: 'Directions',
-      component: Directions,
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
     },
   ],
 });

@@ -8,7 +8,7 @@
     "surroundings": "Environs",
     "prices": "Tarifs ",
     "booking": "Réserver",
-    "directions": "Accès"
+    "contact": "Contact"
   },
   "header": {
     "widget": {
@@ -382,9 +382,9 @@
       "title": "Réserver"
     }
   },
-  "directions": {
+  "contact": {
     "meta": {
-      "title": "Accès"
+      "title": "Contact"
     }
   }
 }

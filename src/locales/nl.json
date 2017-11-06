@@ -9,7 +9,7 @@
     "prices": "Tarieven",
     "booking": "Reserveren",
     "vacatures": "Vacatures",
-    "directions": "Route"
+    "contact": "Contact"
   },
   "header": {
     "widget": {
@@ -477,9 +477,9 @@
       "title": "Vacatures"
     }
   },
-  "directions": {
+  "contact": {
     "meta": {
-      "title": "Route"
+      "title": "Contact"
     }
   }
 }
