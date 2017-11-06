@@ -64,8 +64,8 @@
         this.fetchMapDirections([value, this.language]);
       },
       formattedDuration(duration) {
-        const minutes = duration % 60;
-        const hours = (duration - minutes) / 3600;
+        const minutes = Math.floor((duration % 3600) / 60);
+        const hours = Math.floor(duration / 3600);
         return `${hours}h ${minutes}min`;
       },
       formattedDistance(distance) {
