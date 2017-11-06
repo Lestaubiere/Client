@@ -8,6 +8,7 @@ const state = {
   ],
   line: '',
   bounds: {},
+  error: null,
 };
 
 export default state;

@@ -43,6 +43,9 @@
         if (this.bounds.southwest && this.bounds.southwest) {
           const bounds = new google.maps.LatLngBounds(this.bounds.southwest, this.bounds.northeast);
           this.$refs.map.fitBounds(bounds);
+        } else if (this.markers.length > 0) {
+          const bounds = new google.maps.LatLngBounds(this.markers[0]);
+          this.$refs.map.fitBounds(bounds);
         }
       },
     },
@@ -74,5 +77,11 @@
   .map {
     position: relative;
     flex-basis: calc(100% - 300px);
+  }
+
+  @media (max-width: 960px) {
+    .map-container {
+      flex-direction: column;
+    }
   }
 </style>

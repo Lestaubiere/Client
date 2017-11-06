@@ -53,7 +53,8 @@
     box-sizing: border-box;
   }
 
-  button {
+  button,
+  input[type=submit] {
     background: none;
     border: 0;
     color: inherit;
@@ -65,6 +66,12 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+  }
+
+  button:focus,
+  input[type=submit]:focus,
+  input[type=text]:focus {
+    outline: none;
   }
 
   [id="app"] {
