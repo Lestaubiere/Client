@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Environs"
+  },
+  "subtitle": "Voici quelques propositions",
+  "content": [
+    "La Dordogne (Périgord) est célèbre pour ses châteaux, ses grottes, ses villes anciennes, ses vins, ses rivières et ses marchés.",
+    "Les centres touristiques Lalinde, Le Bugue (30 min), Beynac et Sarlat se trouvent à un peu de route du camping, tandis que les villes de Bergerac et Périgueux (avec des hyper-marchés et des vieux centres à découvrir) ne se trouvent qu’à 20 minutes.",
+    "Vivement recommandé : la visite des nombreuses grottes naturelles, une balade en canoë ou en bateau sue la Dordogne, la visite d’un au plusieurs bons restaurants régionaux ou alors de flâner aux marchés matinaux d’Issigeac, Le Bugue ou Périgueux.",
+    "Pour les amateurs de vin, une disgustation chez un des 80 châteaux est vivement recommandé.",
+    "Dans les alentours, on trouve plusieurs randonnées pédestre, et pour les cyclistes sportifs des petites routes de campagne magnifiquement vallonnées."
+  ],
+  "cards": [
+    {
+      "name": "Issigeac",
+      "content": "Ce village médiéval se trouve à 20km au sud de Bergerac et est connu pour son marché touristique tous les dimanche matins. Un évènement à ne pas manquer !",
+      "image_path": "static/img/surroundings/Issigeac.jpg",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Le Bournat",
+      "content": "Ce parc à thème reconstruit entièrement le village typique du 19ème siècle. Vous y retrouverez les artisans de l'époque, des activités ou encore des ateliers pour retourner dans l'histoire de la France.",
+      "image_path": "static/img/surroundings/Bournat.jpg",
+      "color": "#D9237F"
+    },
+    {
+      "name": "Monbazillac",
+      "content": "Dans le château de Monbazillac vous prendrez connaissance avec le vin à dessert typique de la région. La visite du château et de ses jardins est évidemment aussi une recommandation.",
+      "image_path": "static/img/surroundings/Monbazillac.jpg",
+      "color": "#5AB5BF"
+    },
+    {
+      "name": "Aquarium",
+      "content": "A environ 30 minutes du camping se trouve le parc aquarium du Périgord Nord. Très bien entretenue, il contient plus de 6000 poissons réparti sur 30 bassins, ce qui donne un volume total d'eau de 3 million de litres !",
+      "image_path": "static/img/surroundings/Aquarium.jpg",
+      "color": "#4E35B4"
+    },
+    {
+      "name": "Canoé",
+      "content": "Dans les environs du camping (à 30 minutes environ) se trouvent différent possibilités de location de canoë. Il est alors possible de faire des trajets d'une demi journée et même d'une journée entière sur la Dordogne ou la Vézère.",
+      "image_path": "static/img/surroundings/Canoe.jpg",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Parc aventure",
+      "content": "A 25km du camping se trouve un parcours aventure en forêt. Vous y trouverez des parcours pour tout niveau, pour les grands et pour les petits.",
+      "image_path": "static/img/surroundings/Climbing.jpg",
+      "color": "#D9237F"
+    }
+  ]
+}

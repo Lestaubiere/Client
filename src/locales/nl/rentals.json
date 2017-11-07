@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Verhuuraccommodaties"
+  },
+  "sections": {
+    "mobilhomes": {
+      "title": "Mobilhomes",
+      "content": [
+        "Er staan 4 mobilhomes van ca. 32m2, met een ouderslaapkamer (bed van 1,60 x 2,00 m) en een kinderslaapkamer met 3 bedden, waarvan 1 verhoogd.Dekbedden (1-persoons) en hoofdkussens zijn aanwezig; hoeslakens en dekbedovertrekken zijn eventueel extra bij te boeken.",
+        "In de volledig ingerichte keuken staan een tafel, stoelen en een hoekbank. Er is een douche in de badkamer en een afzonderlijk toilet.",
+        "Het terras is deels overkapt binnen de contouren van de mobilehome en deels door een regen-/zonnescherm. Het terras is uitgerust met tuinstoelen, een tafel en twee relax-stoelen. Er is een complete inventaris aanwezig inclusief een Nespresso koffie apparaat en een Weber BBQ.",
+        "De mobilhomes staan op zeer ruime plaatsen van ca. 250m2, elk met een aparte parkeerplaats aan de achterzijde.",
+        "Honden zijn niet toegestaan."
+      ],
+      "actions": [
+        {
+          "title": "Tarieven en beschikbaarheid",
+          "page": "prices"
+        },
+        {
+          "title": "Reserveren",
+          "page": "booking"
+        }
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "name": "Keuken",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "name": "Eethoek",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "name": "Buiten",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "name": "Indeling",
+          "description": ""
+        }
+      ]
+    },
+    "greencamp": {
+      "title": "Greencamp",
+      "content": [
+        "Er staan 4 mobilhomes van ca. 32m2, met een ouderslaapkamer (bed van 1,60 x 2,00 m) en een kinderslaapkamer met 3 bedden, waarvan 1 verhoogd.Dekbedden (1-persoons) en hoofdkussens zijn aanwezig; hoeslakens en dekbedovertrekken zijn eventueel extra bij te boeken.",
+        "In de volledig ingerichte keuken staan een tafel, stoelen en een hoekbank. Er is een douche in de badkamer en een afzonderlijk toilet.",
+        "Het terras is deels overkapt binnen de contouren van de mobilehome en deels door een regen-/zonnescherm. Het terras is uitgerust met tuinstoelen, een tafel en twee relax-stoelen. Er is een complete inventaris aanwezig inclusief een Nespresso koffie apparaat en een Weber BBQ.",
+        "De mobilhomes staan op zeer ruime plaatsen van ca. 250m2, elk met een aparte parkeerplaats aan de achterzijde.",
+        "Honden zijn niet toegestaan."
+      ],
+      "actions": [
+        {
+          "title": "Greencamp website",
+          "url": "https://www.greencamp.nl/campings/lestaubiere/"
+        }
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/leisure/Playground.jpg",
+          "name": "Speeltuin",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "name": "Tafeltennis",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Football.jpg",
+          "name": "Voetbal",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Volleyball.jpg",
+          "name": "Volleybal",
+          "description": ""
+        }
+      ]
+    },
+    "villatent": {
+      "title": "Villatent",
+      "content": [
+        "Er staan 4 mobilhomes van ca. 32m2, met een ouderslaapkamer (bed van 1,60 x 2,00 m) en een kinderslaapkamer met 3 bedden, waarvan 1 verhoogd.Dekbedden (1-persoons) en hoofdkussens zijn aanwezig; hoeslakens en dekbedovertrekken zijn eventueel extra bij te boeken.",
+        "In de volledig ingerichte keuken staan een tafel, stoelen en een hoekbank. Er is een douche in de badkamer en een afzonderlijk toilet.",
+        "Het terras is deels overkapt binnen de contouren van de mobilehome en deels door een regen-/zonnescherm. Het terras is uitgerust met tuinstoelen, een tafel en twee relax-stoelen. Er is een complete inventaris aanwezig inclusief een Nespresso koffie apparaat en een Weber BBQ.",
+        "De mobilhomes staan op zeer ruime plaatsen van ca. 250m2, elk met een aparte parkeerplaats aan de achterzijde.",
+        "Honden zijn niet toegestaan."
+      ],
+      "actions": [
+        {
+          "title": "Villatent website",
+          "url": "http://www.villatent.nl/camping/lestaubiere/"
+        }
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/leisure/Playground.jpg",
+          "name": "Speeltuin",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "name": "Tafeltennis",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Football.jpg",
+          "name": "Voetbal",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Volleyball.jpg",
+          "name": "Volleybal",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

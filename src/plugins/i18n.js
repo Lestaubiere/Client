@@ -1,10 +1,9 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
-import * as NL from '@/locales/nl.json';
-import * as FR from '@/locales/fr.json';
-import * as EN from '@/locales/en.json';
-import * as DE from '@/locales/de.json';
+import NL from '@/locales/nl';
+import FR from '@/locales/fr';
+import EN from '@/locales/en';
 
 Vue.use(VueI18n);
 
@@ -14,7 +13,6 @@ const i18n = new VueI18n({
     nl: NL,
     fr: FR,
     en: EN,
-    de: DE,
   },
 });
 

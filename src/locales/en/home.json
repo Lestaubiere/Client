@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Home"
+  },
+  "content": {
+    "main_one": [
+      "We like to welcome you at the website of our camping in the Dordogne!",
+      "Camping Lestaubière is a spacious campground, where young and old can relax and enjoy the nature, the tranquillity and the beautiful surroundings of the French Dordogne.",
+      "You have disposal of very spacious sites (all >160 m2) and modern sanitary. We provide you a nice terrace with a view at the pool (with paddling pool for the young children), the playground and the lake with its beach. During the season we offer animation for both children and adults, organised by the Lestaubière team, staffed by Dutch students."
+    ],
+    "main_two": [
+      "We also offer you different rental opportunities of camping. You can choose from our recent Mobil-homes and a number of completely equipped tents (“lodge and safari”).",
+      "The camping is situated between the historical cities Bergerac and Perigueux (capital of the Department of Dordogne). Nearby you find several “wine chateaux”, caves, castles and the river Dordogne. To fulfil your human needs the famous French supermarkets are only at a short distance.",
+      "We are prepared to provide you a carefree and relaxed stay, so that you may return full of fresh energy.",
+      "We are pleased to welcome you at Lestaubière; a jewel in the Dordogne by Dutch owners.",
+      "Family van Osta"
+    ]
+  },
+  "carousel": {
+    "items": [
+      {
+        "name": "Classement étoiles",
+        "image_path": "static/img/carousel/en/Classement_Etoiles_2017.png"
+      },
+      {
+        "name": "Perigord",
+        "image_path": "static/img/carousel/en/Perigord_2017.png",
+        "url": "http://www.dordogne-perigord-tourisme.fr/"
+      },
+      {
+        "name": "CampingCard",
+        "image_path": "static/img/carousel/en/ACSICampingCard_2017.png",
+        "url": "http://www.campingcard.co.uk/gb/en/europe/france/aquitaine/dordogne/campsite-lestaubiere-109670/"
+      },
+      {
+        "name": "ANWB Erkende Camping",
+        "image_path": "static/img/carousel/en/ANWB_ErkendeCamping_2017.png",
+        "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Locations"
+  },
+  "sections": {
+    "mobilhomes": {
+      "title": "Mobilhomes",
+      "content": [
+        "Nous avons, depuis 2012, 4 nouveaux mobilhomes (32 m2) avec 2 chambres chacune. La première chambre comporte un lit 2.00×1.60m et la seconde chambre comporte trois lits 1.90×0.70m.",
+        "Vous y trouverez également une cuisine entièrement équipée avec une table, des chaises et un canapé. La salle de bain comporte une douche et un évier, les toilettes sont séparés. La terrasse est partiellement couverte et équipé d’une table et de chaises, et également de deux transats. Vous y trouverez également un barbecue.",
+        "Chaque mobilhome est placé sur un grand emplacement d’environ 250m2 avec une place de parking à l’arrière.",
+        "Les animaux ne sont pas autorisés."
+      ],
+      "actions": [
+        {
+          "title": "Tarifs et disponibilités",
+          "page": "prices"
+        },
+        {
+          "title": "Réserver",
+          "page": "booking"
+        }
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "name": "Cuisine",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "name": "Coin repas",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "name": "Extérieur",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "name": "Plan",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

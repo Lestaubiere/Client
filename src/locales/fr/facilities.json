@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Aménagements"
+  },
+  "sections": {
+    "food": {
+      "title": "Manger et Boire",
+      "content": [
+        "Notre terrasse couverte par les plantantes est l’endroit idéal pour se détendre la journée. Avec une vue sur la piscine, le lac avec la plage et l’air de jeu.",
+        "Au bar et en terrasse vous pouvez déguster un bon café, un délicieux cappuccino ou alors des boissons fraîches comme une bière ou une boisson gazeuse. L’après midi nous servons différents snacks ainsi que des paninis.",
+        "Quelques jours pas semaines nous servons des menus variés en terrasse, et en pleine saison vous avez tous les jours la possibilité de déguster nos pizza faits maison ou alors de frites avec des snacks. Hors haute saison, ceci ce fait sur commande.",
+        "Durant toute la saison vous pouvez commander du pain frais quotidiennement."
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/facilities/Snack.jpg",
+          "name": "Snack",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Terrace.jpg",
+          "name": "Terrasse",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Shop.jpg",
+          "name": "Alimentation",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Bar.jpg",
+          "name": "Bar",
+          "description": ""
+        }
+      ]
+    },
+    "sanitary": {
+      "title": "Sanitair",
+      "content": [
+        "A l’accueil et sur la terrasse vous disposerez d’un accès internet par wifi. Dans la bibliothèque vous pourrez emprunter des livres et magasines gratuitement. Finalement nous disposons d’une salle de jeux avec un billard, un baby foot et des jeux de société."
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/facilities/Dish_washing.jpg",
+          "name": "Vaisselle",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Sanitary_block.jpg",
+          "name": "Sanitair",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Main_building.jpg",
+          "name": "Sanitair",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Laundry.jpg",
+          "name": "Laverie",
+          "description": ""
+        }
+      ]
+    },
+    "diverse": {
+      "title": "Divers",
+      "content": [
+        "A l’accueil et sur la terrasse vous disposerez d’un accès internet par wifi. Dans la bibliothèque vous pourrez emprunter des livres et magasines gratuitement. Finalement nous disposons d’une salle de jeux avec un billard, un baby foot et des jeux de société."
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/facilities/Library.jpg",
+          "name": "Bibliothèque",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Games.jpg",
+          "name": "Jeux",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/TV.jpg",
+          "name": "Télévision",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/facilities/Wifi.jpg",
+          "name": "Wifi",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

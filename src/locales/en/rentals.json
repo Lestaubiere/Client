@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Rentals"
+  },
+  "sections": {
+    "mobilhomes": {
+      "title": "Mobilhomes",
+      "content": [
+        "We have 4 rental mobile homes of 32m2, containing a parent’s bedroom (bed size 1,60 x 2,00 m) and a children’s bedroom with 3 beds.",
+        "The fully equipped kitchen has a table, chairs and a corner seat. There is a separate toilet and a shower in the bathroom. The terrace is partly covered within the contours of the mobile home and partly covered by a sun/rain blocker. On the terrace some easy chairs, a table and a BBQ are waiting for your unforgettable stay.",
+        "The mobile homes are placed on a spacey of 250 m2, and have a separate parking for your car.",
+        "Pets are not allowed."
+      ],
+      "actions": [
+        {
+          "title": "Prices and availabilities",
+          "page": "prices"
+        },
+        {
+          "title": "Booking",
+          "page": "booking"
+        }
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "name": "Living area",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "name": "Eating area",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "name": "Exterior",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "name": "Layout",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

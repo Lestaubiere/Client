@@ -1,0 +1,11 @@
+{
+  "widget": {
+    "opening": "Open from",
+    "closing": "Closed from",
+    "opening_day": "10th",
+    "opening_month": "April",
+    "closing_day": "30th",
+    "closing_month": "September",
+    "weather": "Today's weather"
+  }
+}

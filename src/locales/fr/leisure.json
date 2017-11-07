@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Détente"
+  },
+  "sections": {
+    "sports": {
+      "title": "Sport et Loisirs",
+      "content": [
+        "Le camping offre de nombreuses possibilités de sports ou de jeux. De nombreux jeux sont organisés quotidiennement par notre équipe Lestaubière (en haute saison), mais nous proposons également une grande variété de loisirs pour toute la famille.",
+        "Nous mettons à votre disposition une nouvelle aire de jeu (2014), un terrain de foot artificiel, un terrain de beach-volley, deux terrains de pétanque illuminés ou encore une table de tennis de table.",
+        "Bien sûr il a le lac dans lequel vous pouvez pêcher. De plus nous organisons régulièrement des tournois de pêche.",
+        "Dans les environs du camping, il se trouve également :"
+      ],
+      "list": [
+        "Un court de tennis (dans le village à 500m)",
+        "6 terrains de golf (avec par exemple “la Marterie” avec 18 trous à 20 minutes)",
+        "2 circuits de kart (à Bergerac et la Douze)",
+        "Paintball à Douville"
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/leisure/Playground.jpg",
+          "name": "Aire de jeux",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "name": "Tennis de table",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Football.jpg",
+          "name": "Foot",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Volleyball.jpg",
+          "name": "Volley",
+          "description": ""
+        }
+      ]
+    },
+    "swimming": {
+      "title": "Natation",
+      "content": [
+        "Pour vous rafraîchir, le camping dispose de :"
+      ],
+      "list": [
+        "Une piscine avec un petit bassin séparé pour les plus petits.",
+        "Une pelouse réservée et des transats pour vous reposer près de la piscine.",
+        "Un lac avec sa plage."
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/leisure/Lake_1.jpg",
+          "name": "Lac",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Lake_2.jpg",
+          "name": "Lac",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Pool_1.jpg",
+          "name": "Piscine",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Pool_2.jpg",
+          "name": "Piscine",
+          "description": ""
+        }
+      ]
+    },
+    "animation": {
+      "title": "Animation",
+      "content": [
+        "Pendant la haute saison, une équipe d’étudiants néerlandais nous aide dans le travail quotidien, elle assure également avec beaucoup d’enthousiasme l’organisation d’activités et l’animation pour enfants et adultes.",
+        "Tous les matins, il y a soit des jeux (intérieur / extérieur) ou du bricolage pour les plus petits, ainsi qu’une activité sportive.",
+        "Une activité récurrente est le disco pour enfants, le mercredi et dimanche soir jusqu’à 21h30 (danse et jeux).",
+        "Durant tout l’été de nombreux événements sont organisés, comme le défilé de lanternes, le miniplayback-show, la tournée des fantômes, la chasse au renard, le jeu au bruits animaliers, des tournois de pêche, football, tennis de table, water-polo, tennis et des concours de pétanque.",
+        "Toutes les semaines, avec un nombre de participants suffisant, il y a pour les enfants plus âgés et les parents la possibilité de participer à un évènement paint-ball, du karting ou une clinique de golf.",
+        "Les journées spéciales, le 14 Juillet et La Journée Lestaubière (première semaine d’août), lorsqu’un hexathlon et un défilé de lanternes s’organisent, se terminent par un magnifique feu d’artifice.",
+        "Pour les plus grands, il y a un lieu de rassemblement où le soir ils peuvent se voir et faire un feu de camp supervisé sans déranger les autres campeurs.",
+        "Il reste assez de temps pour des sorties en famille, pour lire ou simplement pour se détendre à la tente, en terrasse ou autour de la piscine."
+      ],
+      "slider": [
+        {
+          "image_path": "static/img/leisure/Campfire.jpg",
+          "name": "Feu de camp",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Karaoke.jpg",
+          "name": "Karaoké",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Handcraft.jpg",
+          "name": "Bricolage",
+          "description": ""
+        },
+        {
+          "image_path": "static/img/leisure/Petanque.jpg",
+          "name": "Pétanque",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Surroundings"
+  },
+  "subtitle": "Some examples",
+  "content": [
+    "The “Périgord”, part of the department Dordogne, is well known for its castles, caves, old cities, wines, rivers and markets.",
+    "The tourist centres Le Bugue and Lalinde (30 min), Beynac and Sarlat are situated east, whereas the cities of Bergerac and Périgueux (with supermarkets and old city centres) are south/north and to be visited within 20 minutes driving.",
+    "Topics are of course the many caves, a boat or canoe tour on the rivers Dordogne or Vézère, or visiting the morning markets of Issigeac, Lalinde, Vergt, le Bugue or may be of Bergerac/Périgueux.",
+    "Plenty restaurants in the categories of simple to ‘haute cuisine’ are offering you the opportunity to enjoy of the local and other French specialities.",
+    "Wine lovers will certainly appreciate a tasting session at one of the 80 wine chateaux.",
+    "Why not going on a hike, prepared in the neighbourhood. And for the sportive biker there are some challenging tours in the beautiful sloping landscape.",
+    "Like more swimming and canoeing? Find another lake, ‘Lac de Neufont’, nearby the village of Vergt."
+  ],
+  "cards": [
+    {
+      "name": "Issigeac",
+      "content": "This medieval village, 20 km south of Bergerac, is known for its weekly (touristic) market on Sunday morning. Worth to visit!",
+      "image_path": "static/img/surroundings/Issigeac.jpg",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Le Bournat",
+      "content": "A theme park / open-air museum, where the time seems to stand still since 1900. You will discover the ‘original France’. Demonstration of old crafts an several workshops.",
+      "image_path": "static/img/surroundings/Bournat.jpg",
+      "color": "#D9237F"
+    },
+    {
+      "name": "Monbazillac",
+      "content": "Experience in the ‘Chateau de Monbazillac’ the typical sweet digestive wine from this region. A guided tour of the castle and its gardens is worth to do.",
+      "image_path": "static/img/surroundings/Monbazillac.jpg",
+      "color": "#5AB5BF"
+    },
+    {
+      "name": "Aquarium",
+      "content": "The Aquarium in Le Bugue, well over half an hour from the campground, is a really good-looking aquarium. 6000 fishes divided over 30 basins with 3 million litres of water.",
+      "image_path": "static/img/surroundings/Aquarium.jpg",
+      "color": "#4E35B4"
+    },
+    {
+      "name": "Canoeing",
+      "content": "In this region (30 minutes driving) there are different opportunities. At your service for the rivers Dordogne and Vézère. You can book a tour for only 1 hour up to the entire day.",
+      "image_path": "static/img/surroundings/Canoe.jpg",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Adventure Park",
+      "content": "At 25 km you can experience this challenging but safe climbing track. No fear: they provide tracks with different levels for all ages.",
+      "image_path": "static/img/surroundings/Climbing.jpg",
+      "color": "#D9237F"
+    }
+  ]
+}
