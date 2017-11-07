@@ -1,5 +1,29 @@
 {
   "meta": {
     "title": "Contact"
+  },
+  "map": {
+    "placeholder": "Departure",
+    "button": "Search",
+    "messages": {
+      "initial": "Enter a departure to find the best route to Camping Lestaubière.",
+      "not_found": "No directions were found from this departure.",
+      "error": "An error occured when trying to find the directions. Please try again later."
+    }
+  },
+  "form": {
+    "title": "Contact information",
+    "address": "Address",
+    "contact": "Contact",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "button": "Send message",
+    "messages": {
+      "valid": "Your message has been successfully sent. We will come back to you as quickly as possible.",
+      "error": "An error occured when trying to send the message. Please try again later or contact us via telephone."
+    }
   }
 }

@@ -48,7 +48,10 @@
 
 <style>
   .direction__item {
-    padding: 15px 0;
+    padding: 15px;
+  }
+
+  .direction__item:not(:last-of-type) {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 
@@ -62,7 +65,7 @@
 
   .direction__instruction {
     line-height: 22px;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   .direction__instruction b {

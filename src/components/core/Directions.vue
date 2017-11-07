@@ -1,8 +1,8 @@
 <template>
   <div class="directions">
     <form class="directions__form" @submit.prevent="handleSubmit">
-      <input id="direction-departure" class="directions__input" type="text" placeholder="Departure" v-model="departure" />
-      <input class="directions__submit" type="submit" value="Go" :disabled="departure.length === 0" />
+      <input id="direction-departure" class="directions__input" type="text" :placeholder="placeholder" v-model="departure" />
+      <input class="directions__submit" type="submit" :value="button" :disabled="departure.length === 0" />
     </form>
     <div class="directions__loader-container" v-if="loading">
       <clip-loader :color="'#D9237F'"></clip-loader>
@@ -10,11 +10,9 @@
     <div class="directions__container" v-if="!loading && Object.keys(route).length > 0">
       <div class="directions__information-container">
         <p class="directions__information">
-          <span class="directions__information-label">Duration</span>
           <span class="directions__information-value">{{ formattedDuration(route.duration) }}</span>
         </p>
         <p class="directions__information">
-          <span class="directions__information-label">Distance</span>
           <span class="directions__information-value">{{ formattedDistance(route.distance) }}</span>
         </p>
       </div>
@@ -26,9 +24,9 @@
       </div>
     </div>
     <div class="directions__error" v-if="!loading && (error || Object.keys(route).length === 0)">
-      <p class="directions__error-message" v-if="!error && Object.keys(route).length === 0">Enter a departure point to look up the route to Camping Lestaubière</p>
-      <p class="directions__error-message" v-if="error === ERROR_404">No Directions were found for this place</p>
-      <p class="directions__error-message" v-if="error === ERROR_500">There was an error when trying to fetch the Directions. Please try again later.</p>
+      <p class="directions__error-message" v-if="!error && Object.keys(route).length === 0">{{ initialMessage }}</p>
+      <p class="directions__error-message" v-if="error === ERROR_404">{{ notFoundMessage }}</p>
+      <p class="directions__error-message" v-if="error === ERROR_500">{{ errorMessage }}</p>
     </div>
   </div>
 </template>
@@ -62,6 +60,21 @@
       },
       ERROR_500() {
         return ERROR_500;
+      },
+      placeholder() {
+        return this.$i18n.t('contact.map.placeholder');
+      },
+      button() {
+        return this.$i18n.t('contact.map.button');
+      },
+      initialMessage() {
+        return this.$i18n.t('contact.map.messages.initial');
+      },
+      notFoundMessage() {
+        return this.$i18n.t('contact.map.messages.not_found');
+      },
+      errorMessage() {
+        return this.$i18n.t('contact.map.messages.error');
       },
     },
 
@@ -141,7 +154,7 @@
 
   .directions__steps {
     padding: 10px;
-    max-height: 350px;
+    max-height: 373px;
     overflow-y: scroll;
   }
 

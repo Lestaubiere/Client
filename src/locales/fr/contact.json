@@ -1,5 +1,29 @@
 {
   "meta": {
     "title": "Contact"
+  },
+  "map": {
+    "placeholder": "Départ",
+    "button": "Rechercher",
+    "messages": {
+      "initial": "Entrez une adresse de départ et trouvez le meilleur itinéraire vers Camping Lestaubière.",
+      "not_found": "Aucun itinéraire n'a été trouvé pour ce point de départ.",
+      "error": "Une erreur est survenue lors de la recherche d'un itinéraire. Veuillez réessayer plus tard."
+    }
+  },
+  "form": {
+    "title": "Informations de contact",
+    "address": "Adresse",
+    "contact": "Contact",
+    "placeholders": {
+      "name": "Nom",
+      "email": "Adresse mail",
+      "message": "Message"
+    },
+    "button": "Envoyer le message",
+    "messages": {
+      "valid": "Votre message a bien été envoyé. Nous allons revenir vers vous dans les plus brefs délais",
+      "error": "Une erreur est survenue lors de l'envoie du message. Veuillez réessayer plus tard ou nous contacter par téléphone"
+    }
   }
 }

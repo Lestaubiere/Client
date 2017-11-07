@@ -4,10 +4,10 @@
     <div class="separator"></div>
     <div class="contact__section">
       <div class="contact__info">
-        <h2>Contact information</h2>
+        <h2>{{ title }}</h2>
         <div class="contact__info-container">
           <div class="contact__info-item">
-            <p class="contact__info-label">Address</p>
+            <p class="contact__info-label">{{ address }}</p>
             <div class="contact__info-value-container">
               <p class="contact__info-value">Camping Lestaubière</p>
               <p class="contact__info-value">Pont Saint-Mamet</p>
@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="contact__info-item">
-            <p class="contact__info-label">Contact</p>
+            <p class="contact__info-label">{{ contact }}</p>
             <div class="contact__info-value-container">
               <p class="contact__info-value"><a href="tel:+33553829815">+33 5 53 82 98 15</a></p>
               <p class="contact__info-value"><a href="tel:+33682282397">+33 6 82 28 23 97</a></p>
@@ -38,6 +38,7 @@
 
   export default {
     name: 'l-contact',
+
     metaInfo() {
       return {
         title: this.metaTitle,
@@ -47,6 +48,15 @@
     computed: {
       metaTitle() {
         return this.$i18n.t('contact.meta.title');
+      },
+      title() {
+        return this.$i18n.t('contact.form.title');
+      },
+      address() {
+        return this.$i18n.t('contact.form.address');
+      },
+      contact() {
+        return this.$i18n.t('contact.form.contact');
       },
     },
 

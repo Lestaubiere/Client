@@ -1,5 +1,30 @@
 {
   "meta": {
     "title": "Contact"
+  },
+  "map": {
+    "placeholder": "Vertrek",
+    "button": "Zoek",
+    "duration": "",
+    "messages": {
+      "initial": "Vul een vertrekpunt in en vind de beste route naar Camping Lestaubière.",
+      "not_found": "Er kon geen route gevonden worden vanaf het gekozen vertrekpunt.",
+      "error": "Er is iets mis gegaan met het vinden van een route. Probeer later opnieuw."
+    }
+  },
+  "form": {
+    "title": "Contact informatie",
+    "address": "Adres",
+    "contact": "Contact",
+    "placeholders": {
+      "name": "Naam",
+      "email": "Email adres",
+      "message": "Bericht"
+    },
+    "button": "Stuur bericht",
+    "messages": {
+      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
+      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+    }
   }
 }

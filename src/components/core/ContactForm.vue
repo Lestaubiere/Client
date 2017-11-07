@@ -1,27 +1,27 @@
 <template>
   <div class="contact-form">
     <div class="contact-form__messages" v-if="error || valid">
-      <p class="contact-form__error" v-if="error === ERROR_500">There was an error when trying to send the message. Please try again later or contact us via telephone.</p>
-      <p class="contact-form__valid" v-if="valid">Your message has been sent and we will come back to your as quickly as possible!</p>
+      <p class="contact-form__valid" v-if="valid">{{ validMessage }}</p>
+      <p class="contact-form__error" v-if="error === ERROR_500">{{ errorMessage }}</p>
     </div>
     <form @submit.prevent="handleSubmit">
       <div class="contact-form__item">
-        <input class="contact-form__input" v-model="name" type="text" placeholder="Name" required />
+        <input class="contact-form__input" v-model="name" type="text" :placeholder="namePlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__item">
-        <input class="contact-form__input" v-model="email" type="email" placeholder="Email" required />
+        <input class="contact-form__input" v-model="email" type="email" :placeholder="emailPlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__item">
-        <textarea class="contact-form__input" v-model="message" cols="30" rows="10" placeholder="Message" required />
+        <textarea class="contact-form__input" v-model="message" cols="30" rows="10" :placeholder="messagePlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__actions">
         <div class="contact-form__loader">
           <clip-loader :color="'#d9237f'" :size="'25px'" v-if="loading"></clip-loader>
         </div>
-        <input class="contact-form__submit" type="submit" value="Send message" :disabled="isDisabled" />
+        <input class="contact-form__submit" type="submit" :value="button" :disabled="isDisabled" />
       </div>
     </form>
   </div>
@@ -59,6 +59,24 @@
       },
       isDisabled() {
         return this.name.length === 0 || this.email.length === 0 || this.message.length === 0;
+      },
+      namePlaceholder() {
+        return this.$i18n.t('contact.form.placeholders.name');
+      },
+      emailPlaceholder() {
+        return this.$i18n.t('contact.form.placeholders.email');
+      },
+      messagePlaceholder() {
+        return this.$i18n.t('contact.form.placeholders.message');
+      },
+      button() {
+        return this.$i18n.t('contact.form.button');
+      },
+      validMessage() {
+        return this.$i18n.t('contact.form.messages.valid');
+      },
+      errorMessage() {
+        return this.$i18n.t('contact.form.messages.error');
       },
     },
 
