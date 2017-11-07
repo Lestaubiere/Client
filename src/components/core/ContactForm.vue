@@ -21,7 +21,7 @@
         <div class="contact-form__loader">
           <clip-loader :color="'#d9237f'" :size="'25px'" v-if="loading"></clip-loader>
         </div>
-        <input class="contact-form__submit button" type="submit" value="Send message" :disabled="isDisabled" />
+        <input class="contact-form__submit" type="submit" value="Send message" :disabled="isDisabled" />
       </div>
     </form>
   </div>
@@ -109,10 +109,18 @@
     display: flex;
     align-items: center;
     margin: 0 20px;
-    color: #ffffff;
+    padding: 10px 25px;
     background-color: #d9237f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: .2s ease;
+  }
+
+  .contact-form__submit:hover {
+    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 16px 0 rgba(0, 0, 0, 0.12);
   }
 
   .contact-form__submit:disabled {
