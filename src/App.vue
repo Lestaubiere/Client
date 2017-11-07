@@ -54,7 +54,7 @@
   }
 
   button,
-  input[type=submit] {
+  [type=submit] {
     background: none;
     border: 0;
     color: inherit;
@@ -69,8 +69,8 @@
   }
 
   button:focus,
-  input[type=submit]:focus,
-  input[type=text]:focus {
+  [type=submit]:focus,
+  [type=text]:focus {
     outline: none;
   }
 

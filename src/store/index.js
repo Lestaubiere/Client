@@ -6,6 +6,7 @@ import menu from './modules/menu';
 import modal from './modules/modal';
 import map from './modules/map';
 import weather from './modules/weather';
+import contact from './modules/contact';
 
 Vue.use(Vuex);
 
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     modal,
     map,
     weather,
+    contact,
   },
   strict: debug,
 });

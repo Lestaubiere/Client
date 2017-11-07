@@ -1,8 +1,8 @@
 <template>
   <div class="directions">
     <form class="directions__form" @submit.prevent="handleSubmit">
-      <input id="direction-departure" class="directions__input" type="text" placeholder="Departure" />
-      <input class="directions__submit" type="submit" value="Go" />
+      <input id="direction-departure" class="directions__input" type="text" placeholder="Departure" v-model="departure" />
+      <input class="directions__submit" type="submit" value="Go" :disabled="departure.length === 0" />
     </form>
     <div class="directions__loader-container" v-if="loading">
       <clip-loader :color="'#D9237F'"></clip-loader>
@@ -25,7 +25,8 @@
           :step="step" />
       </div>
     </div>
-    <div class="directions__error" v-if="error">
+    <div class="directions__error" v-if="!loading && (error || Object.keys(route).length === 0)">
+      <p class="directions__error-message" v-if="!error && Object.keys(route).length === 0">Enter a departure point to look up the route to Camping Lestaubière</p>
       <p class="directions__error-message" v-if="error === ERROR_404">No Directions were found for this place</p>
       <p class="directions__error-message" v-if="error === ERROR_500">There was an error when trying to fetch the Directions. Please try again later.</p>
     </div>
@@ -43,6 +44,12 @@
   export default {
     name: 'l-directions',
 
+    data() {
+      return {
+        departure: '',
+      };
+    },
+
     computed: {
       ...mapState({
         loading: state => state.map.loading,
@@ -59,9 +66,8 @@
     },
 
     methods: {
-      handleSubmit(e) {
-        const value = e.target.elements[0].value;
-        this.fetchMapDirections([value, this.language]);
+      handleSubmit() {
+        this.fetchMapDirections([this.departure, this.language]);
       },
       formattedDuration(duration) {
         const minutes = Math.floor((duration % 3600) / 60);
@@ -107,6 +113,13 @@
     padding: 5px 20px;
     background-color: #D9237F;
     color: #ffffff;
+    cursor: pointer;
+    transition: .2s ease;
+  }
+
+  .directions__submit:disabled {
+    background-color: rgba(0, 0, 0, .4);
+    cursor: default;
   }
 
   .directions__information-container {
