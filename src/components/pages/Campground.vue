@@ -1,6 +1,6 @@
 <template>
   <div class="campground container">
-    <div class="campground__section">
+    <div class="campground__section campground__section--fototour">
       <h1>{{ phototourSectionTitle }} - <span>{{ phototourSectionSubtitle }}</span></h1>
       <svg viewBox="0 0 1250 950"
           xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +97,23 @@
 
   .campground__card {
     flex-basis: 30%;
+  }
+
+  @media (max-width: 960px) {
+    .campground__card {
+      flex-basis: calc(50% - 100px);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .campground__section--fototour,
+    .separator {
+      display: none;
+    }
+
+    .campground__card {
+      flex-basis: 100%;
+    }
   }
 
   @media (max-width: 600px) {
