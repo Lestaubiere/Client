@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/${name}`" class="secondary-menu-item" :style="{backgroundColor: color}">
+  <router-link :to="path" class="secondary-menu-item" :style="{backgroundColor: color}">
     <span :class="`secondary-menu-item__icon secondary-menu-item__icon--${name}`"></span>
     <span class="secondary-menu-item__label">{{ label }}</span>
   </router-link>
@@ -15,6 +15,10 @@
         required: true,
       },
       name: {
+        type: String,
+        required: true,
+      },
+      path: {
         type: String,
         required: true,
       },

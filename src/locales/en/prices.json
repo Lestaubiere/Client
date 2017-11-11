@@ -15,7 +15,7 @@
       "actions": [
         {
           "title": "Book a pitch",
-          "page": "booking"
+          "page": "/en/booking"
         }
       ],
       "table": {
@@ -96,7 +96,7 @@
       "actions": [
         {
           "title": "Book a mobilhome",
-          "page": "booking"
+          "page": "/en/booking"
         }
       ],
       "table": {

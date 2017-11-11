@@ -12,21 +12,21 @@
     {
       "name": "Leisure",
       "image_path": "static/img/leisure/Pool_1.jpg",
-      "link": "leisure",
+      "link": "/en/leisure",
       "linkLabel": "Go to the leisure page",
       "color": "#78BF45"
     },
     {
       "name": "Facilities",
       "image_path": "static/img/facilities/Terrace.jpg",
-      "link": "facilities",
+      "link": "/en/facilities",
       "linkLabel": "Go to the facilities page",
       "color": "#D9237F"
     },
     {
       "name": "Surroundings",
       "image_path": "static/img/surroundings/Canoe.jpg",
-      "link": "surroundings",
+      "link": "/en/surroundings",
       "linkLabel": "Go to the surroundings page",
       "color": "#5AB5BF"
     }

@@ -1,67 +1,65 @@
 <template>
   <nav class="primary-menu">
-    <router-link to="/"
+    <router-link :to="$t('menu.home.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.home") }}
+                 @click.native="handleClick">
+      {{ $t("menu.home.label") }}
     </router-link>
     <router-link v-if="isMobile"
-                 to="/campground"
+                 :to="$t('menu.campground.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.campground") }}
+                 @click.native="handleClick">
+      {{ $t("menu.campground.label") }}
     </router-link>
-    <router-link to="/leisure"
+    <router-link :to="$t('menu.leisure.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.leisure") }}
+                 @click.native="handleClick">
+      {{ $t("menu.leisure.label") }}
     </router-link>
-    <router-link to="/facilities"
+    <router-link :to="$t('menu.facilities.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.facilities") }}
-    </router-link>
-    <router-link v-if="isMobile"
-                 to="/rentals"
-                 class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.rentals") }}
-    </router-link>
-    <router-link to="/surroundings"
-                 class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.surroundings") }}
+                 @click.native="handleClick">
+      {{ $t("menu.facilities.label") }}
     </router-link>
     <router-link v-if="isMobile"
-                 to="/prices"
+                 :to="$t('menu.rentals.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.prices") }}
+                 @click.native="handleClick">
+      {{ $t("menu.rentals.label") }}
+    </router-link>
+    <router-link :to="$t('menu.surroundings.path')"
+                 class="primary-menu__item"
+                 @click.native="handleClick">
+      {{ $t("menu.surroundings.label") }}
     </router-link>
     <router-link v-if="isMobile"
-                 to="/booking"
+                 :to="$t('menu.prices.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.booking") }}
+                 @click.native="handleClick">
+      {{ $t("menu.prices.label") }}
+    </router-link>
+    <router-link v-if="isMobile"
+                 :to="$t('menu.booking.path')"
+                 class="primary-menu__item"
+                 @click.native="handleClick">
+      {{ $t("menu.booking.label") }}
     </router-link>
     <router-link v-if="lang === 'nl'"
-                 to="/vacatures"
+                 :to="$t('menu.vacatures.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.vacatures") }}
+                 @click.native="handleClick">
+      {{ $t("menu.vacatures.label") }}
     </router-link>
-    <router-link to="/contact"
+    <router-link :to="$t('menu.contact.path')"
                  class="primary-menu__item"
-                 @click.native="closeMenu">
-      {{ $t("menu.contact") }}
+                 @click.native="handleClick">
+      {{ $t("menu.contact.label") }}
     </router-link>
   </nav>
 </template>
 
 <script>
   import { mapState, mapActions } from 'vuex';
-
-  import { CLOSE_MOBILE_MENU } from '@/store/modules/menu/mutation-types';
 
   export default {
     name: 'l-primary-menu',
@@ -75,11 +73,19 @@
 
     computed: mapState({
       lang: state => state.i18n.lang,
+      open: state => state.menu.open,
     }),
 
-    methods: mapActions({
-      closeMenu: CLOSE_MOBILE_MENU,
-    }),
+    methods: {
+      handleClick() {
+        if (this.open) {
+          this.closeMenu();
+        }
+      },
+      ...mapActions({
+        closeMenu: 'closeMenu',
+      }),
+    },
   };
 </script>
 

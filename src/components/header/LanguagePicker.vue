@@ -1,6 +1,6 @@
 <template>
   <div class="language-picker">
-    <button class="language-picker__item" v-for="locale in locales" :key="locale" @click="changeLocale(locale)">
+    <button class="language-picker__item" v-for="locale in locales" :key="locale" @click="handleClick(locale)">
       <img :src="require(`../../assets/icons/${locale}.png`)" :alt="locale">
       <span :class="`language-picker__icon language-picker__icon--${locale}`"></span>
     </button>
@@ -10,18 +10,24 @@
 <script>
   import { mapState, mapActions } from 'vuex';
 
-  import SET_LANGUAGE from '@/store/modules/i18n/mutation-types';
-
   export default {
     name: 'l-language-picker',
 
     computed: mapState({
+      lang: state => state.i18n.lang,
       locales: state => state.i18n.locales,
     }),
 
-    methods: mapActions({
-      changeLocale: SET_LANGUAGE,
-    }),
+    methods: {
+      handleClick(locale) {
+        if (locale !== this.lang) {
+          this.changeLanguage(locale);
+        }
+      },
+      ...mapActions({
+        changeLanguage: 'changeLanguage',
+      }),
+    },
   };
 </script>
 

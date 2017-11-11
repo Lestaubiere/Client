@@ -1,11 +1,38 @@
 {
-  "home": "Accueil",
-  "campground": "Le camping",
-  "leisure": "Détente",
-  "facilities": "Aménagements",
-  "rentals": "Locations",
-  "surroundings": "Environs",
-  "prices": "Tarifs ",
-  "booking": "Réserver",
-  "contact": "Contact"
+  "home": {
+    "label": "Accueil",
+    "path": "/fr/"
+  },
+  "campground": {
+    "label": "Le camping",
+    "path": "/fr/camping"
+  },
+  "leisure": {
+    "label": "Détente",
+    "path": "/fr/detente"
+  },
+  "facilities": {
+    "label": "Aménagements",
+    "path": "/fr/amenagements"
+  },
+  "rentals": {
+    "label": "Locations",
+    "path": "/fr/locations"
+  },
+  "surroundings": {
+    "label": "Environs",
+    "path": "/fr/environs"
+  },
+  "prices": {
+    "label": "Tarifs",
+    "path": "/fr/tarifs"
+  },
+  "booking": {
+    "label": "Réserver",
+    "path": "/fr/reserver"
+  },
+  "contact": {
+    "label": "Contact",
+    "path": "/fr/contact"
+  }
 }

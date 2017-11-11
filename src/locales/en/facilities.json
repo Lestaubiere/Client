@@ -13,22 +13,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/facilities/Snack.jpg",
+          "image_path": "/static/img/facilities/Snack.jpg",
           "name": "Snack",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Terrace.jpg",
+          "image_path": "/static/img/facilities/Terrace.jpg",
           "name": "Terrace",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Shop.jpg",
+          "image_path": "/static/img/facilities/Shop.jpg",
           "name": "Shop",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Bar.jpg",
+          "image_path": "/static/img/facilities/Bar.jpg",
           "name": "Bar",
           "description": ""
         }
@@ -42,22 +42,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/facilities/Dish_washing.jpg",
+          "image_path": "/static/img/facilities/Dish_washing.jpg",
           "name": "Dish washing",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Sanitary_block.jpg",
+          "image_path": "/static/img/facilities/Sanitary_block.jpg",
           "name": "Sanitary block",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Main_building.jpg",
+          "image_path": "/static/img/facilities/Main_building.jpg",
           "name": "Main building",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Laundry.jpg",
+          "image_path": "/static/img/facilities/Laundry.jpg",
           "name": "Laundry",
           "description": ""
         }
@@ -70,22 +70,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/facilities/Library.jpg",
+          "image_path": "/static/img/facilities/Library.jpg",
           "name": "Library",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Games.jpg",
+          "image_path": "/static/img/facilities/Games.jpg",
           "name": "Games",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/TV.jpg",
+          "image_path": "/static/img/facilities/TV.jpg",
           "name": "TV",
           "description": ""
         },
         {
-          "image_path": "static/img/facilities/Wifi.jpg",
+          "image_path": "/static/img/facilities/Wifi.jpg",
           "name": "Wifi",
           "description": ""
         }

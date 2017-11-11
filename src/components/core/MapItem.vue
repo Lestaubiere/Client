@@ -7,8 +7,6 @@
 <script>
   import { mapActions } from 'vuex';
 
-  import { SHOW_IMAGE_MODAL } from '@/store/modules/modal/mutation-types';
-
   export default {
     name: 'l-map-item',
 
@@ -45,7 +43,7 @@
     },
 
     methods: mapActions({
-      showModal: SHOW_IMAGE_MODAL,
+      showModal: 'showModal',
     }),
   };
 </script>

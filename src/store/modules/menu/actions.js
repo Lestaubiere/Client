@@ -1,10 +1,11 @@
 import { OPEN_MOBILE_MENU, CLOSE_MOBILE_MENU } from './mutation-types';
 
 const actions = {
-  [OPEN_MOBILE_MENU]({ commit }) {
+  openMenu({ commit }) {
     commit(OPEN_MOBILE_MENU);
   },
-  [CLOSE_MOBILE_MENU]({ commit }) {
+
+  closeMenu({ commit }) {
     commit(CLOSE_MOBILE_MENU);
   },
 };

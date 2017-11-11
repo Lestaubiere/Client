@@ -21,8 +21,6 @@
 <script>
   import { mapState, mapActions } from 'vuex';
 
-  import { HIDE_IMAGE_MODAL } from '@/store/modules/modal/mutation-types';
-
   export default {
     name: 'l-image-modal',
 
@@ -32,7 +30,7 @@
     }),
 
     methods: mapActions({
-      hideModal: HIDE_IMAGE_MODAL,
+      hideModal: 'hideModal',
     }),
   };
 </script>

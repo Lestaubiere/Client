@@ -30,6 +30,7 @@ const actions = {
         }
       });
   },
+
   resetContactForm({ commit }) {
     commit(RESET_CONTACT_FORM);
   },

@@ -12,21 +12,21 @@
     {
       "name": "Ontspanning",
       "image_path": "static/img/leisure/Pool_1.jpg",
-      "link": "leisure",
+      "link": "/nl/ontspanning",
       "linkLabel": "Ga naar de onspanning pagina",
       "color": "#78BF45"
     },
     {
       "name": "Voorzieningen",
       "image_path": "static/img/facilities/Terrace.jpg",
-      "link": "facilities",
+      "link": "/nl/voorzieningen",
       "linkLabel": "Ga naar de voorzieningen pagina",
       "color": "#D9237F"
     },
     {
       "name": "Omgeving",
       "image_path": "static/img/surroundings/Canoe.jpg",
-      "link": "surroundings",
+      "link": "/nl/omgeving",
       "linkLabel": "Ga naar de omgeving pagina",
       "color": "#5AB5BF"
     }

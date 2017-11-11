@@ -14,31 +14,31 @@
       "actions": [
         {
           "title": "Prices and availabilities",
-          "page": "prices"
+          "page": "/en/prices"
         },
         {
           "title": "Booking",
-          "page": "booking"
+          "page": "/en/booking"
         }
       ],
       "slider": [
         {
-          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
           "name": "Living area",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
           "name": "Eating area",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
           "name": "Exterior",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "image_path": "/static/img/rentals/Mobilehome_layout.jpg",
           "name": "Layout",
           "description": ""
         }

@@ -32,7 +32,7 @@
 
           <router-link v-if="action.page"
                        class="button"
-                       :to="`/${action.page}`" >
+                       :to="`${action.page}`" >
             {{ action.title }}
           </router-link>
         </p>

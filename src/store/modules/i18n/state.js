@@ -1,5 +1,5 @@
 const state = {
-  lang: localStorage.getItem('language') || 'nl',
+  lang: 'nl',
   locales: ['nl', 'fr', 'en'],
 };
 

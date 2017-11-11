@@ -2,45 +2,53 @@
   <div class="footer-menu">
     <h3 class="footer-menu__title">Menu</h3>
     <nav class="footer-menu__container">
-      <router-link to="/campground"
+      <router-link :to="$t('menu.campground.path')"
                   class="footer-menu__item">
-        {{ $t("menu.campground") }}
+        {{ $t("menu.campground.label") }}
       </router-link>
-      <router-link to="/leisure"
+      <router-link :to="$t('menu.leisure.path')"
                   class="footer-menu__item">
-        {{ $t("menu.leisure") }}
+        {{ $t("menu.leisure.label") }}
       </router-link>
-      <router-link to="/facilities"
+      <router-link :to="$t('menu.facilities.path')"
                   class="footer-menu__item">
-        {{ $t("menu.facilities") }}
+        {{ $t("menu.facilities.label") }}
       </router-link>
-      <router-link to="/rentals"
+      <router-link :to="$t('menu.rentals.path')"
                   class="footer-menu__item">
-        {{ $t("menu.rentals") }}
+        {{ $t("menu.rentals.label") }}
       </router-link>
-      <router-link to="/surroundings"
+      <router-link :to="$t('menu.surroundings.path')"
                   class="footer-menu__item">
-        {{ $t("menu.surroundings") }}
+        {{ $t("menu.surroundings.label") }}
       </router-link>
-      <router-link to="/prices"
+      <router-link :to="$t('menu.prices.path')"
                   class="footer-menu__item">
-        {{ $t("menu.prices") }}
+        {{ $t("menu.prices.label") }}
       </router-link>
-      <router-link to="/booking"
+      <router-link :to="$t('menu.booking.path')"
                   class="footer-menu__item">
-        {{ $t("menu.booking") }}
+        {{ $t("menu.booking.label") }}
       </router-link>
-      <router-link to="/contact"
+      <router-link :to="$t('menu.contact.path')"
                   class="footer-menu__item">
-        {{ $t("menu.contact") }}
+        {{ $t("menu.contact.label") }}
       </router-link>
     </nav>
   </div>
 </template>
 
 <script>
+  import { mapState } from 'vuex';
+
   export default {
     name: 'l-footer-menu',
+
+    computed: {
+      ...mapState({
+        lang: state => state.i18n.lang,
+      }),
+    },
   };
 </script>
 

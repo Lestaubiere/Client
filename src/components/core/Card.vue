@@ -7,7 +7,7 @@
       <router-link v-if="link && linkLabel"
                   class="button"
                   :style="{ backgroundColor: color }"
-                  :to="`/${link}`" >
+                  :to="link" >
         {{ linkLabel }}
       </router-link>
     </div>

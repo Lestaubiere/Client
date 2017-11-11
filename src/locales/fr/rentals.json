@@ -14,31 +14,31 @@
       "actions": [
         {
           "title": "Tarifs et disponibilités",
-          "page": "prices"
+          "page": "/fr/tarifs"
         },
         {
           "title": "Réserver",
-          "page": "booking"
+          "page": "/fr/reserver"
         }
       ],
       "slider": [
         {
-          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
           "name": "Cuisine",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
           "name": "Coin repas",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
           "name": "Extérieur",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "image_path": "/static/img/rentals/Mobilehome_layout.jpg",
           "name": "Plan",
           "description": ""
         }

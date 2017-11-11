@@ -15,31 +15,31 @@
       "actions": [
         {
           "title": "Tarieven en beschikbaarheid",
-          "page": "prices"
+          "page": "/nl/tarieven"
         },
         {
           "title": "Reserveren",
-          "page": "booking"
+          "page": "/nl/reserveren"
         }
       ],
       "slider": [
         {
-          "image_path": "static/img/rentals/Mobilhome_living.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
           "name": "Keuken",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_eating.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
           "name": "Eethoek",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilhome_exterior.jpg",
+          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
           "name": "Buiten",
           "description": ""
         },
         {
-          "image_path": "static/img/rentals/Mobilehome_layout.jpg",
+          "image_path": "/static/img/rentals/Mobilehome_layout.jpg",
           "name": "Indeling",
           "description": ""
         }
@@ -62,22 +62,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/leisure/Playground.jpg",
+          "image_path": "/static/img/leisure/Playground.jpg",
           "name": "Speeltuin",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "image_path": "/static/img/leisure/Table_tennis.jpg",
           "name": "Tafeltennis",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Football.jpg",
+          "image_path": "/static/img/leisure/Football.jpg",
           "name": "Voetbal",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Volleyball.jpg",
+          "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volleybal",
           "description": ""
         }
@@ -100,22 +100,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/leisure/Playground.jpg",
+          "image_path": "/static/img/leisure/Playground.jpg",
           "name": "Speeltuin",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "image_path": "/static/img/leisure/Table_tennis.jpg",
           "name": "Tafeltennis",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Football.jpg",
+          "image_path": "/static/img/leisure/Football.jpg",
           "name": "Voetbal",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Volleyball.jpg",
+          "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volleybal",
           "description": ""
         }

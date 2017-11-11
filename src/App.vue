@@ -13,8 +13,6 @@
 <script>
   import { mapState, mapActions } from 'vuex';
 
-  import { CLOSE_MOBILE_MENU } from '@/store/modules/menu/mutation-types';
-
   import LHeader from '@/components/header/Header';
   import LFooter from '@/components/footer/Footer';
   import ImageModal from '@/components/core/ImageModal';
@@ -26,12 +24,17 @@
       titleTemplate: '%s | Lestaubière',
     },
 
+    mounted() {
+      this.setLanguage(this.$route.params.lang);
+    },
+
     computed: mapState({
       menuIsOpen: state => state.menu.open,
     }),
 
     methods: mapActions({
-      closeMenu: CLOSE_MOBILE_MENU,
+      closeMenu: 'closeMenu',
+      setLanguage: 'setLanguage',
     }),
 
     components: {

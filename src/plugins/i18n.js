@@ -8,7 +8,7 @@ import EN from '@/locales/en';
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: localStorage.getItem('language') || 'nl',
+  locale: 'nl',
   messages: {
     nl: NL,
     fr: FR,

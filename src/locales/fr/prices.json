@@ -15,7 +15,7 @@
       "actions": [
         {
           "title": "Réserver un emplacement",
-          "page": "booking"
+          "page": "/fr/reserver"
         }
       ],
       "table": {
@@ -96,7 +96,7 @@
       "actions": [
         {
           "title": "Réserver un mobilhome",
-          "page": "booking"
+          "page": "/fr/reserver"
         }
       ],
       "table": {

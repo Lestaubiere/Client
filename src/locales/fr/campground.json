@@ -12,21 +12,21 @@
     {
       "name": "Détente",
       "image_path": "static/img/leisure/Pool_1.jpg",
-      "link": "leisure",
+      "link": "/fr/detente",
       "linkLabel": "Allez sur la page détente",
       "color": "#78BF45"
     },
     {
       "name": "Aménagements",
       "image_path": "static/img/facilities/Terrace.jpg",
-      "link": "facilities",
+      "link": "/fr/amenagements",
       "linkLabel": "Allez sur la page aménagements",
       "color": "#D9237F"
     },
     {
       "name": "Environs",
       "image_path": "static/img/surroundings/Canoe.jpg",
-      "link": "surroundings",
+      "link": "/fr/environs",
       "linkLabel": "Allez sur la page environs",
       "color": "#5AB5BF"
     }

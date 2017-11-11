@@ -44,8 +44,6 @@
 <script>
   import { mapState, mapActions } from 'vuex';
 
-  import { OPEN_MOBILE_MENU, CLOSE_MOBILE_MENU } from '@/store/modules/menu/mutation-types';
-
   import LPrimaryMenu from '@/components/header/PrimaryMenu';
   import LLanguagePicker from '@/components/header/LanguagePicker';
   import LHeaderWidget from '@/components/header/HeaderWidget';
@@ -59,8 +57,8 @@
     }),
 
     methods: mapActions({
-      openMenu: OPEN_MOBILE_MENU,
-      closeMenu: CLOSE_MOBILE_MENU,
+      openMenu: 'openMenu',
+      closeMenu: 'closeMenu',
     }),
 
     components: {

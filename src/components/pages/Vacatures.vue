@@ -40,20 +40,6 @@
       };
     },
 
-    mounted() {
-      if (this.lang !== 'nl') {
-        this.$router.push('/');
-      }
-    },
-
-    watch: {
-      lang() {
-        if (this.lang !== 'nl') {
-          this.$router.push('/');
-        }
-      },
-    },
-
     computed: {
       title() {
         return this.$i18n.t('vacatures.meta.title');

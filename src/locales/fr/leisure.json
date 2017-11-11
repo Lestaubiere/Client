@@ -19,22 +19,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/leisure/Playground.jpg",
+          "image_path": "/static/img/leisure/Playground.jpg",
           "name": "Aire de jeux",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Table_tennis.jpg",
+          "image_path": "/static/img/leisure/Table_tennis.jpg",
           "name": "Tennis de table",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Football.jpg",
+          "image_path": "/static/img/leisure/Football.jpg",
           "name": "Foot",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Volleyball.jpg",
+          "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volley",
           "description": ""
         }
@@ -52,22 +52,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/leisure/Lake_1.jpg",
+          "image_path": "/static/img/leisure/Lake_1.jpg",
           "name": "Lac",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Lake_2.jpg",
+          "image_path": "/static/img/leisure/Lake_2.jpg",
           "name": "Lac",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Pool_1.jpg",
+          "image_path": "/static/img/leisure/Pool_1.jpg",
           "name": "Piscine",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Pool_2.jpg",
+          "image_path": "/static/img/leisure/Pool_2.jpg",
           "name": "Piscine",
           "description": ""
         }
@@ -87,22 +87,22 @@
       ],
       "slider": [
         {
-          "image_path": "static/img/leisure/Campfire.jpg",
+          "image_path": "/static/img/leisure/Campfire.jpg",
           "name": "Feu de camp",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Karaoke.jpg",
+          "image_path": "/static/img/leisure/Karaoke.jpg",
           "name": "Karaoké",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Handcraft.jpg",
+          "image_path": "/static/img/leisure/Handcraft.jpg",
           "name": "Bricolage",
           "description": ""
         },
         {
-          "image_path": "static/img/leisure/Petanque.jpg",
+          "image_path": "/static/img/leisure/Petanque.jpg",
           "name": "Pétanque",
           "description": ""
         }
