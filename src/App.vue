@@ -191,6 +191,7 @@
   }
 
   .button {
+    display: inline-block;
     padding: 25px 25px;
     background-color: #D9237F;
     color: #ffffff;

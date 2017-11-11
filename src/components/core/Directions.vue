@@ -126,6 +126,7 @@
     padding: 5px 20px;
     background-color: #D9237F;
     color: #ffffff;
+    border-radius: 0;
     cursor: pointer;
     transition: .2s ease;
   }

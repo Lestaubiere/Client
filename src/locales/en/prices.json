@@ -1,5 +1,185 @@
 {
   "meta": {
-    "title": "Prices"
+    "title": "Tarrifs"
+  },
+  "sections": {
+    "pitch": {
+      "title": "Tarrifs campsite pitches",
+      "list": [
+        "During low and mid season(until the 7th of July), on presentation of ACSI-card, the fee of €17,00 (incl. camping pitch, 2 persons, power) applies, with the special promotion 7=6, 14=12, 21=18 etc…!",
+        "We ask a down payment of 25% of the total costs.",
+        "The remaining sum has to be paid on arrival day.",
+        "Bookings costs are €20,00 a booking/family.",
+        "We have a limited number (35) of rental tabletop model fridges for the price of €5,00 per night."
+      ],
+      "actions": [
+        {
+          "title": "Book a pitch",
+          "page": "booking"
+        }
+      ],
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "High season",
+            "dates": ["14/07 - 25/08"]
+          },
+          {
+            "label": "Mid season",
+            "dates": ["23/06 - 14/07"]
+          },
+          {
+            "label": "Low season",
+            "dates": ["15/04 - 23/06", "25/08 - 30/09"]
+          }
+        ],
+        "rows": [
+          [
+            "Pitch",
+            "€13,00",
+            "€10,00",
+            "€7,00"
+          ],
+          [
+            "Persons (> 7 years)",
+            "€8,25",
+            "€6,25",
+            "€5,25"
+          ],
+          [
+            "Persons (< 7 years)",
+            "€5,25",
+            "€4,25",
+            "€3,25"
+          ],
+          [
+            "Electricity 6A",
+            "€4,50",
+            "€4,50",
+            "€4,50"
+          ],
+          [
+            "Electricity 10A",
+            "€5,50",
+            "€5,50",
+            "€5,50"
+          ],
+          [
+            "Pets",
+            "€3,50",
+            "€1,50",
+            "€1,50"
+          ],
+          [
+            "Tourist taxt (> 18 years)",
+            "€0,35",
+            "€0,35",
+            "€0,35"
+          ]
+        ]
+      }
+    },
+    "mobilhome": {
+      "title": "Tarfifs mobilhome",
+      "list": [
+        "The prices for the rental accommodation are valid for 5 persons and are including baby bed en children’s chair. Tariff for each extra person is €8,00 or €5,00 per day.",
+        "Bookings costs are €20,- a booking/family.",
+        "A bed linen set is for rent for €8,00 p.p.",
+        "Final clean up for the mobilehomes: €45,00",
+        "Down payment of 25% of the total rental fee at booking; the remaining to be paid 6 weeks before arrival."
+      ],
+      "content": [
+        "(*) Special offer during low season: 50% discount on the second consecutive week",
+        "Offer valid if both weeks are entirely in low season."
+      ],
+      "actions": [
+        {
+          "title": "Book a mobilhome",
+          "page": "booking"
+        }
+      ],
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "High season",
+            "dates": ["14/07 - 25/08"]
+          },
+          {
+            "label": "Mid season",
+            "dates": ["23/06 - 14/07", "25/08 - 01/09"]
+          },
+          {
+            "label": "Low season (*)",
+            "dates": ["15/04 - 23/06", "01/09 - 30/09"]
+          }
+        ],
+        "rows": [
+          [
+            "Mobilhome (5 persons)",
+            "€850,00 /week",
+            "€80,00 /night",
+            "€60,00 /night"
+          ],
+          [
+            "Additional small tent",
+            "free",
+            "free",
+            "free"
+          ]
+        ]
+      }
+    },
+    "availabilities": {
+      "title": "Availability of the mobilhomes",
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "07/07 - 14/07"
+          },
+          {
+            "label": "14/07 - 21/07"
+          },
+          {
+            "label": "21/07 - 28/07"
+          },
+          {
+            "label": "28/07 - 04/08"
+          },
+          {
+            "label": "04/08 - 11/08"
+          },
+          {
+            "label": "11/08 - 18/08"
+          },
+          {
+            "label": "18/08 - 25/08"
+          },
+          {
+            "label": "25/08 - 01/09"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Mobilhome 1",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 2",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 3",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 4",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          }
+        ]
+      }
+    }
   }
 }

@@ -1,5 +1,185 @@
 {
   "meta": {
     "title": "Tarifs"
+  },
+  "sections": {
+    "pitch": {
+      "title": "Tarifs emplacements",
+      "list": [
+        "Pour les adhérents de la carte ACSI nous vous proposons le tarif de €17,00 par nuit (emplacement, 2 personnes et électricité) en basse et moyenne saison(jusqu’au le 7 juillet). Nous avons également l’offre spéciale de 7=6, 14=12, 21=18 etc… !",
+        "Nous demandons un paiement à l’avance de 25% du prix du séjour.",
+        "Le reste des frais sont à payer à l’arrivée, ou si désiré, il est également possible de transférer la somme avant l’arrivée sur notre compte (RIB 30004 00712 00010183976 12 / BNP PARIBAS BERGERAC).",
+        "Les frais de réservation sont €20,- par réservation/famille.",
+        "Nous proposons également la location d'un nombre limité (35) de réfrigérateurs pour €5,00 par nuit."
+      ],
+      "actions": [
+        {
+          "title": "Réserver un emplacement",
+          "page": "booking"
+        }
+      ],
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "Haute saison",
+            "dates": ["14/07 - 25/08"]
+          },
+          {
+            "label": "Moyenne saison",
+            "dates": ["23/06 - 14/07"]
+          },
+          {
+            "label": "Basse saison",
+            "dates": ["15/04 - 23/06", "25/08 - 30/09"]
+          }
+        ],
+        "rows": [
+          [
+            "Emplacement",
+            "€13,00",
+            "€10,00",
+            "€7,00"
+          ],
+          [
+            "Personne (> 7 ans)",
+            "€8,25",
+            "€6,25",
+            "€5,25"
+          ],
+          [
+            "Personne (< 7 ans)",
+            "€5,25",
+            "€4,25",
+            "€3,25"
+          ],
+          [
+            "Electricité 6A",
+            "€4,50",
+            "€4,50",
+            "€4,50"
+          ],
+          [
+            "Electricité 10A",
+            "€5,50",
+            "€5,50",
+            "€5,50"
+          ],
+          [
+            "Animaux de compagnie",
+            "€3,50",
+            "€1,50",
+            "€1,50"
+          ],
+          [
+            "Taxe de séjour (> 18 ans)",
+            "€0,35",
+            "€0,35",
+            "€0,35"
+          ]
+        ]
+      }
+    },
+    "mobilhome": {
+      "title": "Tarifs mobilhome",
+      "list": [
+        "Ces tarifs sont valables pour 5 personnes et sont inclusif un lit etude chaise pour bébé. Les tarifs pour une personne supplémentaire sont de €8,00 pour un adulte (plus de 7 ans) et €5,00 pour un enfant, et par jour.",
+        "Les frais de réservations sont €20,- par réservation/famille.",
+        "Il est également possible de louer les draps pour €8,00 par personne.",
+        "Les frais de nettoyages sont de €45,00 (obligatoire).",
+        "Nous demandons un paiement à l’avance de 25% lors de la réservation. Le restant est à payer au maximum 6 semaines avant l’arrivée."
+      ],
+      "content": [
+        "(*) Offre spéciale en basse saison: 50% de réduction sur la deuxième semaine consécutive",
+        "Offre valable si les deux semaines sont entièrement en basse saison."
+      ],
+      "actions": [
+        {
+          "title": "Réserver un mobilhome",
+          "page": "booking"
+        }
+      ],
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "Haute saison",
+            "dates": ["14/07 - 25/08"]
+          },
+          {
+            "label": "Moyenne saison",
+            "dates": ["23/06 - 14/07", "25/08 - 01/09"]
+          },
+          {
+            "label": "Basse saison (*)",
+            "dates": ["15/04 - 23/06", "01/09 - 30/09"]
+          }
+        ],
+        "rows": [
+          [
+            "Mobilhome (5 personnes)",
+            "€850,00 /semaine",
+            "€80,00 /nuit",
+            "€60,00 /nuit"
+          ],
+          [
+            "Tente supplémentaire",
+            "gratuit",
+            "gratuit",
+            "gratuit"
+          ]
+        ]
+      }
+    },
+    "availabilities": {
+      "title": "Disponibilités des mobilhomes",
+      "table": {
+        "header": [
+          {},
+          {
+            "label": "07/07 - 14/07"
+          },
+          {
+            "label": "14/07 - 21/07"
+          },
+          {
+            "label": "21/07 - 28/07"
+          },
+          {
+            "label": "28/07 - 04/08"
+          },
+          {
+            "label": "04/08 - 11/08"
+          },
+          {
+            "label": "11/08 - 18/08"
+          },
+          {
+            "label": "18/08 - 25/08"
+          },
+          {
+            "label": "25/08 - 01/09"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Mobilhome 1",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 2",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 3",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          },
+          {
+            "label": "Mobilhome 4",
+            "availabilities": [true, true, false, false, false, false, true, true]
+          }
+        ]
+      }
+    }
   }
 }
