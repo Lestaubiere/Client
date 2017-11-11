@@ -1,16 +1,25 @@
 <template>
   <div class="facebook-widget">
-    <div class="fb-page"
-         data-href="https://www.facebook.com/CampingLestaubiere/"
-         data-tabs="timeline"
-         data-height="350"
-         data-small-header="true"
-         data-adapt-container-width="true"
-         data-hide-cover="false"
-         data-show-facepile="false">
-      <blockquote cite="https://www.facebook.com/CampingLestaubiere/" class="fb-xfbml-parse-ignore">
-        <a href="https://www.facebook.com/CampingLestaubiere/">Camping Lestaubiere</a>
-      </blockquote>
+    <div class="facebook-widget__container">
+      <div class="fb-page"
+          data-href="https://www.facebook.com/CampingLestaubiere/"
+          data-tabs="timeline"
+          data-width="300"
+          data-height="350"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/CampingLestaubiere/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/CampingLestaubiere/">Camping Lestaubiere</a>
+        </blockquote>
+      </div>
+    </div>
+    <div class="facebook-widget__container facebook-widget__container--mobile">
+      <a class="facebook-widget__mobile" href="https://www.facebook.com/CampingLestaubiere/" target="_blank">
+        <img src="../../assets/icons/facebook.svg" alt="Facebook logo">
+        <span>{{ $t('footer.facebook') }}</span>
+      </a>
     </div>
   </div>
 </template>
@@ -30,6 +39,7 @@
         });
       };
 
+      // eslint-disable-next-line func-names
       (function (d, s, id) {
         let js = {};
         const fjs = d.getElementsByTagName(s)[0];
@@ -43,4 +53,42 @@
 </script>
 
 <style scoped>
+  .facebook-widget {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fb-page {
+    width: 300px;
+  }
+
+  .facebook-widget__container--mobile {
+    display: none;
+  }
+
+  .facebook-widget__mobile {
+    padding: 10px 20px;
+    background-color: #3B5998;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  .facebook-widget__mobile img {
+    margin-bottom: 15px;
+  }
+
+  .facebook-widget__mobile span {
+    color: #ffffff;
+  }
+
+  @media (max-width: 600px) {
+    .facebook-widget__container:not(.facebook-widget__container--mobile) {
+      display: none;
+    }
+
+    .facebook-widget__container--mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>

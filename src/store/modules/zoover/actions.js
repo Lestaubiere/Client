@@ -9,7 +9,6 @@ const actions = {
     fetch(`${LESATUBIERE_API_URL}/zoover`)
       .then(response => response.json())
       .then((data) => {
-        console.log(data);
         commit(FETCHED_ZOOVER_INFORMATION, data);
       });
   },
