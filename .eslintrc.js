@@ -11,6 +11,7 @@ module.exports = {
   },
   globals: {
     google: true,
+    FB: true,
   },
   extends: 'airbnb-base',
   // required to lint *.vue files

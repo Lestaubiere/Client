@@ -9,6 +9,7 @@ import * as surroundings from './surroundings.json';
 import * as prices from './prices.json';
 import * as booking from './booking.json';
 import * as contact from './contact.json';
+import * as footer from './footer.json';
 
 export default {
   menu,
@@ -22,4 +23,5 @@ export default {
   prices,
   booking,
   contact,
+  footer,
 };

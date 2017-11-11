@@ -7,6 +7,7 @@ import modal from './modules/modal';
 import map from './modules/map';
 import weather from './modules/weather';
 import contact from './modules/contact';
+import zoover from './modules/zoover';
 
 Vue.use(Vuex);
 
@@ -20,6 +21,7 @@ export default new Vuex.Store({
     map,
     weather,
     contact,
+    zoover,
   },
   strict: debug,
 });
