@@ -12,7 +12,7 @@
             </g>
           </svg>
         </button>
-        <img :src="imagePath" />
+        <img class="modal__image" :src="imagePath" />
       </div>
     </div>
   </transition>
@@ -60,12 +60,18 @@
 
   .modal__container {
     position: relative;
+    display: flex;
     max-width: 90%;
-    margin: 0px auto;
+    height: 90%;
+    margin: 0 auto;
     border-radius: 3px;
     box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
     font-size: 0;
     transition: all .3s ease;
+  }
+
+  .modal__image {
+    max-height: 100%;
   }
 
   .modal__close {
