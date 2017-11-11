@@ -10,9 +10,15 @@
     <div class="directions__container" v-if="!loading && Object.keys(route).length > 0">
       <div class="directions__information-container">
         <p class="directions__information">
+          <span class="directions__information-icon">
+            <img src="../../assets/icons/duration.svg" alt="Duration icon" />
+          </span>
           <span class="directions__information-value">{{ formattedDuration(route.duration) }}</span>
         </p>
         <p class="directions__information">
+          <span class="directions__information-icon">
+            <img src="../../assets/icons/distance.svg" alt="Distance icon" />
+          </span>
           <span class="directions__information-value">{{ formattedDistance(route.distance) }}</span>
         </p>
       </div>
@@ -138,14 +144,19 @@
 
   .directions__information-container {
     display: flex;
-    padding: 10px;
+    padding: 10px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 
   .directions__information {
     display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
+    align-items: center;
+    margin-right: 25px;
+  }
+
+  .directions__information-icon {
+    width: 20px;
+    margin-right: 8px;
   }
 
   .directions__information-label {
