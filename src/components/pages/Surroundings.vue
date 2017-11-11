@@ -17,8 +17,7 @@
             :title="card.name"
             :content="card.content"
             :imagePath="card.image_path"
-            :color="card.color">
-      </card>
+            :color="card.color" />
     </div>
   </div>
 </template>

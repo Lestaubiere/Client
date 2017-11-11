@@ -1,5 +1,34 @@
 {
   "meta": {
     "title": "Campground"
-  }
+  },
+  "sections": {
+    "phototour": {
+      "title": "Phototour",
+      "subtitle": "Click on the dots to view a picture of that place"
+    }
+  },
+  "cards": [
+    {
+      "name": "Leisure",
+      "image_path": "static/img/leisure/Pool_1.jpg",
+      "link": "leisure",
+      "linkLabel": "Go to the leisure page",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Facilities",
+      "image_path": "static/img/facilities/Terrace.jpg",
+      "link": "facilities",
+      "linkLabel": "Go to the facilities page",
+      "color": "#D9237F"
+    },
+    {
+      "name": "Surroundings",
+      "image_path": "static/img/surroundings/Canoe.jpg",
+      "link": "surroundings",
+      "linkLabel": "Go to the surroundings page",
+      "color": "#5AB5BF"
+    }
+  ]
 }

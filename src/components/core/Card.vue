@@ -2,7 +2,15 @@
   <div class="card" :style="{ borderColor: color }">
     <h4 class="card__title">{{ title }}</h4>
     <img class="card__image" :src="`../../${imagePath}`" :alt="`Picture ${title}`">
-    <p class="card__content">{{ content }}</p>
+    <p class="card__content" v-if="content">{{ content }}</p>
+    <div class="card__button">
+      <router-link v-if="link && linkLabel"
+                  class="button"
+                  :style="{ backgroundColor: color }"
+                  :to="`/${link}`" >
+        {{ linkLabel }}
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -21,7 +29,15 @@
       },
       content: {
         type: String,
-        required: true,
+        required: false,
+      },
+      link: {
+        type: String,
+        required: false,
+      },
+      linkLabel: {
+        type: String,
+        required: false,
       },
       color: {
         type: String,
@@ -33,6 +49,7 @@
 
 <style scoped>
   .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,6 +78,12 @@
   .card__content {
     padding: 0 25px 25px;
     line-height: 1.5rem;
+  }
+
+  .card__button {
+    padding: 0 10px;
+    background-color: #ffffff;
+    transform: translateY(35px);
   }
 
   @media (max-width: 960px) {

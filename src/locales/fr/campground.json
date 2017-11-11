@@ -1,5 +1,34 @@
 {
   "meta": {
     "title": "Camping"
-  }
+  },
+  "sections": {
+    "phototour": {
+      "title": "Phototour",
+      "subtitle": "Cliquez sur les flèches pour afficher une photo"
+    }
+  },
+  "cards": [
+    {
+      "name": "Détente",
+      "image_path": "static/img/leisure/Pool_1.jpg",
+      "link": "leisure",
+      "linkLabel": "Allez sur la page détente",
+      "color": "#78BF45"
+    },
+    {
+      "name": "Aménagements",
+      "image_path": "static/img/facilities/Terrace.jpg",
+      "link": "facilities",
+      "linkLabel": "Allez sur la page aménagements",
+      "color": "#D9237F"
+    },
+    {
+      "name": "Environs",
+      "image_path": "static/img/surroundings/Canoe.jpg",
+      "link": "surroundings",
+      "linkLabel": "Allez sur la page environs",
+      "color": "#5AB5BF"
+    }
+  ]
 }
