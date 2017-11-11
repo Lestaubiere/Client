@@ -4,7 +4,9 @@ import {
   REQUEST_CONTACT_SUBMIT,
   FETCHED_CONTACT_SUBMIT_SUCCESS,
   FETCHED_CONTACT_SUBMIT_ERROR,
-  RESET_CONTACT_FORM,
+  SET_NAME,
+  SET_EMAIL,
+  SET_MESSAGE,
 } from './mutation-types';
 
 const mutations = {
@@ -16,15 +18,22 @@ const mutations = {
   [FETCHED_CONTACT_SUBMIT_SUCCESS](state) {
     state.loading = false;
     state.valid = true;
+    state.name = '';
+    state.email = '';
+    state.message = '';
   },
   [FETCHED_CONTACT_SUBMIT_ERROR](state) {
     state.loading = false;
     state.error = ERROR_500;
   },
-  [RESET_CONTACT_FORM](state) {
-    state.loading = false;
-    state.error = null;
-    state.valid = false;
+  [SET_NAME](state, name) {
+    state.name = name;
+  },
+  [SET_EMAIL](state, email) {
+    state.email = email;
+  },
+  [SET_MESSAGE](state, message) {
+    state.message = message;
   },
 };
 

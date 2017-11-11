@@ -4,7 +4,9 @@ import {
   REQUEST_CONTACT_SUBMIT,
   FETCHED_CONTACT_SUBMIT_SUCCESS,
   FETCHED_CONTACT_SUBMIT_ERROR,
-  RESET_CONTACT_FORM,
+  SET_NAME,
+  SET_EMAIL,
+  SET_MESSAGE,
 } from './mutation-types';
 
 const actions = {
@@ -31,8 +33,16 @@ const actions = {
       });
   },
 
-  resetContactForm({ commit }) {
-    commit(RESET_CONTACT_FORM);
+  setName({ commit }, name) {
+    commit(SET_NAME, name);
+  },
+
+  setEmail({ commit }, email) {
+    commit(SET_EMAIL, email);
+  },
+
+  setMessage({ commit }, message) {
+    commit(SET_MESSAGE, message);
   },
 };
 

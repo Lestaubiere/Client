@@ -6,15 +6,15 @@
     </div>
     <form @submit.prevent="handleSubmit">
       <div class="contact-form__item">
-        <input class="contact-form__input" v-model="name" type="text" :placeholder="namePlaceholder" required />
+        <input class="contact-form__input" :value="name" @input="handleNameChange" type="text" :placeholder="namePlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__item">
-        <input class="contact-form__input" v-model="email" type="email" :placeholder="emailPlaceholder" required />
+        <input class="contact-form__input" :value="email" @input="handleEmailChange" type="email" :placeholder="emailPlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__item">
-        <textarea class="contact-form__input" v-model="message" cols="30" rows="10" :placeholder="messagePlaceholder" required />
+        <textarea class="contact-form__input" :value="message" @input="handleMessageChange" cols="30" rows="10" :placeholder="messagePlaceholder" required />
         <span class="contact-form__required">*</span>
       </div>
       <div class="contact-form__actions">
@@ -36,21 +36,12 @@
   export default {
     name: 'l-contact-form',
 
-    beforeDestroy() {
-      this.resetContactForm();
-    },
-
-    data() {
-      return {
-        name: '',
-        email: '',
-        message: '',
-      };
-    },
-
     computed: {
       ...mapState({
         loading: state => state.contact.loading,
+        name: state => state.contact.name,
+        email: state => state.contact.email,
+        message: state => state.contact.message,
         valid: state => state.contact.valid,
         error: state => state.contact.error,
       }),
@@ -81,12 +72,28 @@
     },
 
     methods: {
+      handleNameChange(e) {
+        this.setName(e.target.value);
+      },
+
+      handleEmailChange(e) {
+        this.setEmail(e.target.value);
+      },
+
+      handleMessageChange(e) {
+        this.setMessage(e.target.value);
+      },
+
       handleSubmit() {
         this.sendContactInformation([this.name, this.email, this.message]);
       },
+
       ...mapActions({
         sendContactInformation: 'sendContactInformation',
         resetContactForm: 'resetContactForm',
+        setName: 'setName',
+        setEmail: 'setEmail',
+        setMessage: 'setMessage',
       }),
     },
 
