@@ -5,6 +5,7 @@ import {
   FETCHED_MAP_DIRECTION_SUCCESS,
   FETCHED_MAP_DIRECTION_NOT_FOUND,
   FETCHED_MAP_DIRECTION_ERROR,
+  SET_DEPARTURE,
 } from './mutation-types';
 
 const actions = {
@@ -33,6 +34,10 @@ const actions = {
           commit(FETCHED_MAP_DIRECTION_SUCCESS, data);
         }
       });
+  },
+
+  setDeparture({ commit }, departure) {
+    commit(SET_DEPARTURE, departure);
   },
 };
 

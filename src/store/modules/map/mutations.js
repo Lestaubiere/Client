@@ -5,6 +5,7 @@ import {
   FETCHED_MAP_DIRECTION_SUCCESS,
   FETCHED_MAP_DIRECTION_NOT_FOUND,
   FETCHED_MAP_DIRECTION_ERROR,
+  SET_DEPARTURE,
 } from './mutation-types';
 
 const mutations = {
@@ -38,6 +39,9 @@ const mutations = {
     state.line = '';
     state.bounds = {};
     state.error = ERROR_500;
+  },
+  [SET_DEPARTURE](state, departure) {
+    state.departure = departure;
   },
 };
 

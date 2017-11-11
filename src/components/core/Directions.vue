@@ -1,7 +1,7 @@
 <template>
   <div class="directions">
     <form class="directions__form" @submit.prevent="handleSubmit">
-      <input id="direction-departure" class="directions__input" type="text" :placeholder="placeholder" v-model="departure" />
+      <input id="direction-departure" class="directions__input" type="text" :placeholder="placeholder" :value="departure" @input="handleChange" />
       <input class="directions__submit" type="submit" :value="button" :disabled="departure.length === 0" />
     </form>
     <div class="directions__loader-container" v-if="loading">
@@ -48,15 +48,10 @@
   export default {
     name: 'l-directions',
 
-    data() {
-      return {
-        departure: '',
-      };
-    },
-
     computed: {
       ...mapState({
         loading: state => state.map.loading,
+        departure: state => state.map.departure,
         route: state => state.map.route,
         error: state => state.map.error,
         language: state => state.i18n.lang,
@@ -85,20 +80,28 @@
     },
 
     methods: {
+      handleChange(e) {
+        this.setDeparture(e.target.value);
+      },
+
       handleSubmit() {
         this.fetchMapDirections([this.departure, this.language]);
       },
+
       formattedDuration(duration) {
         const minutes = Math.floor((duration % 3600) / 60);
         const hours = Math.floor(duration / 3600);
         return `${hours}h ${minutes}min`;
       },
+
       formattedDistance(distance) {
         const kilometers = Math.round(distance / 1000);
         return `${kilometers} km`;
       },
+
       ...mapActions({
         fetchMapDirections: 'fetchMapDirections',
+        setDeparture: 'setDeparture',
       }),
     },
 
