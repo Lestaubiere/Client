@@ -19,7 +19,7 @@
           <span></span>
         </button>
         <div class="header__logo-container">
-          <img src="../../assets/logo_white.png" alt="Logo Camping Lestaubière"/>
+          <img src="../../assets/icons/logo.svg" alt="Logo Camping Lestaubière"/>
         </div>
         <div class="header__primary-menu">
           <l-primary-menu></l-primary-menu>
@@ -84,6 +84,10 @@
   .header__left-container,
   .header__right-container {
     z-index: 1;
+  }
+
+  .header__logo-container img {
+    height: 50px;
   }
 
   .header__top-bar {
