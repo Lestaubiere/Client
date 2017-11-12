@@ -58,19 +58,19 @@
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--campground {
-    background-image: url('../../assets/icons/campground-icon.png');
+    background-image: url('../../assets/icons/campground.svg');
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--rentals {
-    background-image: url('../../assets/icons/rentals-icon.png');
+    background-image: url('../../assets/icons/rentals.svg');
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--prices {
-    background-image: url('../../assets/icons/prices-icon.png');
+    background-image: url('../../assets/icons/prices.svg');
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--booking {
-    background-image: url('../../assets/icons/booking-icon.png');
+    background-image: url('../../assets/icons/booking.svg');
   }
 
   .secondary-menu-item:hover .secondary-menu-item__icon {
