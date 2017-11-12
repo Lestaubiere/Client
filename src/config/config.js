@@ -7,3 +7,11 @@ export const LESATUBIERE_API_URL = 'https://api.lestaubiere.com/v1';
 
 export const ERROR_404 = 'ERROR_404';
 export const ERROR_500 = 'ERROR_500';
+
+export const TYPE_SELECT = 'TYPE_SELECT';
+export const TYPE_TEXT = 'TYPE_TEXT';
+export const TYPE_NUMBER = 'TYPE_NUMBER';
+export const TYPE_EMAIL = 'TYPE_EMAIL';
+export const TYPE_DATE = 'TYPE_DATE';
+export const TYPE_TEXTAREA = 'TYPE_TEXTAREA';
+export const TYPE_PEOPLE = 'TYPE_PEOPLE';

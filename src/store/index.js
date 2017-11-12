@@ -8,6 +8,7 @@ import map from './modules/map';
 import weather from './modules/weather';
 import contact from './modules/contact';
 import zoover from './modules/zoover';
+import booking from './modules/booking';
 
 Vue.use(Vuex);
 
@@ -22,6 +23,7 @@ export default new Vuex.Store({
     weather,
     contact,
     zoover,
+    booking,
   },
   strict: debug,
 });

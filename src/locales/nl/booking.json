@@ -1,5 +1,163 @@
 {
   "meta": {
     "title": "Reserveren"
+  },
+  "form": {
+    "inputs": [
+      {
+        "name": "title",
+        "placeholder": "Aanhef.",
+        "type": "TYPE_SELECT",
+        "required": true,
+        "action": "setBookingTitle",
+        "options": [
+          {
+            "value": "fam",
+            "label": "Fam."
+          },
+          {
+            "value": "dhr",
+            "label": "Dhr."
+          },
+          {
+            "value": "mevr",
+            "label": "Mevr."
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "placeholder": "Naam",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingName"
+      },
+      {
+        "name": "address",
+        "placeholder": "Adres",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingAddress"
+      },
+      {
+        "name": "zipCode",
+        "placeholder": "Postcode",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingZipCode"
+      },
+      {
+        "name": "city",
+        "placeholder": "Plaats",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingCity"
+      },
+      {
+        "name": "country",
+        "placeholder": "Land",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingCountry"
+      },
+      {
+        "name": "email",
+        "placeholder": "Email",
+        "type": "TYPE_EMAIL",
+        "required": true,
+        "action": "setBookingEmail"
+      },
+      {
+        "name": "phoneNumber",
+        "placeholder": "Telefoon nummer",
+        "type": "TYPE_TEXT",
+        "required": true,
+        "action": "setBookingPhoneNumber"
+      },
+      {
+        "placeholder": "Aantal personen",
+        "type": "TYPE_PEOPLE",
+        "required": true
+      },
+      {
+        "name": "numberOfPets",
+        "placeholder": "Aantal huisdieren",
+        "type": "TYPE_NUMBER",
+        "required": true,
+        "action": "setBookingNumberOfPets"
+      },
+      {
+        "name": "equipment",
+        "placeholder": "Kampeermiddel",
+        "type": "TYPE_SELECT",
+        "required": true,
+        "action": "setBookingEquipment",
+        "options": [
+          {
+            "value": "tent",
+            "label": "Tent"
+          },
+          {
+            "value": "caravan",
+            "label": "Caravan"
+          },
+          {
+            "value": "vouwwagen",
+            "label": "vouwwagen"
+          },
+          {
+            "value": "camper",
+            "label": "Camper"
+          }
+        ]
+      },
+      {
+        "name": "electricity",
+        "placeholder": "Elektriciteit",
+        "type": "TYPE_SELECT",
+        "required": true,
+        "action": "setBookingElectricity",
+        "options": [
+          {
+            "value": "none",
+            "label": "Geen"
+          },
+          {
+            "value": "6",
+            "label": "6 Amp."
+          },
+          {
+            "value": "10",
+            "label": "10 Amp."
+          }
+        ]
+      },
+      {
+        "name": "dateOfArrival",
+        "placeholder": "Datum aankomst",
+        "type": "TYPE_DATE",
+        "required": true,
+        "action": "setBookingDateOfArrival"
+      },
+      {
+        "name": "dateOfDeparture",
+        "placeholder": "Datum vertrek",
+        "type": "TYPE_DATE",
+        "required": true,
+        "action": "setBookingDateOfDeparture"
+      },
+      {
+        "name": "comment",
+        "placeholder": "Vragen of opmerkingen",
+        "type": "TYPE_TEXTAREA",
+        "required": true,
+        "action": "setBookingComment"
+      }
+    ],
+    "button": "Stuur reservering",
+    "messages": {
+      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
+      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+    }
   }
 }
