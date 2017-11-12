@@ -61,7 +61,17 @@
 </script>
 
 <style scoped>
+  .vacatures {
+    padding: 0 25px;
+  }
+
   .vacatures__content-container {
     margin: 25px 0;
+  }
+
+  @media (max-width: 600px) {
+    .vacatures {
+      padding: 0 10px;
+    }
   }
 </style>
