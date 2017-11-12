@@ -39,6 +39,15 @@
       };
     },
 
+    mounted() {
+      if (this.bounds.southwest && this.bounds.southwest) {
+        setTimeout(() => {
+          const bounds = new google.maps.LatLngBounds(this.bounds.southwest, this.bounds.northeast);
+          this.$refs.map.fitBounds(bounds);
+        }, 100);
+      }
+    },
+
     watch: {
       bounds() {
         if (this.bounds.southwest && this.bounds.southwest) {
