@@ -1,8 +1,7 @@
 <template>
   <div class="language-picker">
     <button class="language-picker__item" v-for="locale in locales" :key="locale" @click="handleClick(locale)">
-      <img :src="require(`../../assets/icons/${locale}.png`)" :alt="locale">
-      <span :class="`language-picker__icon language-picker__icon--${locale}`"></span>
+      <img :src="require(`../../assets/icons/${locale}.svg`)" :alt="`Flag ${locale}`">
     </button>
   </div>
 </template>
@@ -33,16 +32,23 @@
 
 <style scoped>
   .language-picker {
+    display: flex;
     margin-left: 25px;
-    padding: 3px 5px;
+    padding: 5px 5px;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 5px;
   }
 
   .language-picker__item {
-    margin: 0 2px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
     color: #ffffff;
     cursor: pointer;
+  }
+
+  .language-picker__item img {
+    width: 25px;
   }
 
   .header__primary-menu--mobile .language-picker {
@@ -65,14 +71,18 @@
       right: 15px;
     }
 
-    .language-picker__item {
-      margin: 0 5px;
+    .language-picker__item img {
+      width: 30px;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .language-picker {
       position: initial;
+    }
+
+    .language-picker__item img {
+      width: 35px;
     }
   }
 </style>

@@ -198,7 +198,7 @@
     transform-origin: 10px 2px;
   }
 
-  @media (min-width: 601px) {
+  @media (min-width: 641px) {
     .header__primary-menu--mobile,
     .header__mobile-menu-button {
       display: none;
@@ -243,7 +243,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     .header__top-bar-container {
       flex-direction: row;
       justify-content: center;
@@ -258,7 +258,7 @@
     }
 
     .header__primary-menu {
-      display: none;;
+      display: none;
     }
 
     .header__main-container {
