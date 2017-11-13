@@ -14,9 +14,9 @@
     <div class="separator"></div>
     <l-section
       :index="2"
-      :images="diverseSectionSlider"
-      :title="diverseSectionTitle"
-      :content="diverseSectionContent"></l-section>
+      :images="mediaSectionSlider"
+      :title="mediaSectionTitle"
+      :content="mediaSectionContent"></l-section>
   </div>
 </template>
 
@@ -54,14 +54,14 @@
       sanitarySectionSlider() {
         return this.$i18n.t('facilities.sections.sanitary.slider');
       },
-      diverseSectionTitle() {
-        return this.$i18n.t('facilities.sections.diverse.title');
+      mediaSectionTitle() {
+        return this.$i18n.t('facilities.sections.media.title');
       },
-      diverseSectionContent() {
-        return this.$i18n.t('facilities.sections.diverse.content');
+      mediaSectionContent() {
+        return this.$i18n.t('facilities.sections.media.content');
       },
-      diverseSectionSlider() {
-        return this.$i18n.t('facilities.sections.diverse.slider');
+      mediaSectionSlider() {
+        return this.$i18n.t('facilities.sections.media.slider');
       },
     },
 
