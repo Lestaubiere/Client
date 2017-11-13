@@ -21,14 +21,14 @@ export default new Router({
       path: '/',
       redirect: '/nl',
     },
+    ...NLroutes,
+    ...FRroutes,
+    ...ENroutes,
     {
       path: '/:lang',
       name: 'Home',
       component: Home,
     },
-    ...NLroutes,
-    ...FRroutes,
-    ...ENroutes,
     {
       path: '/:lang/contact',
       name: 'Contact',
@@ -38,10 +38,6 @@ export default new Router({
         fr: 'contact',
         en: 'contact',
       },
-    },
-    {
-      path: '/contact',
-      redirect: '/nl/contact',
     },
   ],
   scrollBehavior() {

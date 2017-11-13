@@ -108,6 +108,10 @@ const routes = [
     path: '/vacatures',
     redirect: '/nl/vacatures',
   },
+  {
+    path: '/contact',
+    redirect: '/nl/contact',
+  },
 ];
 
 export default routes;
