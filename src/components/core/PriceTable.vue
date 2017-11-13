@@ -69,6 +69,7 @@
   }
 
   .table__header-item:not(:first-of-type) {
+    background-color: rgba(0,0,0,.015);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -92,6 +93,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
+  .table__row:hover {
+    background-color: rgba(0,0,0,.025);
+  }
+
   .table__column {
     flex-basis: 20%;
     padding: 15px;
@@ -101,6 +106,7 @@
   .table__column:first-of-type {
     flex-basis: 40%;
     font-weight: bold;
+    background-color: rgba(0,0,0,.015);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 

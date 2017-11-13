@@ -66,6 +66,7 @@
   }
 
   .table__header-item:not(:first-of-type) {
+    background-color: rgba(0,0,0,.015);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -93,6 +94,7 @@
   .table__column:first-of-type {
     flex-basis: 20%;
     font-weight: bold;
+    background-color: rgba(0,0,0,.015);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 
