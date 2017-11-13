@@ -38,5 +38,9 @@
   "contact": {
     "label": "Contact",
     "path": "/nl/contact"
+  },
+  "legalMentions": {
+    "label": "Mentions légales",
+    "path": "/nl/mentions-legales"
   }
 }

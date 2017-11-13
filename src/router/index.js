@@ -4,6 +4,7 @@ import Meta from 'vue-meta';
 
 import Home from '@/components/pages/Home';
 import Contact from '@/components/pages/Contact';
+import LegalMentions from '@/components/pages/LegalMentions';
 import NotFound from '@/components/pages/NotFound';
 
 import { LOCALES } from '@/config/config';
@@ -38,6 +39,16 @@ const router = new Router({
         nl: 'contact',
         fr: 'contact',
         en: 'contact',
+      },
+    },
+    {
+      path: '/:lang/mentions-legales',
+      name: 'Mentions Légales',
+      component: LegalMentions,
+      meta: {
+        nl: 'mentions-legales',
+        fr: 'mentions-legales',
+        en: 'mentions-legales',
       },
     },
     {

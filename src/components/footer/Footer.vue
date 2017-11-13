@@ -19,7 +19,10 @@
     <div class="footer__bottom-container">
       <div class="footer__container container">
         <div class="footer__left-column">
-          <p>Last updated at: {{updatedAt}}</p>
+          <router-link :to="$t('menu.legalMentions.path')"
+                        class="footer__link">
+              {{ $t("menu.legalMentions.label") }}
+            </router-link>
         </div>
         <div class="footer__copyright">© 2017 - SARL Lestaubière</div>
       </div>
@@ -31,8 +34,6 @@
 <script>
   import CookieLaw from 'vue-cookie-law';
 
-  import deployment from '@/config/deployment.json';
-
   import LFooterMenu from '@/components/footer/FooterMenu';
   import LFooterContact from '@/components/footer/FooterContact';
   import LZooverWidget from '@/components/footer/ZooverWidget';
@@ -40,12 +41,6 @@
 
   export default {
     name: 'l-footer',
-
-    data() {
-      return {
-        updatedAt: deployment.updated_at,
-      };
-    },
 
     computed: {
       cookieMessage() {
@@ -88,6 +83,19 @@
     padding: 10px 0;
     background-color: #1b1b1b;
     font-size: .9em;
+  }
+
+  .footer__left-column {
+    display: flex;
+  }
+
+  .footer__link {
+    color: rgba(255, 255, 255, .25);
+    text-decoration: none;
+  }
+
+  .footer__link:hover {
+    text-decoration: underline;
   }
 
   .footer__copyright {
