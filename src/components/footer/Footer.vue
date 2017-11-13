@@ -176,6 +176,7 @@
 
     .footer__left-column {
       margin-bottom: 20px;
+      justify-content: center;
     }
   }
 </style>
