@@ -10,6 +10,7 @@ import * as prices from './prices.json';
 import * as booking from './booking.json';
 import * as contact from './contact.json';
 import * as footer from './footer.json';
+import * as notFound from './not-found.json';
 
 export default {
   menu,
@@ -24,4 +25,5 @@ export default {
   booking,
   contact,
   footer,
+  notFound,
 };

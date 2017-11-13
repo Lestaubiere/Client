@@ -1,6 +1,8 @@
+import { LOCALES } from '@/config/config';
+
 const state = {
   lang: 'nl',
-  locales: ['nl', 'fr', 'en'],
+  locales: LOCALES,
 };
 
 export default state;

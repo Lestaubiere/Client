@@ -4,17 +4,18 @@ import Meta from 'vue-meta';
 
 import Home from '@/components/pages/Home';
 import Contact from '@/components/pages/Contact';
+import NotFound from '@/components/pages/NotFound';
+
+import { LOCALES } from '@/config/config';
 
 import NLroutes from './nl';
 import FRroutes from './fr';
 import ENroutes from './en';
 
-// import store from '../store';
-
 Vue.use(Router);
 Vue.use(Meta);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     {
@@ -39,8 +40,27 @@ export default new Router({
         en: 'contact',
       },
     },
+    {
+      path: '/:lang/404',
+      name: '404',
+      component: NotFound,
+    },
+    {
+      path: '/:lang/*',
+      redirect: '/:lang/404',
+    },
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };
   },
 });
+
+router.beforeEach((to, from, next) => {
+  if (LOCALES.includes(to.params.lang)) {
+    next();
+  } else {
+    next({ path: '/nl/404' });
+  }
+});
+
+export default router;
