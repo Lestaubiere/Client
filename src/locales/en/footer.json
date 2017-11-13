@@ -1,4 +1,8 @@
 {
   "zoover": "http://www.zoover.co.uk/france/aquitaine/pont-saint-mamet-dordogne/lestaubiere/campsite",
-  "facebook": "Follow us on Facebook"
+  "facebook": "Follow us on Facebook",
+  "cookie": {
+    "message": "To make this site work properly, we sometimes place small data files called cookies on your device",
+    "button": "Ok"
+  }
 }

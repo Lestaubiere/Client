@@ -24,10 +24,13 @@
         <div class="footer__copyright">© 2017 - SARL Lestaubière</div>
       </div>
     </div>
+    <cookie-law :message="cookieMessage" :buttonText="cookieButton" />
   </footer>
 </template>
 
 <script>
+  import CookieLaw from 'vue-cookie-law';
+
   import deployment from '@/config/deployment.json';
 
   import LFooterMenu from '@/components/footer/FooterMenu';
@@ -44,7 +47,18 @@
       };
     },
 
+    computed: {
+      cookieMessage() {
+        return this.$i18n.t('footer.cookie.message');
+      },
+
+      cookieButton() {
+        return this.$i18n.t('footer.cookie.button');
+      },
+    },
+
     components: {
+      CookieLaw,
       LFooterMenu,
       LFooterContact,
       LZooverWidget,
@@ -53,7 +67,7 @@
   };
 </script>
 
-<style scoped>
+<style>
   .footer {
     margin-top: 75px;
     color: #ffffff;
@@ -75,8 +89,39 @@
     background-color: #1b1b1b;
     font-size: .9em;
   }
+
   .footer__copyright {
     color: rgba(255, 255, 255, .25);
+  }
+
+  .Cookie.Cookie--base {
+    max-width: 1250px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    padding: 10px 25px;
+    border-radius: 3px 3px 0 0;
+    background-color: #212121;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .Cookie--base .Cookie__content {
+    margin: 0;
+    color: #ffffff;
+    line-height: 26px;
+  }
+
+  .Cookie--base .Cookie__buttons .Cookie__button {
+    padding: 15px 50px;
+    background-color: #D9237F;
+    color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .3s ease;
+  }
+
+  .Cookie--base .Cookie__buttons .Cookie__button:hover {
+    background-color: #D9237F;
+    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 16px 0 rgba(0, 0, 0, 0.12);
   }
 
   @media (max-width: 960px) {
@@ -93,6 +138,18 @@
   @media (max-width: 800px) {
     .footer {
       margin-top: 50px;
+    }
+
+    .Cookie--base .Cookie__content {
+      line-height: 24px;
+    }
+
+    .Cookie--base .Cookie__buttons {
+      margin: 5px 0 0;
+    }
+
+    .Cookie--base .Cookie__buttons .Cookie__button {
+      padding: 10px 35px;
     }
   }
 
