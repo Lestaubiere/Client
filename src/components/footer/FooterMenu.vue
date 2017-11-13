@@ -2,6 +2,10 @@
   <div class="footer-menu">
     <h3 class="footer-menu__title">Menu</h3>
     <nav class="footer-menu__container">
+      <router-link :to="$t('menu.home.path')"
+                  class="footer-menu__item">
+        {{ $t("menu.home.label") }}
+      </router-link>
       <router-link :to="$t('menu.campground.path')"
                   class="footer-menu__item">
         {{ $t("menu.campground.label") }}
