@@ -25,12 +25,27 @@
       {
         "name": "Perigord",
         "image_path": "static/img/carousel/en/Perigord_2017.png",
-        "url": "http://www.dordogne-perigord-tourisme.fr/"
+        "url": "https://www.dordogne-perigord-tourisme.fr/sejourner/campings/detail/?ido=douville-lestaubiere-HPAAQU024FS00005"
+      },
+      {
+        "name": "Cool Camping",
+        "image_path": "static/img/carousel/en/CoolCamping_2017.png",
+        "url": "https://coolcamping.com/campsites/europe/france/west-france/dordogne-lot/360-camping-lestaubiere"
       },
       {
         "name": "CampingCard",
         "image_path": "static/img/carousel/en/ACSICampingCard_2017.png",
         "url": "http://www.campingcard.co.uk/gb/en/europe/france/aquitaine/dordogne/campsite-lestaubiere-109670/"
+      },
+      {
+        "name": "Zoover",
+        "image_path": "static/img/carousel/en/Zoover_2017.svg",
+        "url": "http://www.zoover.co.uk/france/aquitaine/pont-saint-mamet-dordogne/lestaubiere/campsite"
+      },
+      {
+        "name": "CampingKey",
+        "image_path": "static/img/carousel/en/CampingKey_2017.svg",
+        "url": "http://www.campingkeyeurope.com/en"
       },
       {
         "name": "ANWB Erkende Camping",

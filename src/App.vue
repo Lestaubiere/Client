@@ -208,6 +208,10 @@
     box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 16px 0 rgba(0, 0, 0, 0.12);
   }
 
+  .VueCarousel-inner {
+    align-items: center;
+  }
+
   @media (max-width: 600px) {
     h1 {
       font-size: 1.75rem;
