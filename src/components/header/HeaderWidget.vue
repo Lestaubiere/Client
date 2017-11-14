@@ -20,7 +20,7 @@
       <span class="header-widget__weather-label">{{ $t('header.widget.weather') }}</span>
       <span class="header-widget__weather-value">
         <span :class="`header-widget__weather-icon wi wi-owm-${isDay ? 'day' : 'night'}-${code}`"></span>
-        <span>{{ temperature || '-' }} ° C</span>
+        <span>{{ temperature !== null ? temperature : '-' }} ° C</span>
       </span>
     </div>
   </div>
