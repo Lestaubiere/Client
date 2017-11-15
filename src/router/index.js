@@ -61,9 +61,6 @@ const router = new Router({
       redirect: '/:lang/404',
     },
   ],
-  scrollBehavior() {
-    return { x: 0, y: 0 };
-  },
 });
 
 router.beforeEach((to, from, next) => {
