@@ -11,7 +11,10 @@
           data-hide-cover="false"
           data-show-facepile="false">
         <blockquote cite="https://www.facebook.com/CampingLestaubiere/" class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/CampingLestaubiere/">Camping Lestaubiere</a>
+          <a class="fb-xfbml-parse-ignore facebook-widget__mobile" href="https://www.facebook.com/CampingLestaubiere/" target="_blank">
+            <img src="../../assets/icons/facebook.svg" alt="Facebook logo">
+            <span>{{ $t('footer.facebook') }}</span>
+          </a>  
         </blockquote>
       </div>
     </div>
@@ -67,6 +70,9 @@
   }
 
   .facebook-widget__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px 20px;
     background-color: #3B5998;
     border-radius: 3px;
@@ -74,6 +80,7 @@
   }
 
   .facebook-widget__mobile img {
+    max-width: 200px;
     margin-bottom: 15px;
   }
 
