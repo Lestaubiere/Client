@@ -268,6 +268,7 @@
     .header__main-container {
       flex-direction: column;
       align-items: center;
+      padding: 20px 10px;
     }
 
     .header__left-container {
