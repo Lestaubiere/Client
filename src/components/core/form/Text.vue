@@ -1,5 +1,5 @@
 <template>
-  <input class="input" :value="value" @input="handleChange" type="text" :placeholder="placeholder" :required="required" />
+  <input class="input" :value="value" @input="handleChange" type="text" :required="required" />
 </template>
 
 <script>
@@ -8,10 +8,6 @@
 
     props: {
       name: {
-        type: String,
-        required: true,
-      },
-      placeholder: {
         type: String,
         required: true,
       },

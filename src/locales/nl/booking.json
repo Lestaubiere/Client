@@ -3,155 +3,211 @@
     "title": "Reserveren"
   },
   "form": {
-    "inputs": [
+    "sections": [
       {
-        "name": "title",
-        "placeholder": "Aanhef.",
-        "type": "TYPE_SELECT",
-        "required": true,
-        "action": "setBookingTitle",
-        "options": [
+        "name": "Algemene informatie",
+        "rows": [
           {
-            "value": "fam",
-            "label": "Fam."
+            "inputs": [
+              {
+                "name": "title",
+                "label": "Aanhef.",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingTitle",
+                "options": [
+                  {
+                    "value": "fam",
+                    "label": "Fam."
+                  },
+                  {
+                    "value": "dhr",
+                    "label": "Dhr."
+                  },
+                  {
+                    "value": "mevr",
+                    "label": "Mevr."
+                  }
+                ]
+              },
+              {
+                "name": "name",
+                "label": "Naam",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingName"
+              }
+            ]
           },
           {
-            "value": "dhr",
-            "label": "Dhr."
+            "inputs": [
+              {
+                "name": "address",
+                "label": "Adres",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingAddress"
+              }
+            ]
           },
           {
-            "value": "mevr",
-            "label": "Mevr."
+            "inputs": [
+              {
+                "name": "zipCode",
+                "label": "Postcode",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingZipCode"
+              },
+              {
+                "name": "city",
+                "label": "Plaats",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCity"
+              },
+              {
+                "name": "country",
+                "label": "Land",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCountry"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "email",
+                "label": "Email",
+                "type": "TYPE_EMAIL",
+                "required": true,
+                "action": "setBookingEmail"
+              },
+              {
+                "name": "phoneNumber",
+                "label": "Telefoon nummer",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingPhoneNumber"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "name",
-        "placeholder": "Naam",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingName"
-      },
-      {
-        "name": "address",
-        "placeholder": "Adres",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingAddress"
-      },
-      {
-        "name": "zipCode",
-        "placeholder": "Postcode",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingZipCode"
-      },
-      {
-        "name": "city",
-        "placeholder": "Plaats",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingCity"
-      },
-      {
-        "name": "country",
-        "placeholder": "Land",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingCountry"
-      },
-      {
-        "name": "email",
-        "placeholder": "Email",
-        "type": "TYPE_EMAIL",
-        "required": true,
-        "action": "setBookingEmail"
-      },
-      {
-        "name": "phoneNumber",
-        "placeholder": "Telefoon nummer",
-        "type": "TYPE_TEXT",
-        "required": true,
-        "action": "setBookingPhoneNumber"
-      },
-      {
-        "placeholder": "Aantal personen",
-        "type": "TYPE_PEOPLE",
-        "required": true
-      },
-      {
-        "name": "numberOfPets",
-        "placeholder": "Aantal huisdieren",
-        "type": "TYPE_NUMBER",
-        "required": true,
-        "action": "setBookingNumberOfPets"
-      },
-      {
-        "name": "equipment",
-        "placeholder": "Kampeermiddel",
-        "type": "TYPE_SELECT",
-        "required": true,
-        "action": "setBookingEquipment",
-        "options": [
+        "name": "Kampeer informatie",
+        "rows": [
           {
-            "value": "tent",
-            "label": "Tent"
+            "inputs": [
+              {
+                "label": "Aantal personen",
+                "type": "TYPE_PEOPLE",
+                "required": true
+              }
+            ]
           },
           {
-            "value": "caravan",
-            "label": "Caravan"
+            "inputs": [
+              {
+                "name": "numberOfPets",
+                "label": "Aantal huisdieren",
+                "type": "TYPE_NUMBER",
+                "required": true,
+                "action": "setBookingNumberOfPets"
+              }
+            ]
           },
           {
-            "value": "vouwwagen",
-            "label": "vouwwagen"
-          },
-          {
-            "value": "camper",
-            "label": "Camper"
+            "inputs": [
+              {
+                "name": "equipment",
+                "label": "Kampeermiddel",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingEquipment",
+                "options": [
+                  {
+                    "value": "tent",
+                    "label": "Tent"
+                  },
+                  {
+                    "value": "caravan",
+                    "label": "Caravan"
+                  },
+                  {
+                    "value": "vouwwagen",
+                    "label": "vouwwagen"
+                  },
+                  {
+                    "value": "camper",
+                    "label": "Camper"
+                  }
+                ]
+              },
+              {
+                "name": "electricity",
+                "label": "Elektriciteit",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingElectricity",
+                "options": [
+                  {
+                    "value": "none",
+                    "label": "Geen"
+                  },
+                  {
+                    "value": "6",
+                    "label": "6 Amp."
+                  },
+                  {
+                    "value": "10",
+                    "label": "10 Amp."
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
       {
-        "name": "electricity",
-        "placeholder": "Elektriciteit",
-        "type": "TYPE_SELECT",
-        "required": true,
-        "action": "setBookingElectricity",
-        "options": [
+        "name": "Verblijf informatie",
+        "rows": [
           {
-            "value": "none",
-            "label": "Geen"
-          },
-          {
-            "value": "6",
-            "label": "6 Amp."
-          },
-          {
-            "value": "10",
-            "label": "10 Amp."
+            "inputs": [
+              {
+                "name": "dateOfArrival",
+                "label": "Datum aankomst",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfArrival"
+              },
+              {
+                "name": "dateOfDeparture",
+                "label": "Datum vertrek",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfDeparture"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "dateOfArrival",
-        "placeholder": "Datum aankomst",
-        "type": "TYPE_DATE",
-        "required": true,
-        "action": "setBookingDateOfArrival"
-      },
-      {
-        "name": "dateOfDeparture",
-        "placeholder": "Datum vertrek",
-        "type": "TYPE_DATE",
-        "required": true,
-        "action": "setBookingDateOfDeparture"
-      },
-      {
-        "name": "comment",
-        "placeholder": "Vragen of opmerkingen",
-        "type": "TYPE_TEXTAREA",
-        "required": true,
-        "action": "setBookingComment"
+        "name": "Verblijf informatie",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "comment",
+                "label": "Vragen of opmerkingen",
+                "type": "TYPE_TEXTAREA",
+                "required": true,
+                "action": "setBookingComment"
+              }
+            ]
+          }
+        ]
       }
     ],
     "button": "Stuur reservering",

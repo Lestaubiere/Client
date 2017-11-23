@@ -5,9 +5,13 @@
       <p class="booking-form__error" v-if="error === ERROR_500">{{ errorMessage }}</p>
     </div>
     <form @submit.prevent="handleSubmit">
-      <l-input v-for="(input, index) in inputs"
-               :key="index"
-               :input="input" />
+      <div class="booking-form__sections">
+        <l-booking-form-section
+          v-for="(section, index) in sections"
+          :key="index"
+          :section="section"
+        />
+      </div>
       <div class="booking-form__actions">
         <div class="booking-form__loader">
           <clip-loader :color="'#d9237f'" :size="'25px'" v-if="loading"></clip-loader>
@@ -24,7 +28,7 @@
 
   import { ERROR_500 } from '@/config/config';
 
-  import LInput from '@/components/core/form/Input';
+  import LBookingFormSection from '@/components/core/BookingFormSection';
 
   export default {
     name: 'l-booking-form',
@@ -68,8 +72,8 @@
                this.dateOfArrival.length === 0 ||
                this.dateOfDeparture.length === 0;
       },
-      inputs() {
-        return this.$i18n.t('booking.form.inputs');
+      sections() {
+        return this.$i18n.t('booking.form.sections');
       },
       button() {
         return this.$i18n.t('booking.form.button');
@@ -110,7 +114,7 @@
 
     components: {
       ClipLoader,
-      LInput,
+      LBookingFormSection,
     },
   };
 </script>

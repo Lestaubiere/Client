@@ -1,33 +1,20 @@
 <template>
-  <div>
-    <div class="input__container" v-if="input.type === TYPE_TEXT">
-      <l-text :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_NUMBER">
-      <l-number :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_EMAIL">
-      <l-email :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_SELECT">
-      <l-select :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" :options="input.options" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_DATE">
-      <l-date :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_TEXTAREA">
-      <l-textarea :name="input.name" :placeholder="input.placeholder" :required="input.required" :action="input.action" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
-    <div class="input__container" v-if="input.type === TYPE_PEOPLE">
-      <l-people-select :placeholder="input.placeholder" :required="input.required" />
-      <span v-if="input.required" class="input__required">*</span>
-    </div>
+  <div class="input__container">
+    <label>
+      <div class="input__label-container">
+        <p class="input__label">{{ input.label }}</p>
+        <span v-if="input.required" class="input__required">*</span>
+      </div>
+      <div class="input__item">
+        <l-text :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXT" />
+        <l-people-select :required="input.required" v-if="input.type === TYPE_PEOPLE" />
+        <l-number :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_NUMBER" />
+        <l-email :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_EMAIL" />
+        <l-select :name="input.name" :required="input.required" :action="input.action" :options="input.options" v-if="input.type === TYPE_SELECT" />
+        <l-date :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_DATE" />
+        <l-textarea :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXTAREA" />
+      </div>
+    </label>
   </div>
 </template>
 
@@ -90,12 +77,25 @@
 
 <style scoped>
   .input__container {
+    margin: 0 15px;
+  }
+
+  .input__label-container {
     display: flex;
-    margin-bottom: 25px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .input__label {
+    font-weight: bold;
+  }
+
+  .input__item {
+    display: flex;
   }
 
   .input__required {
-    margin: 5px 0 0 10px;
+    margin-left: 10px;
     color: #d9237f;
   }
 </style>

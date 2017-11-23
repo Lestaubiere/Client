@@ -1,5 +1,5 @@
 <template>
-  <datepicker class="datepicker" :value="value" @input="handleChange" :placeholder="placeholder" :required="required" />
+  <datepicker class="datepicker" :value="value" @input="handleChange" :required="required" />
 </template>
 
 <script>
@@ -10,10 +10,6 @@
 
     props: {
       name: {
-        type: String,
-        required: true,
-      },
-      placeholder: {
         type: String,
         required: true,
       },

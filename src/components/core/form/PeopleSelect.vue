@@ -1,7 +1,7 @@
 <template>
   <div class="people-select">
     <div class="people-select__container">
-      <input class="input" :value="numberOfPeople" @input="handleNumberChange" type="number" :placeholder="placeholder" :required="required" min="1" max="8" />
+      <input class="input" :value="numberOfPeople" @input="handleNumberChange" type="number" :required="required" min="1" max="8" />
     </div>
     <div class="people-select__inputs">
       <datepicker class="datepicker" v-for="(person, index) in people" :key="index" :value="person" @input="(value) => handleDateChange(index, value)" />
@@ -17,10 +17,6 @@
     name: 'l-people-select',
 
     props: {
-      placeholder: {
-        type: String,
-        required: true,
-      },
       required: {
         type: Boolean,
         required: true,

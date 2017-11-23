@@ -1,5 +1,5 @@
 <template>
-  <textarea class="input" :value="value" @input="handleChange" cols="30" rows="10" :placeholder="placeholder" :required="required" />
+  <textarea class="input" :value="value" @input="handleChange" cols="30" rows="10" :required="required" />
 </template>
 
 <script>
@@ -8,10 +8,6 @@
 
     props: {
       name: {
-        type: String,
-        required: true,
-      },
-      placeholder: {
         type: String,
         required: true,
       },
