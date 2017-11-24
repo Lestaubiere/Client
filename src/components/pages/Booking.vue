@@ -1,5 +1,7 @@
 <template>
-  <l-booking-form />
+  <div class="booking container">
+    <l-booking-form />
+  </div>
 </template>
 
 <script>
@@ -27,4 +29,13 @@
 </script>
 
 <style scoped>
+  .booking {
+    padding: 0 25px;
+  }
+
+  @media (max-width: 600px) {
+    .booking {
+      padding: 0 10px;
+    }
+  }
 </style>

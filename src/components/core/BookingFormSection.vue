@@ -60,4 +60,10 @@
     display: flex;
     margin-bottom: 25px;
   }
+
+  @media (max-width: 800px) {
+    .booking-form__row {
+      flex-direction: column;
+    }
+  }
 </style>

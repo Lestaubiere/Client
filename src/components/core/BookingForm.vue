@@ -192,6 +192,10 @@
     background-color: #78bf45;
   }
 
+  @media (max-width: 800px) {
+    
+  }
+
   @media (max-width: 600px) {
     .booking-form__actions {
       flex-direction: column-reverse;
@@ -206,6 +210,10 @@
     .booking-form__loader {
       margin: 10px 0 0;
       justify-content: center;
+    }
+
+    .booking-form__submit {
+      margin-right: 0;
     }
   }
 </style>

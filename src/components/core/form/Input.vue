@@ -98,4 +98,17 @@
     margin-left: 10px;
     color: #d9237f;
   }
+
+  @media (max-width: 800px) {
+    .input__container:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .input__container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 </style>
