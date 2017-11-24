@@ -1,5 +1,5 @@
 <template>
-  <datepicker class="datepicker" :value="value" @input="handleChange" :required="required" />
+  <datepicker :id="name" class="datepicker" :value="value" @input="handleChange" :required="required" />
 </template>
 
 <script>

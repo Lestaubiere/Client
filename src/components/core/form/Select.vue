@@ -1,7 +1,6 @@
 <template>
   <div class="select__container">
-    <select class="select" @change="handleChange" :value="value" :required="required">
-      <option disabled value="">Select a value</option>
+    <select :id="name" class="select" @change="handleChange" :value="value" :required="required">
       <option v-for="option in options"
               :key="option.value"
               :value="option.value">

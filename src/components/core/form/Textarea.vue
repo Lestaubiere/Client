@@ -1,5 +1,5 @@
 <template>
-  <textarea class="input" :value="value" @input="handleChange" cols="30" rows="10" :required="required" />
+  <textarea :id="name" class="input" :value="value" @input="handleChange" cols="30" rows="10" :required="required" />
 </template>
 
 <script>

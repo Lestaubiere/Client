@@ -1,5 +1,5 @@
 <template>
-  <input class="input" :value="value" @input="handleChange" type="text" :required="required" />
+  <input :id="name" class="input" :value="value" @input="handleChange" type="text" :required="required" />
 </template>
 
 <script>

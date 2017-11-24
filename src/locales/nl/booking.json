@@ -101,6 +101,7 @@
           {
             "inputs": [
               {
+                "name": "numberOfPeople",
                 "label": "Aantal personen",
                 "type": "TYPE_PEOPLE",
                 "required": true

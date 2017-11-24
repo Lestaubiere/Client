@@ -1,20 +1,20 @@
 <template>
   <div class="input__container">
-    <label>
+    <label :for="input.name">
       <div class="input__label-container">
         <p class="input__label">{{ input.label }}</p>
         <span v-if="input.required" class="input__required">*</span>
       </div>
-      <div class="input__item">
-        <l-text :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXT" />
-        <l-people-select :required="input.required" v-if="input.type === TYPE_PEOPLE" />
-        <l-number :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_NUMBER" />
-        <l-email :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_EMAIL" />
-        <l-select :name="input.name" :required="input.required" :action="input.action" :options="input.options" v-if="input.type === TYPE_SELECT" />
-        <l-date :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_DATE" />
-        <l-textarea :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXTAREA" />
-      </div>
     </label>
+    <div class="input__item">
+      <l-text :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXT" />
+      <l-people-select :name="input.name" :required="input.required" v-if="input.type === TYPE_PEOPLE" />
+      <l-number :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_NUMBER" />
+      <l-email :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_EMAIL" />
+      <l-select :name="input.name" :required="input.required" :action="input.action" :options="input.options" v-if="input.type === TYPE_SELECT" />
+      <l-date :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_DATE" />
+      <l-textarea :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXTAREA" />
+    </div>
   </div>
 </template>
 
