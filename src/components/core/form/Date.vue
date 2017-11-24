@@ -1,12 +1,37 @@
 <template>
-  <datepicker :id="name" class="datepicker" :value="value" @input="handleChange" :required="required" />
+  <datepicker
+    :id="name"
+    class="datepicker"
+    :value="value"
+    @input="handleChange"
+    :required="required"
+    :disabled="disabled"
+    :openDate="openingDate"
+    :language="lang"
+    maximumView="day"
+    :fullMonthName="true"
+    format="dd MMMM yyyy"
+    :mondayFirst="true"
+  />
 </template>
 
 <script>
+  import { mapState } from 'vuex';
   import Datepicker from 'vuejs-datepicker';
+
+  import { OPENING_DATE, CLOSING_DATE } from '@/config/config';
 
   export default {
     name: 'l-date',
+
+    data() {
+      return {
+        disabled: {
+          to: OPENING_DATE,
+          from: CLOSING_DATE,
+        },
+      };
+    },
 
     props: {
       name: {
@@ -27,6 +52,12 @@
       value() {
         return this.$store.state.booking[this.name];
       },
+      openingDate() {
+        return OPENING_DATE;
+      },
+      ...mapState({
+        lang: state => state.i18n.lang,
+      }),
     },
 
     methods: {

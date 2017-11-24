@@ -5,6 +5,9 @@ export const FB_APP_ID = '236774400075192';
 
 export const LESATUBIERE_API_URL = 'https://api.lestaubiere.com/v1';
 
+export const OPENING_DATE = new Date(2018, 4, 15);
+export const CLOSING_DATE = new Date(2018, 9, 30);
+
 export const LOCALES = ['nl', 'fr', 'en'];
 
 export const ERROR_404 = 'ERROR_404';
