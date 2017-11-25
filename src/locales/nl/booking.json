@@ -216,6 +216,7 @@
       }
     ],
     "button": "Stuur reservering",
+    "conditions": "Door dit formulier te verzenden verklaar ik de {reserveringsvoorwaarden} te hebben gelezen en hiermee akkoord ga.",
     "messages": {
       "valid": "Wij hebben uw reservering ontvangen. Wij zullen deze zo snel mogelijk behandelen. Mocht u na 48 uur nog geen bevestiging hebben ontvangen van ons, gelieve contact op te nemen via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",
       "ERROR_500": "De reservering kon niet worden verstuurd door een probleem aan onze kan. Probeer het later nog eens of neem contact met ons op via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",

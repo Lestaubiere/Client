@@ -6,6 +6,7 @@ import Surroundings from '@/components/pages/Surroundings';
 import Prices from '@/components/pages/Prices';
 import Booking from '@/components/pages/Booking';
 import Vacatures from '@/components/pages/Vacatures';
+import BookingMentions from '@/components/pages/BookingMentions';
 
 const routes = [
   {
@@ -111,6 +112,19 @@ const routes = [
   {
     path: '/contact',
     redirect: '/nl/contact',
+  },
+  {
+    path: '/:lang/reserverings-voorwaarden',
+    name: 'NL_Reserverings_Voorwaarden',
+    component: BookingMentions,
+    meta: {
+      en: 'booking-conditions',
+      fr: 'conditions-de-reservation',
+    },
+  },
+  {
+    path: '/reserverings-voorwaarden',
+    redirect: '/nl/reserverings-voorwaarden',
   },
 ];
 

@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Booking Conditions"
+  },
+  "sections": [
+    {
+      "title": "Conditions camping pitch",
+      "sections": [
+        {
+          "content": "The campsites are available as from the day of arrival at 12h00 a.m. and have to be at disposal of the campground owner at 12h00 a.m. on the day of departure. Only one family (2 adults with their children) is allowed to stay on the campsite; exceptions only after agreement of the management. During high season period only one pet is allowed. We preserve the right to refuse the entrance to the campground to persons and vehicles (without valid booking). This may be without statement of arguments."
+        },
+        {
+          "title": "Down payment",
+          "content": "Within 14 days after reception of the invoice down payment has to be made on 25% of the total amount; the remaining sum has to be paid before or at arrival."
+        },
+        {
+          "title": "Refunding",
+          "content": "No refunding will be made as a result of later arrival and/or earlier departure. For this reason we recommend you to take out a cancellation insurance."
+        },
+        {
+          "title": "For our campground the ‘ACSI – Camping Card’ conditions apply."
+        }
+      ]
+    },
+    {
+      "title": "Conditions for rental facilities",
+      "sections": [
+        {
+          "content": "The standard rental period is from Saturday 3h00 p.m. to next Saturday 10h00 a.m. (with exception for the low season). Pets are never allowed in the rental accommodations."
+        },
+        {
+          "title": "Down payment",
+          "content": "Within 14 days after reception of the invoice down payment has to be made on 25% of the total amount; the remaining sum has to be paid 6 weeks before the arrival latest. If booking within 6 weeks before arrival the total amount has to be paid within 14 days after reception of the invoice (confirmation of booking reception)."
+        },
+        {
+          "title": "Refunding",
+          "content": "No refunding will be made as a result of earlier departure. For this reason we recommend you to take out a cancellation insurance."
+        },
+        {
+          "title": "Deposit",
+          "content": "of €100 to be paid at arrival."
+        },
+        {
+          "title": "Final cleaning ",
+          "content": "At departure the Mobil Home has to be wiped thoroughly, all dishes being washed and the rubbish bags emptied. Final cleaning will take place after your departure. An amount of €45 has been involved. A while before departing and refunding your deposit an inspection of the accommodation will be done by the staff of Camping Lestaubière. This inspection will take place at 8h00 a.m. earliest at the day of departure. In case of earlier departure the refunded deposit will be transferred to client’s bank account."
+        }
+      ]
+    },
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "Cancellation",
+          "content": "When cancellation will occur up to 6 weeks before planned arrival the down payment will be refunded (minus €25 administration costs).  At a cancellation within less than 6 weeks before planned arrival no refunding will take place. In order to provide financial damage it is recommended to take out a cancellation insurance."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Conditions de réservations"
+  },
+  "sections": [
+    {
+      "title": "Conditions de location emplacement",
+      "sections": [
+        {
+          "content": "Les emplacements sont disponibles à partir de 12h le jour de l’arrivée et doivent également être disponibles à 12h le jour du départ. Sur chaque emplacement, il est autorisé de loger avec une famille (2 adultes et leurs enfants). Les autres cas sont à discuter avec le propriétaire de camping. En haute saison, un seul animal de compagnie est autorisé. Nous gardons le droit d’interdire à tout moment l’accès au camping à toute personne n’ayant pas de confirmation de réservation valable."
+        },
+        {
+          "title": "Paiement",
+          "content": "Nous demandons un paiement en avance de 25% de la somme totale du séjour. Il est à payer dans les 14 jours suivant la réception de la facture. Le restant est à payer avant ou à l’arrivée au camping."
+        },
+        {
+          "title": "Remboursement",
+          "content": "Si vous arrivez plus tard, ou si vous partez plus tôt qu’indiqué sur la réservation, il n’y aura pas de remboursement, la somme totale du séjour réservé doit être payé. Il est alors fortement conseillé de prendre une assurance d’annulation."
+        },
+        {
+          "title": "Les conditions de la carte ASCI sont également valables sur notre camping."
+        }
+      ]
+    },
+    {
+      "title": "Conditions de location mobilhomes",
+      "sections": [
+        {
+          "content": "La période de location se déroule du samedi 15h au samedi 15h (saison haute) Les animaux de compagnie ne sont pas autorisés."
+        },
+        {
+          "title": "Paiement",
+          "content": "Nous demandons un paiement de 25% de la somme du séjour dans les 14 jours suivant la réception de la facture. Le restant est à payer au maximum 6 semaines avant le début du séjour."
+        },
+        {
+          "title": "Remboursement",
+          "content": "Si vous arrivez plus tard, ou si vous partez plus tôt qu’indiqué sur la réservation, il n’y aura pas de remboursement, la somme totale du séjour réservé doit être payé. Il est alors fortement conseillé de prendre une assurance d’annulation."
+        },
+        {
+          "title": "Caution",
+          "content": "Nous demandons une caution de € 100 à payer à l’arrivée."
+        },
+        {
+          "title": "Nettoyage",
+          "content": "Au départ nous demandons de nettoyer et de ranger le mobilhome. Les frais de nettoyage sont de € 45,00. Avant le remboursement de la caution, nous viendrons vérifier l’état du mobilhome. La vérification est possible à partir de 8h le jour du départ. Lorsque vous désirez partir avant 8h, la caution sera remboursée par compte bancaire."
+        }
+      ]
+    },
+    {
+      "title": "Général",
+      "sections": [
+        {
+          "title": "Annulation",
+          "content": "Pour une annulation de plus de 6 semaines avant le début du séjour, la somme du séjour sera remboursée (moins €25,00 pour les frais de réservation). Pour une annulation de moins de 6 semaines avant l’arrivée au camping, la somme ne sera pas remboursée, il est alors conseillé de choisir une assurance d’annulation avant de réserver."
+        }
+      ]
+    }
+  ]
+}

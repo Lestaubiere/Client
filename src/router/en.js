@@ -5,6 +5,7 @@ import Rentals from '@/components/pages/Rentals';
 import Surroundings from '@/components/pages/Surroundings';
 import Prices from '@/components/pages/Prices';
 import Booking from '@/components/pages/Booking';
+import BookingMentions from '@/components/pages/BookingMentions';
 
 const routes = [
   {
@@ -97,6 +98,20 @@ const routes = [
   {
     path: '/booking',
     redirect: '/en/booking',
+  },
+
+  {
+    path: '/:lang/booking-conditions',
+    name: 'EN_Booking_Conditions',
+    component: BookingMentions,
+    meta: {
+      nl: 'reserverings-voorwaarden',
+      fr: 'conditions-de-reservation',
+    },
+  },
+  {
+    path: '/booking-conditions',
+    redirect: '/en/booking-conditions',
   },
 ];
 

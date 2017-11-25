@@ -38,5 +38,9 @@
   "legalMentions": {
     "label": "Mentions légales",
     "path": "/nl/mentions-legales"
+  },
+  "bookingMentions": {
+    "label": "Booking Conditions",
+    "path": "/en/booking-conditions"
   }
 }

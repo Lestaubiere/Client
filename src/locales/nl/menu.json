@@ -42,5 +42,9 @@
   "legalMentions": {
     "label": "Mentions légales",
     "path": "/nl/mentions-legales"
+  },
+  "bookingMentions": {
+    "label": "Reserverings Voorwaarden",
+    "path": "/nl/reserverings-voorwaarden"
   }
 }

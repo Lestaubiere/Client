@@ -12,6 +12,7 @@ import * as vacatures from './vacatures.json';
 import * as contact from './contact.json';
 import * as footer from './footer.json';
 import * as notFound from './not-found.json';
+import * as bookingMentions from './booking-mentions.json';
 
 export default {
   menu,
@@ -28,4 +29,5 @@ export default {
   contact,
   footer,
   notFound,
+  bookingMentions,
 };

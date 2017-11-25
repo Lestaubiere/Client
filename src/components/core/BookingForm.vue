@@ -8,6 +8,11 @@
           :section="section"
         />
       </div>
+      <p class="paragraph booking-form__conditions">
+        {{ conditions[0] }}
+        <router-link :to="$t('menu.bookingMentions.path')">{{ conditions[1] }}</router-link>
+        {{ conditions[2] }}
+      </p>
       <div class="booking-form__actions">
         <div class="booking-form__loader">
           <clip-loader :color="'#d9237f'" :size="'25px'" v-if="loading"></clip-loader>
@@ -93,6 +98,9 @@
       sections() {
         return this.$i18n.t('booking.form.sections');
       },
+      conditions() {
+        return this.$i18n.t('booking.form.conditions').split(/\{(.*?)\}/g);
+      },
       button() {
         return this.$i18n.t('booking.form.button');
       },
@@ -174,6 +182,19 @@
   .booking-form__required {
     margin: 5px 0 0 10px;
     color: #d9237f;
+  }
+
+  .booking-form__conditions {
+    margin-bottom: 25px;
+  }
+
+  .booking-form__conditions a {
+    color: #D9237F;
+    text-decoration: none;
+  }
+
+  .booking-form__conditions a:hover {
+    text-decoration: underline;
   }
 
   .booking-form__submit {
