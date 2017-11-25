@@ -61,23 +61,13 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/leisure/Playground.jpg",
+          "image_path": "/static/img/rentals/Greencamp_1.jpg",
           "name": "Speeltuin",
           "description": ""
         },
         {
-          "image_path": "/static/img/leisure/Table_tennis.jpg",
+          "image_path": "/static/img/rentals/Greencamp_2.jpg",
           "name": "Tafeltennis",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/leisure/Football.jpg",
-          "name": "Voetbal",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/leisure/Volleyball.jpg",
-          "name": "Volleybal",
           "description": ""
         }
       ]
@@ -97,23 +87,13 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/leisure/Playground.jpg",
+          "image_path": "/static/img/rentals/Villatent_1.jpg",
           "name": "Speeltuin",
           "description": ""
         },
         {
-          "image_path": "/static/img/leisure/Table_tennis.jpg",
+          "image_path": "/static/img/rentals/Villatent_2.jpg",
           "name": "Tafeltennis",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/leisure/Football.jpg",
-          "name": "Voetbal",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/leisure/Volleyball.jpg",
-          "name": "Volleybal",
           "description": ""
         }
       ]
