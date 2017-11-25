@@ -213,8 +213,12 @@
     ],
     "button": "Envoyer la réservations",
     "messages": {
-      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
-      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+      "valid": "Nous avond bien reçu votre réservation. Nous allons la traiter dans les plus brefs délais. Si après 48h vous n'avez toujours pas reç de réponse de notre part, veuillez nous contacter par mail: lestaubiere@gmail.com ou par téléphone: 05 53 82 98 15.",
+      "ERROR_500": "Il y a eu une erreur lors de la validation de la réservations. Veuillez essayer plus tard ou nous contacter par mail: lestaubiere@gmail.com ou par téléphone: 05 53 82 98 15.",
+      "INCOMPLETE_FORM": "La réservation n'a pas pu être validée car certains champs obligatoires sont manquants. Veuillez remplir ces champs et réessayer l'envoie de la réservation.",
+      "MAIL_FAILURE": "La réservation n'a pas pu être envoyée. Veuillez essayer plus tard ou nous contacter par mail: lestaubiere@gmail.com ou par téléphone: 05 53 82 98 15.",
+      "DEPARTURE_BEFORE_ARRIVAL": "La réservation n'a pas pu être validée car vous avez sélectionné une date de départ avant la date d'arrivée. Veuillez sélectionner une date de départ après la date d'arrivée et réessayer l'envoie de la réservation.",
+      "NO_PEOPLE": "La réservation n'a pas pu être validée car vous n'avez pas renseigné de date de naissance pour les personnes. Veuillez renseigner les dates de naissance et réessayer l'envoie de la réservation."
     }
   }
 }

@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { LESATUBIERE_API_URL } from '@/config/config';
+import { LESATUBIERE_API_URL, ERROR_500 } from '@/config/config';
 
 import {
   REQUEST_BOOKING_SUBMIT,
@@ -44,36 +44,35 @@ const actions = {
     comment]) {
     commit(REQUEST_BOOKING_SUBMIT);
 
-    const data = new FormData();
-    data.append('title', title);
-    data.append('name', name);
-    data.append('address', address);
-    data.append('zip_code', zipCode);
-    data.append('city', city);
-    data.append('country', country);
-    data.append('email', email);
-    data.append('phone_number', phoneNumber);
-    data.append('number_pets', numberOfPets);
-    data.append('equipment', equipment);
-    data.append('electricity', electricity);
-    data.append('date_arrival', moment(dateOfArrival).format('DD-MM-YYYY'));
-    data.append('date_departure', moment(dateOfDeparture).format('DD-MM-YYYY'));
-    data.append('comment', comment);
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('name', name);
+    formData.append('address', address);
+    formData.append('zip_code', zipCode);
+    formData.append('city', city);
+    formData.append('country', country);
+    formData.append('email', email);
+    formData.append('phone_number', phoneNumber);
+    formData.append('number_pets', numberOfPets);
+    formData.append('equipment', equipment);
+    formData.append('electricity', electricity);
+    formData.append('date_arrival', moment(dateOfArrival).format('DD-MM-YYYY'));
+    formData.append('date_departure', moment(dateOfDeparture).format('DD-MM-YYYY'));
+    formData.append('comment', comment);
     people.forEach((person) => {
-      data.append('people[]', moment(person).format('DD-MM-YYYY'));
+      formData.append('people[]', moment(person).format('DD-MM-YYYY'));
     });
 
-    fetch(`${LESATUBIERE_API_URL}/booking`, { method: 'POST', body: data })
+    fetch(`${LESATUBIERE_API_URL}/booking`, { method: 'POST', body: formData })
       .then((response) => {
-        switch (response.status) {
-          case 200:
+        if (response.status === 200) {
+          response.json().then(() => {
             commit(FETCHED_BOOKING_SUBMIT_SUCCESS);
-            break;
-          case 500:
-            commit(FETCHED_BOOKING_SUBMIT_ERROR);
-            break;
-          default:
-            commit(FETCHED_BOOKING_SUBMIT_ERROR);
+          });
+        } else {
+          response.json().then((data) => {
+            commit(FETCHED_BOOKING_SUBMIT_ERROR, data.error || ERROR_500);
+          });
         }
       });
   },

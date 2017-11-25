@@ -1,5 +1,3 @@
-import { ERROR_500 } from '@/config/config';
-
 import {
   REQUEST_BOOKING_SUBMIT,
   FETCHED_BOOKING_SUBMIT_SUCCESS,
@@ -48,9 +46,9 @@ const mutations = {
     state.dateOfDeparture = '';
     state.comment = '';
   },
-  [FETCHED_BOOKING_SUBMIT_ERROR](state) {
+  [FETCHED_BOOKING_SUBMIT_ERROR](state, error) {
     state.loading = false;
-    state.error = ERROR_500;
+    state.error = error;
   },
   [SET_BOOKING_TITLE](state, title) {
     state.title = title;
@@ -77,7 +75,13 @@ const mutations = {
     state.phoneNumber = phoneNumber;
   },
   [SET_PERSON](state, [index, person]) {
-    state.people[index] = person;
+    state.people = state.people.map((p, i) => {
+      if (i === index) {
+        return person;
+      }
+
+      return p;
+    });
   },
   [ADD_PERSON](state) {
     state.people = [...state.people, ''];

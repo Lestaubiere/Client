@@ -213,8 +213,12 @@
     ],
     "button": "Stuur reservering",
     "messages": {
-      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
-      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+      "valid": "Wij hebben uw reservering ontvangen. Wij zullen deze zo snel mogelijk behandelen. Mocht u na 48 uur nog geen bevestiging hebben ontvangen van ons, gelieve contact op te nemen via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",
+      "ERROR_500": "De reservering kon niet worden verstuurd door een probleem aan onze kan. Probeer het later nog eens of neem contact met ons op via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",
+      "INCOMPLETE_FORM": "De reservering kon niet worden voltooid omdat het formulier niet compleet was. Vul alle velden in om de reservering te voltooien.",
+      "MAIL_FAILURE": "De reservering kon niet worden verstuurd. Probeer het later nog eens of neem contact met ons op via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",
+      "DEPARTURE_BEFORE_ARRIVAL": "De reservering kon niet worden voltooid omdat de vertrek datum voor de aankomst datum is. Selecteer een vertrek datum na de aankomst datum, en probeer de reservering nog eens te sturen.",
+      "NO_PEOPLE": "De reserving kon niet worden voltooid ofdat de geboorte datums missen. Vul de geboorte datums in en probeer de reservering nog eens te sturen."
     }
   }
 }

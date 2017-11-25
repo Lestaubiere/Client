@@ -1,9 +1,5 @@
 <template>
   <div class="booking-form">
-    <div class="booking-form__messages" v-if="error || valid">
-      <p class="booking-form__valid" v-if="valid">{{ validMessage }}</p>
-      <p class="booking-form__error" v-if="error === ERROR_500">{{ errorMessage }}</p>
-    </div>
     <form @submit.prevent="handleSubmit">
       <div class="booking-form__sections">
         <l-booking-form-section
@@ -19,6 +15,14 @@
         <input class="booking-form__submit" type="submit" :value="button" :disabled="isDisabled" />
       </div>
     </form>
+    <div class="booking-form__messages" v-if="error || valid">
+      <p class="booking-form__valid" v-if="valid">{{ validMessage }}</p>
+      <p class="booking-form__error" v-if="error === ERROR_500">{{ errorMessage }}</p>
+      <p class="booking-form__error" v-if="error === INCOMPLETE_FORM">{{ incompleteFormMessage }}</p>
+      <p class="booking-form__error" v-if="error === MAIL_FAILURE">{{ mailFailureMessage }}</p>
+      <p class="booking-form__error" v-if="error === DEPARTURE_BEFORE_ARRIVAL">{{ departureBeforeArrivalMessage }}</p>
+      <p class="booking-form__error" v-if="error === NO_PEOPLE">{{ noPeopleMessage }}</p>
+    </div>
   </div>
 </template>
 
@@ -26,7 +30,7 @@
   import { mapState, mapActions } from 'vuex';
   import ClipLoader from 'vue-spinner/src/ClipLoader';
 
-  import { ERROR_500 } from '@/config/config';
+  import { ERROR_500, INCOMPLETE_FORM, MAIL_FAILURE, DEPARTURE_BEFORE_ARRIVAL, NO_PEOPLE } from '@/config/config';
 
   import LBookingFormSection from '@/components/core/BookingFormSection';
 
@@ -57,6 +61,18 @@
       ERROR_500() {
         return ERROR_500;
       },
+      INCOMPLETE_FORM() {
+        return INCOMPLETE_FORM;
+      },
+      MAIL_FAILURE() {
+        return MAIL_FAILURE;
+      },
+      DEPARTURE_BEFORE_ARRIVAL() {
+        return DEPARTURE_BEFORE_ARRIVAL;
+      },
+      NO_PEOPLE() {
+        return NO_PEOPLE;
+      },
       isDisabled() {
         return this.title.length === 0 ||
                this.name.length === 0 ||
@@ -67,10 +83,12 @@
                this.email.length === 0 ||
                this.phoneNumber.length === 0 ||
                this.people.length === 0 ||
+               this.people[0] === '' ||
                this.equipment.length === 0 ||
                this.electricity.length === 0 ||
                this.dateOfArrival.length === 0 ||
-               this.dateOfDeparture.length === 0;
+               this.dateOfDeparture.length === 0 ||
+               this.loading;
       },
       sections() {
         return this.$i18n.t('booking.form.sections');
@@ -82,7 +100,19 @@
         return this.$i18n.t('booking.form.messages.valid');
       },
       errorMessage() {
-        return this.$i18n.t('booking.form.messages.error');
+        return this.$i18n.t('booking.form.messages.ERROR_500');
+      },
+      incompleteFormMessage() {
+        return this.$i18n.t('booking.form.messages.INCOMPLETE_FORM');
+      },
+      mailFailureMessage() {
+        return this.$i18n.t('booking.form.messages.MAIL_FAILURE');
+      },
+      departureBeforeArrivalMessage() {
+        return this.$i18n.t('booking.form.messages.DEPARTURE_BEFORE_ARRIVAL');
+      },
+      noPeopleMessage() {
+        return this.$i18n.t('booking.form.messages.NO_PEOPLE');
       },
     },
 
@@ -177,7 +207,7 @@
 
   .booking-form__error,
   .booking-form__valid {
-    margin-bottom: 25px;
+    margin-top: 25px;
     padding: 10px 25px;
     color: #ffffff;
     line-height: 22px;
@@ -193,7 +223,7 @@
   }
 
   @media (max-width: 800px) {
-    
+
   }
 
   @media (max-width: 600px) {

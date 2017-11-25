@@ -12,6 +12,10 @@ export const LOCALES = ['nl', 'fr', 'en'];
 
 export const ERROR_404 = 'ERROR_404';
 export const ERROR_500 = 'ERROR_500';
+export const INCOMPLETE_FORM = 'INCOMPLETE_FORM';
+export const MAIL_FAILURE = 'MAIL_FAILURE';
+export const DEPARTURE_BEFORE_ARRIVAL = 'DEPARTURE_BEFORE_ARRIVAL';
+export const NO_PEOPLE = 'NO_PEOPLE';
 
 export const TYPE_SELECT = 'TYPE_SELECT';
 export const TYPE_TEXT = 'TYPE_TEXT';

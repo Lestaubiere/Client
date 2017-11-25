@@ -213,8 +213,12 @@
     ],
     "button": "Send your booking",
     "messages": {
-      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
-      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+      "valid": "We have received your booking, and we will treat it as quick as possible. If you don't receive a confirmation 48 hours after sending this form, please contact us by mail: lestaubiere@gmail.com or telephone: +33 5 53 82 98 15.",
+      "ERROR_500": "There was an error while sending the booking. Please try again later or contact us by mail: lestaubiere@gmail.com or telephone: +33 5 53 82 98 15.",
+      "INCOMPLETE_FORM": "The booking could not be completed because some required fields were not completed. Please complete the missing fields and try again.",
+      "MAIL_FAILURE": "The booking could not be sent. Please try again later or contact us by mail: lestaubiere@gmail.com or telephone: +33 5 53 82 98 15.",
+      "DEPARTURE_BEFORE_ARRIVAL": "The booking could not be completed because the departure date is before the arrival date. Please select a departure date after the arrival date and try again.",
+      "NO_PEOPLE": "The booking could not be completed because there were no birth dates set. Please add the birth dates and try again."
     }
   }
 }
