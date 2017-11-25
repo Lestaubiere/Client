@@ -70,6 +70,11 @@
           "image_path": "/static/img/leisure/Pool_2.jpg",
           "name": "Swimming pool",
           "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Fishing.jpg",
+          "name": "Fishing",
+          "description": ""
         }
       ]
     },
@@ -101,6 +106,11 @@
         {
           "image_path": "/static/img/leisure/Petanque.jpg",
           "name": "Pétanque",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Wine.jpg",
+          "name": "Wine",
           "description": ""
         }
       ]

@@ -37,6 +37,11 @@
           "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volley",
           "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Fishing.jpg",
+          "name": "Pêche",
+          "description": ""
         }
       ]
     },
@@ -102,6 +107,11 @@
         {
           "image_path": "/static/img/leisure/Petanque.jpg",
           "name": "Pétanque",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Wine.jpg",
+          "name": "Vin",
           "description": ""
         }
       ]
