@@ -134,12 +134,32 @@
     padding: 10px 20px;
     font-size: .8rem;
     line-height: .8rem;
-    transition: .2s ease;
+    transition: background-color .2s ease;
     cursor: pointer;
   }
 
   .people-select__button:disabled {
     background-color: rgba(0, 0, 0, .4);
     cursor: default;
+  }
+
+  @media (max-width: 800px) {
+    .datepicker__container {
+      flex-basis: calc(100% / 2 - 10px);
+    }
+
+    .people-select__button {
+      flex-basis: calc(100% / 2 - 10px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .datepicker__container {
+      flex-basis: calc(100% - 10px);
+    }
+
+    .people-select__button {
+      flex-basis: calc(100% - 10px);
+    }
   }
 </style>
