@@ -7,7 +7,7 @@
       :key="index"
     >
       <l-input
-        v-if="!(input.name === 'electricity' && equipment === 'mobilhome')"
+        v-if="!(input.name === 'electricity' && (equipment === 'mobilhome' || equipment === 'villatent'))"
         :style="{flexBasis: `${100 / row.inputs.length}%`}"
         v-for="(input, index) in row.inputs"
         :key="index"

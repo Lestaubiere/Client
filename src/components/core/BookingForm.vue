@@ -90,7 +90,7 @@
                this.people.length === 0 ||
                this.people[0] === '' ||
                this.equipment.length === 0 ||
-               (this.equipment !== 'mobilhome' && this.electricity.length === 0) ||
+               ((this.equipment !== 'mobilhome' || this.equipment !== 'villatent') && this.electricity.length === 0) ||
                this.dateOfArrival.length === 0 ||
                this.dateOfDeparture.length === 0 ||
                this.loading;

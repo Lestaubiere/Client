@@ -147,6 +147,10 @@
                   {
                     "value": "mobilhome",
                     "label": "Mobilhome"
+                  },
+                  {
+                    "value": "villatent",
+                    "label": "Villatent"
                   }
                 ]
               },
