@@ -6,7 +6,8 @@
       v-for="(row, index) in section.rows"
       :key="index"
     >
-      <l-input 
+      <l-input
+        v-if="!(input.name === 'electricity' && equipment === 'mobilhome')"
         :style="{flexBasis: `${100 / row.inputs.length}%`}"
         v-for="(input, index) in row.inputs"
         :key="index"
@@ -17,6 +18,8 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
+
   import LInput from '@/components/core/form/Input';
 
   export default {
@@ -27,6 +30,12 @@
         type: Object,
         required: true,
       },
+    },
+
+    computed: {
+      ...mapState({
+        equipment: state => state.booking.equipment,
+      }),
     },
 
     components: {

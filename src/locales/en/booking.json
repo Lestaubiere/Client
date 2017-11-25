@@ -143,6 +143,10 @@
                   {
                     "value": "camper",
                     "label": "Camper"
+                  },
+                  {
+                    "value": "mobilhome",
+                    "label": "Mobilhome"
                   }
                 ]
               },
