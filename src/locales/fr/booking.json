@@ -1,5 +1,220 @@
 {
   "meta": {
     "title": "Réserver"
+  },
+  "form": {
+    "sections": [
+      {
+        "name": "Informations générales",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "title",
+                "label": "Titre.",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingTitle",
+                "options": [
+                  {
+                    "value": "family",
+                    "label": "Famille"
+                  },
+                  {
+                    "value": "mr",
+                    "label": "M."
+                  },
+                  {
+                    "value": "mrs",
+                    "label": "Mme."
+                  }
+                ]
+              },
+              {
+                "name": "name",
+                "label": "Nom",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingName"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "address",
+                "label": "Adresse",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingAddress"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "zipCode",
+                "label": "Code postal",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingZipCode"
+              },
+              {
+                "name": "city",
+                "label": "Ville",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCity"
+              },
+              {
+                "name": "country",
+                "label": "Pays",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCountry"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "email",
+                "label": "Adresse mail",
+                "type": "TYPE_EMAIL",
+                "required": true,
+                "action": "setBookingEmail"
+              },
+              {
+                "name": "phoneNumber",
+                "label": "Numéro de téléphone",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingPhoneNumber"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Informations séjour",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "numberOfPeople",
+                "label": "Date de naissance des personnes",
+                "type": "TYPE_PEOPLE",
+                "required": true
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "numberOfPets",
+                "label": "Nombre d'animaux de compagnie",
+                "type": "TYPE_NUMBER",
+                "required": true,
+                "action": "setBookingNumberOfPets"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "equipment",
+                "label": "Equipement",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingEquipment",
+                "options": [
+                  {
+                    "value": "tent",
+                    "label": "Tente"
+                  },
+                  {
+                    "value": "caravan",
+                    "label": "Caravane"
+                  },
+                  {
+                    "value": "folding-caravan",
+                    "label": "Tente-roulotte"
+                  },
+                  {
+                    "value": "camper",
+                    "label": "Camping-car"
+                  }
+                ]
+              },
+              {
+                "name": "electricity",
+                "label": "Electricité",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingElectricity",
+                "options": [
+                  {
+                    "value": "none",
+                    "label": "Non"
+                  },
+                  {
+                    "value": "6",
+                    "label": "6 Amp."
+                  },
+                  {
+                    "value": "10",
+                    "label": "10 Amp."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dates du séjour",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "dateOfArrival",
+                "label": "Date d'arrivée",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfArrival"
+              },
+              {
+                "name": "dateOfDeparture",
+                "label": "Date de départ",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfDeparture"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Informations supplémentaires",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "comment",
+                "label": "Questions ou remarques",
+                "type": "TYPE_TEXTAREA",
+                "required": false,
+                "action": "setBookingComment"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "button": "Envoyer la réservations",
+    "messages": {
+      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
+      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+    }
   }
 }

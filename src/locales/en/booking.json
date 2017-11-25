@@ -1,5 +1,220 @@
 {
   "meta": {
     "title": "Booking"
+  },
+  "form": {
+    "sections": [
+      {
+        "name": "General information",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "title",
+                "label": "Title.",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingTitle",
+                "options": [
+                  {
+                    "value": "family",
+                    "label": "Family"
+                  },
+                  {
+                    "value": "mr",
+                    "label": "Mr."
+                  },
+                  {
+                    "value": "mrs",
+                    "label": "Mrs."
+                  }
+                ]
+              },
+              {
+                "name": "name",
+                "label": "Name",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingName"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "address",
+                "label": "Address",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingAddress"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "zipCode",
+                "label": "Zip code",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingZipCode"
+              },
+              {
+                "name": "city",
+                "label": "City",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCity"
+              },
+              {
+                "name": "country",
+                "label": "Country",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingCountry"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "email",
+                "label": "Email",
+                "type": "TYPE_EMAIL",
+                "required": true,
+                "action": "setBookingEmail"
+              },
+              {
+                "name": "phoneNumber",
+                "label": "Phone number",
+                "type": "TYPE_TEXT",
+                "required": true,
+                "action": "setBookingPhoneNumber"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Camp information",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "numberOfPeople",
+                "label": "Birth date of people",
+                "type": "TYPE_PEOPLE",
+                "required": true
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "numberOfPets",
+                "label": "Number of pets",
+                "type": "TYPE_NUMBER",
+                "required": true,
+                "action": "setBookingNumberOfPets"
+              }
+            ]
+          },
+          {
+            "inputs": [
+              {
+                "name": "equipment",
+                "label": "Equipment",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingEquipment",
+                "options": [
+                  {
+                    "value": "tent",
+                    "label": "Tent"
+                  },
+                  {
+                    "value": "caravan",
+                    "label": "Caravan"
+                  },
+                  {
+                    "value": "folding-caravan",
+                    "label": "Folding caravan"
+                  },
+                  {
+                    "value": "camper",
+                    "label": "Camper"
+                  }
+                ]
+              },
+              {
+                "name": "electricity",
+                "label": "Electricity",
+                "type": "TYPE_SELECT",
+                "required": true,
+                "action": "setBookingElectricity",
+                "options": [
+                  {
+                    "value": "none",
+                    "label": "None"
+                  },
+                  {
+                    "value": "6",
+                    "label": "6 Amp."
+                  },
+                  {
+                    "value": "10",
+                    "label": "10 Amp."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dates of your stay",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "dateOfArrival",
+                "label": "Date of arrival",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfArrival"
+              },
+              {
+                "name": "dateOfDeparture",
+                "label": "Date of departure",
+                "type": "TYPE_DATE",
+                "required": true,
+                "action": "setBookingDateOfDeparture"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Additional information",
+        "rows": [
+          {
+            "inputs": [
+              {
+                "name": "comment",
+                "label": "Questions or remarks",
+                "type": "TYPE_TEXTAREA",
+                "required": false,
+                "action": "setBookingComment"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "button": "Send your booking",
+    "messages": {
+      "valid": "Het bericht is verstuurd. Wij zullen hier zo spoeding mogelijk op antwoorden.",
+      "error": "Het bericht kon niet verstuurd worden. Probeer het later opnieuw of neem contact met ons op via telefoon"
+    }
   }
 }

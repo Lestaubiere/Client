@@ -17,15 +17,15 @@
                 "action": "setBookingTitle",
                 "options": [
                   {
-                    "value": "fam",
-                    "label": "Fam."
+                    "value": "family",
+                    "label": "Familie"
                   },
                   {
-                    "value": "dhr",
+                    "value": "mr",
                     "label": "Dhr."
                   },
                   {
-                    "value": "mevr",
+                    "value": "mrs",
                     "label": "Mevr."
                   }
                 ]
@@ -137,8 +137,8 @@
                     "label": "Caravan"
                   },
                   {
-                    "value": "vouwwagen",
-                    "label": "vouwwagen"
+                    "value": "folding-caravan",
+                    "label": "Vouwwagen"
                   },
                   {
                     "value": "camper",
@@ -195,7 +195,7 @@
         ]
       },
       {
-        "name": "Verblijf informatie",
+        "name": "Overige informatie",
         "rows": [
           {
             "inputs": [
@@ -203,7 +203,7 @@
                 "name": "comment",
                 "label": "Vragen of opmerkingen",
                 "type": "TYPE_TEXTAREA",
-                "required": true,
+                "required": false,
                 "action": "setBookingComment"
               }
             ]
