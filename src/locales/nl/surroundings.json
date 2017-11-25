@@ -3,15 +3,19 @@
     "title": "Omgeving"
   },
   "subtitle": "Hieronder een aantal suggesties",
-  "content": [
-    "De Périgord als onderdeel van de Dordogne staat bekend om zijn kastelen, grotten, oude steden, wijnen, rivieren en markten.",
-    "De toeristische centra Le Bugue en Lalinde (30min), Beynac en Sarlat liggen oostelijk, terwijl de steden Bergerac en Périgueux (met de hypermarchés en oude binnensteden) binnen 20 minuten bereikbaar zijn.",
-    "Aanraders zijn natuurlijk de vele grotten, een boot/kanotocht op de Dordogne of de Vézère, of een bezoek aan de ochtendmarkten van Issigeac, Lalinde, Vergt,le Bugue of die van Bergerac/Périgueux.",
-    "De vele restaurants van eenvoudig tot haute cuisine bieden u alle gelegenheid om van de lokale én andere Franse specialiteiten te genieten.",
-    "Voor de wijnliefhebbers is een proeverij bij een van de 80 wijnchateaux een must.",
-    "Er zijn enkele wandeltochten in de buurt uitgezet en voor de sportieve fietser liggen er uitdagende routes in het mooie glooiende landschap.",
-    "Een meer voor zwem- en kanoplezier, Lac de Neufont, vindt u op korte afstand in Vergt."
-  ],
+  "content": {
+    "main_one": [
+      "De Périgord als onderdeel van de Dordogne staat bekend om zijn kastelen, grotten, oude steden, wijnen, rivieren en markten.",
+      "De toeristische centra Le Bugue en Lalinde (30min), Beynac en Sarlat liggen oostelijk, terwijl de steden Bergerac en Périgueux (met de hypermarchés en oude binnensteden) binnen 20 minuten bereikbaar zijn.",
+      "Aanraders zijn natuurlijk de vele grotten, een boot/kanotocht op de Dordogne of de Vézère, of een bezoek aan de ochtendmarkten van Issigeac, Lalinde, Vergt,le Bugue of die van Bergerac/Périgueux."
+    ],
+    "main_two": [
+      "De vele restaurants van eenvoudig tot haute cuisine bieden u alle gelegenheid om van de lokale én andere Franse specialiteiten te genieten.",
+      "Voor de wijnliefhebbers is een proeverij bij een van de 80 wijnchateaux een must.",
+      "Er zijn enkele wandeltochten in de buurt uitgezet en voor de sportieve fietser liggen er uitdagende routes in het mooie glooiende landschap.",
+      "Een meer voor zwem- en kanoplezier, Lac de Neufont, vindt u op korte afstand in Vergt."
+    ]
+  },
   "cards": [
     {
       "name": "Issigeac",

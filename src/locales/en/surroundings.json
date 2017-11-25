@@ -3,15 +3,19 @@
     "title": "Surroundings"
   },
   "subtitle": "Some examples",
-  "content": [
-    "The “Périgord”, part of the department Dordogne, is well known for its castles, caves, old cities, wines, rivers and markets.",
-    "The tourist centres Le Bugue and Lalinde (30 min), Beynac and Sarlat are situated east, whereas the cities of Bergerac and Périgueux (with supermarkets and old city centres) are south/north and to be visited within 20 minutes driving.",
-    "Topics are of course the many caves, a boat or canoe tour on the rivers Dordogne or Vézère, or visiting the morning markets of Issigeac, Lalinde, Vergt, le Bugue or may be of Bergerac/Périgueux.",
-    "Plenty restaurants in the categories of simple to ‘haute cuisine’ are offering you the opportunity to enjoy of the local and other French specialities.",
-    "Wine lovers will certainly appreciate a tasting session at one of the 80 wine chateaux.",
-    "Why not going on a hike, prepared in the neighbourhood. And for the sportive biker there are some challenging tours in the beautiful sloping landscape.",
-    "Like more swimming and canoeing? Find another lake, ‘Lac de Neufont’, nearby the village of Vergt."
-  ],
+  "content": {
+    "main_one": [
+      "The “Périgord”, part of the department Dordogne, is well known for its castles, caves, old cities, wines, rivers and markets.",
+      "The tourist centres Le Bugue and Lalinde (30 min), Beynac and Sarlat are situated east, whereas the cities of Bergerac and Périgueux (with supermarkets and old city centres) are south/north and to be visited within 20 minutes driving.",
+      "Topics are of course the many caves, a boat or canoe tour on the rivers Dordogne or Vézère, or visiting the morning markets of Issigeac, Lalinde, Vergt, le Bugue or may be of Bergerac/Périgueux."
+    ],
+    "main_two": [
+      "Plenty restaurants in the categories of simple to ‘haute cuisine’ are offering you the opportunity to enjoy of the local and other French specialities.",
+      "Wine lovers will certainly appreciate a tasting session at one of the 80 wine chateaux.",
+      "Why not going on a hike, prepared in the neighbourhood. And for the sportive biker there are some challenging tours in the beautiful sloping landscape.",
+      "Like more swimming and canoeing? Find another lake, ‘Lac de Neufont’, nearby the village of Vergt."
+    ]
+  },
   "cards": [
     {
       "name": "Issigeac",
