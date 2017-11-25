@@ -8,7 +8,7 @@ const state = {
   country: '',
   email: '',
   phoneNumber: '',
-  numberOfPeople: '',
+  numberOfPeople: 1,
   people: [],
   numberOfPets: '',
   equipment: '',

@@ -66,7 +66,6 @@ const actions = {
 
     fetch(`${LESATUBIERE_API_URL}/booking`, { method: 'POST', body: data })
       .then((response) => {
-        console.log(response);
         switch (response.status) {
           case 200:
             commit(FETCHED_BOOKING_SUBMIT_SUCCESS);

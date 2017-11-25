@@ -1,10 +1,7 @@
 <template>
   <div class="people-select">
-    <div class="people-select__container">
-      <input class="input" :id="name" :value="numberOfPeople" @input="handleNumberChange" type="number" :required="required" min="1" max="8" />
-    </div>
     <div class="people-select__inputs">
-      <datepicker class="datepicker" v-for="(person, index) in people" :key="index" :value="person" @input="(value) => handleDateChange(index, value)" />
+      <datepicker class="datepicker" v-for="(value, index) in Array(Number(numberOfPeople)).length" :key="index" :value="people[index]" @input="(value) => handleDateChange(index, value)" />
     </div>
   </div>
 </template>
@@ -17,10 +14,6 @@
     name: 'l-people-select',
 
     props: {
-      name: {
-        type: String,
-        required: true,
-      },
       required: {
         type: Boolean,
         required: true,
@@ -36,14 +29,8 @@
 
     methods: {
       handleNumberChange(e) {
-        if (e.target.value >= 1 && e.target.value <= 8) {
+        if (e.target.value <= 8 && e.target.value >= 1) {
           this.setBookingNumberOfPeople(e.target.value);
-
-          if (e.target.value > this.people.length) {
-            this.addPerson();
-          } else {
-            this.removePerson(this.people.length - 1);
-          }
         }
       },
 
