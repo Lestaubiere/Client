@@ -14,7 +14,6 @@ import {
   SET_BOOKING_COUNTRY,
   SET_BOOKING_EMAIL,
   SET_BOOKING_PHONE_NUMBER,
-  SET_BOOKING_NUMBER_OF_PEOPLE,
   SET_PERSON,
   ADD_PERSON,
   REMOVE_PERSON,
@@ -111,20 +110,16 @@ const actions = {
     commit(SET_BOOKING_PHONE_NUMBER, phoneNumber);
   },
 
-  setBookingNumberOfPeople({ commit }, numberOfPeople) {
-    commit(SET_BOOKING_NUMBER_OF_PEOPLE, numberOfPeople);
-  },
-
   setPerson({ commit }, [index, person]) {
     commit(SET_PERSON, [index, person]);
   },
 
-  addPerson({ commit }, person) {
-    commit(ADD_PERSON, person);
+  addPerson({ commit }) {
+    commit(ADD_PERSON);
   },
 
-  removePerson({ commit }, person) {
-    commit(REMOVE_PERSON, person);
+  removePerson({ commit }, index) {
+    commit(REMOVE_PERSON, index);
   },
 
   setBookingNumberOfPets({ commit }, numberOfPets) {

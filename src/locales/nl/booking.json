@@ -102,7 +102,7 @@
             "inputs": [
               {
                 "name": "numberOfPeople",
-                "label": "Aantal personen",
+                "label": "Geboorte datums personen",
                 "type": "TYPE_PEOPLE",
                 "required": true
               }

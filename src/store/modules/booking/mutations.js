@@ -12,7 +12,6 @@ import {
   SET_BOOKING_COUNTRY,
   SET_BOOKING_EMAIL,
   SET_BOOKING_PHONE_NUMBER,
-  SET_BOOKING_NUMBER_OF_PEOPLE,
   SET_PERSON,
   ADD_PERSON,
   REMOVE_PERSON,
@@ -41,8 +40,7 @@ const mutations = {
     state.country = '';
     state.email = '';
     state.phoneNumber = '';
-    state.numberOfPeople = 0;
-    state.people = [];
+    state.people = [''];
     state.numberOfPets = 0;
     state.equipment = '';
     state.electricity = '';
@@ -78,9 +76,6 @@ const mutations = {
   [SET_BOOKING_PHONE_NUMBER](state, phoneNumber) {
     state.phoneNumber = phoneNumber;
   },
-  [SET_BOOKING_NUMBER_OF_PEOPLE](state, numberOfPeople) {
-    state.numberOfPeople = numberOfPeople;
-  },
   [SET_PERSON](state, [index, person]) {
     state.people[index] = person;
   },
@@ -88,7 +83,7 @@ const mutations = {
     state.people = [...state.people, ''];
   },
   [REMOVE_PERSON](state, index) {
-    state.people = state.people.splice(index, 1);
+    state.people = state.people.filter((person, i) => i !== index);
   },
   [SET_BOOKING_NUMBER_OF_PETS](state, numberOfPets) {
     state.numberOfPets = numberOfPets;
