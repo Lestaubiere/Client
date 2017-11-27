@@ -2,6 +2,11 @@
   "meta": {
     "title": "Conditions de réservations"
   },
+  "actions": {
+    "form": {
+      "label": "Retourner au formulaire de réservation"
+    }
+  },
   "sections": [
     {
       "title": "Conditions de location emplacement",

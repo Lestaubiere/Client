@@ -241,4 +241,23 @@
       width: 100%;
     }
   }
+
+  @media print {
+    .header {
+      display: none;
+    }
+
+    .footer {
+      display: none;
+    }
+    
+    main {
+      margin: 50px 0;
+    }
+
+    button, .button {
+      display: none;
+    }
+  }
+
 </style>

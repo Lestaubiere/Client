@@ -2,6 +2,11 @@
   "meta": {
     "title": "Reserverings voorwaarden"
   },
+  "actions": {
+    "form": {
+      "label": "Ga terug naar het reserverings formulier"
+    }
+  },
   "sections": [
     {
       "title": "Huurvoorwaarden kampeerplaats",

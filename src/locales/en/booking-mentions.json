@@ -2,6 +2,11 @@
   "meta": {
     "title": "Booking Conditions"
   },
+  "actions": {
+    "form": {
+      "label": "Go back to the booking form"
+    }
+  },
   "sections": [
     {
       "title": "Conditions camping pitch",
