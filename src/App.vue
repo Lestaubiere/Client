@@ -227,6 +227,12 @@
     opacity: 0
   }
 
+  @media (max-width: 800px) {
+    .separator {
+      margin: 50px 0;
+    }
+  }
+
   @media (max-width: 600px) {
     h1 {
       font-size: 1.75rem;
