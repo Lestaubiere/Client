@@ -2,8 +2,8 @@
   "meta": {
     "title": "Voorzieningen"
   },
-  "sections": {
-    "food": {
+  "sections": [
+    {
       "title": "Eten en Drinken",
       "content": [
         "Het schaduwrijke terras onder de platanen is het middelpunt van de camping. Vanaf het terras is er prachtig zicht op het zwembad, het meertje, het strandje, de speeltuin en op de zonne weide. Het terras is het centrum en verzamelpunt van alle activiteiten die op de camping worden georganiseerd.",
@@ -34,7 +34,7 @@
         }
       ]
     },
-    "sanitary": {
+    {
       "title": "Sanitair",
       "content": [
         "Er zijn 3 sanitair gebouwen op de camping met moderne toilet en douche voorzieningen, babybadjes, afwasbakken, een gehandicapten ruimte en 2 stortplaatsen voor chemische toiletten.",
@@ -64,7 +64,7 @@
         }
       ]
     },
-    "media": {
+    {
       "title": "Media",
       "content": [
         "In de bar en op het terras kun je via onze Wifi-verbinding gratis gebruik maken van het internet. Daarnaast heeft onze camping een goed functionerend 4G-netwerk zodat je met een eigen databundel ook goed uit de voeten kunt.",
@@ -93,5 +93,5 @@
         }
       ]
     }
-  }
+  ]
 }

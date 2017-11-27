@@ -3,17 +3,39 @@
     "title": "Environs"
   },
   "subtitle": "Voici quelques propositions",
-  "content": {
-    "main_one": [
-      "La Dordogne (Périgord) est célèbre pour ses châteaux, ses grottes, ses villes anciennes, ses vins, ses rivières et ses marchés.",
-      "Les centres touristiques Lalinde, Le Bugue (30 min), Beynac et Sarlat se trouvent à un peu de route du camping, tandis que les villes de Bergerac et Périgueux (avec des hyper-marchés et des vieux centres à découvrir) ne se trouvent qu’à 20 minutes.",
-      "Vivement recommandé : la visite des nombreuses grottes naturelles, une balade en canoë ou en bateau sue la Dordogne, la visite d’un au plusieurs bons restaurants régionaux ou alors de flâner aux marchés matinaux d’Issigeac, Le Bugue ou Périgueux."
-    ],
-    "main_two": [
-      "Pour les amateurs de vin, une disgustation chez un des 80 châteaux est vivement recommandé.",
-      "Dans les alentours, on trouve plusieurs randonnées pédestre, et pour les cyclistes sportifs des petites routes de campagne magnifiquement vallonnées."
-    ]
-  },
+  "sections": [
+    {
+      "content": [
+        "La Dordogne (Périgord) est célèbre pour ses châteaux, ses grottes, ses villes anciennes, ses vins, ses rivières et ses marchés.",
+        "Les centres touristiques Lalinde, Le Bugue (30 min), Beynac et Sarlat se trouvent à un peu de route du camping, tandis que les villes de Bergerac et Périgueux (avec des hyper-marchés et des vieux centres à découvrir) ne se trouvent qu’à 20 minutes.",
+        "Vivement recommandé : la visite des nombreuses grottes naturelles, une balade en canoë ou en bateau sue la Dordogne, la visite d’un au plusieurs bons restaurants régionaux ou alors de flâner aux marchés matinaux d’Issigeac, Le Bugue ou Périgueux.",
+        "Pour les amateurs de vin, une disgustation chez un des 80 châteaux est vivement recommandé.",
+        "Dans les alentours, on trouve plusieurs randonnées pédestre, et pour les cyclistes sportifs des petites routes de campagne magnifiquement vallonnées."
+      ],
+      "slider": [
+        {
+          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
+          "name": "Keuken",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
+          "name": "Eethoek",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
+          "name": "Buiten",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/rentals/Mobilehome_layout.jpg",
+          "name": "Indeling",
+          "description": ""
+        }
+      ]
+    }
+  ],
   "cards": [
     {
       "name": "Issigeac",

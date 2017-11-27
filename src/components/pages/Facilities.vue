@@ -1,22 +1,9 @@
 <template>
   <div class="facilities container">
-    <l-section
-      :index="0"
-      :images="sportsSectionSlider"
-      :title="sportsSectionTitle"
-      :content="sportsSectionContent"></l-section>
-    <div class="separator"></div>
-    <l-section
-      :index="1"
-      :images="sanitarySectionSlider"
-      :title="sanitarySectionTitle"
-      :content="sanitarySectionContent"></l-section>
-    <div class="separator"></div>
-    <l-section
-      :index="2"
-      :images="mediaSectionSlider"
-      :title="mediaSectionTitle"
-      :content="mediaSectionContent"></l-section>
+    <div v-for="(section, index) in sections" :key="index">
+      <l-section :section="section" />
+      <div class="separator" v-if="index < sections.length -1" />
+    </div>
   </div>
 </template>
 
@@ -36,32 +23,8 @@
       title() {
         return this.$i18n.t('facilities.meta.title');
       },
-      sportsSectionTitle() {
-        return this.$i18n.t('facilities.sections.food.title');
-      },
-      sportsSectionContent() {
-        return this.$i18n.t('facilities.sections.food.content');
-      },
-      sportsSectionSlider() {
-        return this.$i18n.t('facilities.sections.food.slider');
-      },
-      sanitarySectionTitle() {
-        return this.$i18n.t('facilities.sections.sanitary.title');
-      },
-      sanitarySectionContent() {
-        return this.$i18n.t('facilities.sections.sanitary.content');
-      },
-      sanitarySectionSlider() {
-        return this.$i18n.t('facilities.sections.sanitary.slider');
-      },
-      mediaSectionTitle() {
-        return this.$i18n.t('facilities.sections.media.title');
-      },
-      mediaSectionContent() {
-        return this.$i18n.t('facilities.sections.media.content');
-      },
-      mediaSectionSlider() {
-        return this.$i18n.t('facilities.sections.media.slider');
+      sections() {
+        return this.$i18n.t('facilities.sections');
       },
     },
 

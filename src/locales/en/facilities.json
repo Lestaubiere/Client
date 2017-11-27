@@ -2,8 +2,8 @@
   "meta": {
     "title": "Facilities"
   },
-  "sections": {
-    "food": {
+  "sections": [
+    {
       "title": "Food and Beverage",
       "content": [
         "The shady terrace under the planet-trees is the centre of Camping Lestaubière. Here you have a beautiful view of the pool, the lake, the beach and the playground. This central terrace will be the starting point for all organised activities.",
@@ -34,7 +34,7 @@
         }
       ]
     },
-    "sanitary": {
+    {
       "title": "Sanitary",
       "content": [
         "There are 3 sanitary blocks equipped with modern toilet and shower facilities, baby baths, dishwashing bowls, a dedicated “disabled room” and 2 dumps for chemical toilets.",
@@ -64,7 +64,7 @@
         }
       ]
     },
-    "media": {
+    {
       "title": "Media",
       "content": [
         "In the bar and on the terrace you have free wifi acces. There is also a good working 4G – network on our campsite.",
@@ -93,5 +93,5 @@
         }
       ]
     }
-  }
+  ]
 }

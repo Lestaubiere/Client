@@ -2,8 +2,8 @@
   "meta": {
     "title": "Leisure"
   },
-  "sections": {
-    "sports": {
+  "sections": [
+    {
       "title": "Sport et Games",
       "content": [
         "The campground offers you a variety of opportunities for sport and games. Both on one’s own initiative and invited by the Lestaubière team (daily at highseason).",
@@ -41,7 +41,7 @@
         }
       ]
     },
-    "swimming": {
+    {
       "title": "Swimming",
       "content": [
         "What’s available to refresh?"
@@ -78,7 +78,7 @@
         }
       ]
     },
-    "animation": {
+    {
       "title": "Animation",
       "content": [
         "Animation activities by the Lestaubière team are organised during the season period only.",
@@ -115,5 +115,5 @@
         }
       ]
     }
-  }
+  ]
 }

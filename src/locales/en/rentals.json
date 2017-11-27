@@ -2,8 +2,8 @@
   "meta": {
     "title": "Rentals"
   },
-  "sections": {
-    "mobilhomes": {
+  "sections": [
+    {
       "title": "Mobilhomes",
       "content": [
         "We have 4 rental mobile homes of 32m2, containing a parent’s bedroom (bed size 1,60 x 2,00 m) and a children’s bedroom with 3 beds.",
@@ -44,5 +44,5 @@
         }
       ]
     }
-  }
+  ]
 }

@@ -2,8 +2,8 @@
   "meta": {
     "title": "Locations"
   },
-  "sections": {
-    "mobilhomes": {
+  "sections": [
+    {
       "title": "Mobilhomes",
       "content": [
         "Nous avons, depuis 2012, 4 nouveaux mobilhomes (32 m2) avec 2 chambres chacune. La première chambre comporte un lit 2.00×1.60m et la seconde chambre comporte trois lits 1.90×0.70m.",
@@ -44,5 +44,5 @@
         }
       ]
     }
-  }
+  ]
 }

@@ -18,7 +18,7 @@
         v-for="(image, index) in images"
         :key="index"
         @click="setCurrentImage(index)"
-        :class="`slider__bullet ${index === activeImageIndex ? 'slider__bullet--active' : ''}`"></span>
+        :class="`slider__bullet ${index === activeImageIndex ? 'slider__bullet--active' : ''}`">&#9679;</span>
     </div>
   </div>
 </template>
@@ -122,29 +122,20 @@
 </script>
 
 <style scoped>
-  .slider {
-    display: flex;
-  }
-
-  .section--right .slider {
-    flex-direction: row-reverse;
-  }
-
   .slider__image {
-    max-width: none;
     box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   }
 
   .slider__navigation {
-    margin: auto 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
   }
 
   .slider__bullet {
     display: block;
-    width: 10px;
-    height: 10px;
-    margin: 10px 0;
-    background-color: #000000;
+    margin: 0 5px;
+    font-size: 1.5rem;
     opacity: 0.25;
     border-radius: 50%;
     transition: opacity .3s ease;

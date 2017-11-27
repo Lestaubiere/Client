@@ -2,19 +2,41 @@
   "meta": {
     "title": "Accueil"
   },
-  "content": {
-    "main_one": [
-      "Nous vous souhaitons la bienvenue sur notre camping !",
-      "Camping Lestaubière est un site familial, où toute la famille peut se détendre, profiter de la tranquillité et du magnifique département de la Dordogne.",
-      "Le camping dispose d’emplacements très grands (> 160m2), des bâtiments sanitaires modernes et une belle terrasse donnant sur la piscine, l’aire de jeux et le lac avec sa plage. En haute saison, nous fournissons un large programme de divertissements pour enfants et adultes, organisés par notre équipe Lestaubière, composé de plusieurs étudiant(e)s."
-    ],
-    "main_two": [
-      "Nous proposons également la location de Mobilehomes et de tentes « Safari » et « Lodge ». Toutes nos location sont entièrement équipées.",
-      "Le site se trouve entre Bergerac et Périgueux; dans les alentours vous trouverez des vignobles, des grottes, la rivière La Dordogne et ses magnifiques châteaux, mais aussi les hypermarchés les plus courants.",
-      "Nous nous ferons un plaisir de vous faire passer des vacances bien reposantes, afin de vous faire rentrer chez vous avec le plein d’énergie.",
-      "Famille van Osta"
-    ]
-  },
+  "sections": [
+    {
+      "content": [
+        "Nous vous souhaitons la bienvenue sur notre camping !",
+        "Camping Lestaubière est un site familial, où toute la famille peut se détendre, profiter de la tranquillité et du magnifique département de la Dordogne.",
+        "Le camping dispose d’emplacements très grands (> 160m2), des bâtiments sanitaires modernes et une belle terrasse donnant sur la piscine, l’aire de jeux et le lac avec sa plage. En haute saison, nous fournissons un large programme de divertissements pour enfants et adultes, organisés par notre équipe Lestaubière, composé de plusieurs étudiant(e)s.",
+        "Nous proposons également la location de Mobilehomes et de tentes « Safari » et « Lodge ». Toutes nos location sont entièrement équipées.",
+        "Le site se trouve entre Bergerac et Périgueux; dans les alentours vous trouverez des vignobles, des grottes, la rivière La Dordogne et ses magnifiques châteaux, mais aussi les hypermarchés les plus courants.",
+        "Nous nous ferons un plaisir de vous faire passer des vacances bien reposantes, afin de vous faire rentrer chez vous avec le plein d’énergie.",
+        "Famille van Osta"
+      ],
+      "slider": [
+        {
+          "image_path": "/static/img/facilities/Library.jpg",
+          "name": "Bibliotheek",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Games.jpg",
+          "name": "Recreatie",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/TV.jpg",
+          "name": "TV",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Wifi.jpg",
+          "name": "Wifi",
+          "description": ""
+        }
+      ]
+    }
+  ],
   "carousel": {
     "items": [
       {

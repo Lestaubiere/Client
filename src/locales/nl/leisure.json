@@ -2,8 +2,8 @@
   "meta": {
     "title": "Ontspanning"
   },
-  "sections": {
-    "sports": {
+  "sections": [
+    {
       "title": "Sport en Spel",
       "content": [
         "De camping biedt tal van mogelijkheden voor sport en spel.",
@@ -47,7 +47,7 @@
         }
       ]
     },
-    "swimming": {
+    {
       "title": "Zwemmen",
       "content": [
         "De camping beschikt over:"
@@ -79,7 +79,7 @@
         }
       ]
     },
-    "animation": {
+    {
       "title": "Animatie",
       "content": [
         "Animatie door het Lestaubière-team is gericht op activiteiten in het hoogseizoen.",
@@ -116,5 +116,5 @@
         }
       ]
     }
-  }
+  ]
 }

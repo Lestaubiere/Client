@@ -1,31 +1,12 @@
 <template>
   <div class="surroundings container">
-    <div class="surroundings__row">
-      <div class="surroundings__image-container">
-        <div class="surroundings__image">
-          <img src="../../../static/img/surroundings/Proxy.jpg" alt="Picture of the Proxy near Camping Lestaubière">
-        </div>
-      </div>
-      <div class="surroundings__content-container">
-        <h1>{{ title }}</h1>
-        <p class="paragraph"
-          v-for="(paragraph, index) in mainContent"
-          :key="index">
-          {{ paragraph }}
-        </p>
-      </div>
-      <div class="surroundings__paragraph-container">
-        <p class="paragraph"
-            v-for="(paragraph, index) in mainContentTwo"
-            :key="index">
-            {{ paragraph }}
-          </p>
-      </div>
+    <div v-for="(section, index) in sections" :key="index">
+      <l-section :section="section" />
     </div>
     <div class="separator"></div>
     <h2 class="surroundings__subtitle">{{ subtitle }}</h2>
     <div class="surroundings__cards-container">
-      <card class="surroundings__card"
+      <l-card class="surroundings__card"
             v-for="(card, index) in cards"
             :key="index"
             :title="card.name"
@@ -37,7 +18,8 @@
 </template>
 
 <script>
-  import Card from '@/components/core/Card';
+  import LSection from '@/components/core/Section';
+  import LCard from '@/components/core/Card';
 
   export default {
     name: 'l-surroundings',
@@ -55,11 +37,8 @@
       subtitle() {
         return this.$i18n.t('surroundings.subtitle');
       },
-      mainContent() {
-        return this.$i18n.t('surroundings.content.main_one');
-      },
-      mainContentTwo() {
-        return this.$i18n.t('surroundings.content.main_two');
+      sections() {
+        return this.$i18n.t('surroundings.sections');
       },
       cards() {
         return this.$i18n.t('surroundings.cards');
@@ -67,7 +46,8 @@
     },
 
     components: {
-      Card,
+      LSection,
+      LCard,
     },
   };
 </script>

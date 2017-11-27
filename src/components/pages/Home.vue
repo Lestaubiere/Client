@@ -1,35 +1,17 @@
 <template>
   <div class="home container">
-    <div class="home__row">
-      <div class="home__image-container">
-        <div class="home__image">
-          <img src="../../assets/photos/image_2.jpg" alt="Picture of the lake at Camping Lestaubière">
-        </div>
-      </div>
-      <div class="home__content-container">
-        <h1>{{ title }}</h1>
-        <p class="paragraph"
-          v-for="(paragraph, index) in mainContentOne"
-          :key="index">
-          {{ paragraph }}
-        </p>
-      </div>
-      <div class="home__paragraph-container">
-        <p class="paragraph"
-            v-for="(paragraph, index) in mainContentTwo"
-            :key="index">
-            {{ paragraph }}
-          </p>
-      </div>
+    <div v-for="(section, index) in sections" :key="index">
+      <l-section :section="section" />
     </div>
     <div class="home__row">
-      <carousel></carousel>
+      <l-carousel />
     </div>
   </div>
 </template>
 
 <script>
-  import Carousel from '@/components/core/Carousel';
+  import LSection from '@/components/core/Section';
+  import LCarousel from '@/components/core/Carousel';
 
   export default {
     name: 'l-home',
@@ -44,16 +26,14 @@
       title() {
         return this.$i18n.t('home.meta.title');
       },
-      mainContentOne() {
-        return this.$i18n.t('home.content.main_one');
-      },
-      mainContentTwo() {
-        return this.$i18n.t('home.content.main_two');
+      sections() {
+        return this.$i18n.t('home.sections');
       },
     },
 
     components: {
-      Carousel,
+      LSection,
+      LCarousel,
     },
   };
 </script>

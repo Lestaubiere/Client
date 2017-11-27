@@ -2,8 +2,8 @@
   "meta": {
     "title": "Détente"
   },
-  "sections": {
-    "sports": {
+  "sections": [
+    {
       "title": "Sport et Loisirs",
       "content": [
         "Le camping offre de nombreuses possibilités de sports ou de jeux. De nombreux jeux sont organisés quotidiennement par notre équipe Lestaubière (en haute saison), mais nous proposons également une grande variété de loisirs pour toute la famille.",
@@ -45,7 +45,7 @@
         }
       ]
     },
-    "swimming": {
+    {
       "title": "Natation",
       "content": [
         "Pour vous rafraîchir, le camping dispose de :"
@@ -78,7 +78,7 @@
         }
       ]
     },
-    "animation": {
+    {
       "title": "Animation",
       "content": [
         "Durant la haute saison, une équipe d’étudiants néerlandais nous aide dans le travail quotidien, elle assure également avec beaucoup d’enthousiasme l’organisation d’activités et l’animation pour enfants et adultes.",
@@ -116,5 +116,5 @@
         }
       ]
     }
-  }
+  ]
 }

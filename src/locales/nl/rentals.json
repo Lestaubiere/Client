@@ -2,8 +2,8 @@
   "meta": {
     "title": "Verhuuraccommodaties"
   },
-  "sections": {
-    "mobilhomes": {
+  "sections": [
+    {
       "title": "Mobilhomes",
       "content": [
         "Er staan 4 mobilhomes van ca. 32m2, met een ouderslaapkamer (bed van 1,60 x 2,00 m) en een kinderslaapkamer met 3 bedden, waarvan 1 verhoogd.Dekbedden (1-persoons) en hoofdkussens zijn aanwezig; hoeslakens en dekbedovertrekken zijn eventueel extra bij te boeken.",
@@ -45,7 +45,7 @@
         }
       ]
     },
-    "greencamp": {
+    {
       "title": "Greencamp",
       "content": [
         "De Nederlandse reisorganisatie Greencamp heeft 8 Safaritenten staan op onze camping.",
@@ -72,7 +72,7 @@
         }
       ]
     },
-    "villatent": {
+    {
       "title": "Villatent",
       "content": [
         "Ook de Nederlandse reisorganisatie Villatent heeft 4 safaritenten staan op Lestaubière.",
@@ -98,5 +98,5 @@
         }
       ]
     }
-  }
+  ]
 }
