@@ -5,6 +5,9 @@
   "actions": {
     "form": {
       "label": "Retourner au formulaire de réservation"
+    },
+    "print": {
+      "label": "Imprimer"
     }
   },
   "sections": [

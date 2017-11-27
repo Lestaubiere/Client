@@ -3,6 +3,7 @@
     <p class="booking-mentions__print-container">
       <button class="booking-mentions__print" @click="handleClick">
         <img src="../../assets/icons/print.svg" />
+        <span>{{ $t('bookingMentions.actions.print.label') }}</span>
       </button>
     </p>
     <div class="booking-mentions__section" v-for="(section, index) in sections" :key="index">
@@ -17,7 +18,7 @@
         class="button"
         :to="$t('menu.booking.path')"
       >
-        {{ $t("bookingMentions.actions.form.label") }}
+        {{ $t('bookingMentions.actions.form.label') }}
       </router-link>
     </div>
   </div>
@@ -74,7 +75,14 @@
   }
 
   .booking-mentions__print {
+    display: flex;
+    align-items: center;
     cursor: pointer;
+  }
+
+  .booking-mentions__print span {
+    margin-left: 10px;
+    font-size: .8rem;
   }
 
   .booking-mentions__print img {

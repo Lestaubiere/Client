@@ -5,6 +5,9 @@
   "actions": {
     "form": {
       "label": "Go back to the booking form"
+    },
+    "print": {
+      "label": "Print"
     }
   },
   "sections": [

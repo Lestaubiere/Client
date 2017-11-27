@@ -5,6 +5,9 @@
   "actions": {
     "form": {
       "label": "Ga terug naar het reserverings formulier"
+    },
+    "print": {
+      "label": "Print"
     }
   },
   "sections": [
