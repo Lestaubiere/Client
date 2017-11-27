@@ -9,7 +9,8 @@
         "Het schaduwrijke terras onder de platanen is het middelpunt van de camping. Vanaf het terras is er prachtig zicht op het zwembad, het meertje, het strandje, de speeltuin en op de zonne weide. Het terras is het centrum en verzamelpunt van alle activiteiten die op de camping worden georganiseerd.",
         "Bij de bar en op het terras kunt u terecht voor heerlijke verse kop koffie of een cappucino, espresso, bier en frisdranken. ´s Middags worden er diverse snacks geserveerd.",
         "Een aantal keer per week worden er op het terras gevarieerde menu’s geserveerd, en in het hoogseizoen kunt u hier dagelijks terecht voor vers gebakken pizza’s. Ook is onze snackbar, voor afhaal van friet en diverse snacks, in het hoogseizoen dagelijks geopend. Buiten het hoogseizoen kunnen er overigens ook op bestelling friet en/of snacks worden besteld.",
-        "Zowel in voor-, hoofd- als naseizoen kunt u dagelijks vers brood bestellen."
+        "Zowel in voor-, hoofd- als naseizoen kunt u dagelijks vers brood bestellen.",
+        "Voor de dagelijkse boodschappen ligt er op 10 minuten loop-afstand van de camping de Proxi-supermarkt; een kleine maar ruim gesorteerde dorps-supermarkt."
       ],
       "slider": [
         {
@@ -30,6 +31,16 @@
         {
           "image_path": "/static/img/facilities/Bar.jpg",
           "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Bar_2.jpg",
+          "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Proxy.jpg",
+          "name": "Proxy",
           "description": ""
         }
       ]
@@ -84,11 +95,6 @@
         {
           "image_path": "/static/img/facilities/TV.jpg",
           "name": "TV",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/facilities/Wifi.jpg",
-          "name": "Wifi",
           "description": ""
         }
       ]

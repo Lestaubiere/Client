@@ -175,7 +175,7 @@
 
   .separator {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 100px auto;
     height: 1px;
     background-color: rgba(0, 0, 0, .1);
   }

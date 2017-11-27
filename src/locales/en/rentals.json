@@ -23,18 +23,13 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
-          "name": "Living area",
+          "image_path": "/static/img/rentals/Mobilhomes.jpg",
+          "name": "Mobilhomes",
           "description": ""
         },
         {
           "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
           "name": "Eating area",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
-          "name": "Exterior",
           "description": ""
         },
         {

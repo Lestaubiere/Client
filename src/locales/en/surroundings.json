@@ -16,23 +16,23 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
-          "name": "Keuken",
+          "image_path": "/static/img/surroundings/Perigueux.jpg",
+          "name": "Perigueux",
           "description": ""
         },
         {
-          "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
-          "name": "Eethoek",
+          "image_path": "/static/img/surroundings/Bergerac.jpg",
+          "name": "Bergerac",
           "description": ""
         },
         {
-          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
-          "name": "Buiten",
+          "image_path": "/static/img/surroundings/Gringrols.jpg",
+          "name": "Gringrols",
           "description": ""
         },
         {
-          "image_path": "/static/img/rentals/Mobilehome_layout.jpg",
-          "name": "Indeling",
+          "image_path": "/static/img/surroundings/Jaure.jpg",
+          "name": "Jaure",
           "description": ""
         }
       ]

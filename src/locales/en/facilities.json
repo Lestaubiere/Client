@@ -9,7 +9,8 @@
         "The shady terrace under the planet-trees is the centre of Camping Lestaubière. Here you have a beautiful view of the pool, the lake, the beach and the playground. This central terrace will be the starting point for all organised activities.",
         "In the bar and on the terrace you can order a delicious coffee, espresso, beer and soft drinks. In the afternoon several snacks will be served on the terrace.",
         "Several times a week we serve a variety of menus on the terrace. In the season period our famous, freshly served pizzas can be ordered daily. The snack bar is then open for take away fries and snacks. Offseason French fries and/or snacks are available on demand.",
-        "At all seasons you can order your daily fresh bread."
+        "At all seasons you can order your daily fresh bread.",
+        "For daily shopping there is the Proxi supermarket within 10 minutes walking distance of the campsite; a small but well-stocked village supermarket."
       ],
       "slider": [
         {
@@ -30,6 +31,16 @@
         {
           "image_path": "/static/img/facilities/Bar.jpg",
           "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Bar_2.jpg",
+          "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Proxy.jpg",
+          "name": "Proxy",
           "description": ""
         }
       ]

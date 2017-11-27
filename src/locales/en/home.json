@@ -16,23 +16,23 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/facilities/Library.jpg",
-          "name": "Bibliotheek",
+          "image_path": "/static/img/home/Entry.jpg",
+          "name": "Entry",
           "description": ""
         },
         {
-          "image_path": "/static/img/facilities/Games.jpg",
-          "name": "Recreatie",
+          "image_path": "/static/img/home/Overview_1.jpg",
+          "name": "Overview",
           "description": ""
         },
         {
-          "image_path": "/static/img/facilities/TV.jpg",
-          "name": "TV",
+          "image_path": "/static/img/home/Overview_2.jpg",
+          "name": "Overview",
           "description": ""
         },
         {
-          "image_path": "/static/img/facilities/Wifi.jpg",
-          "name": "Wifi",
+          "image_path": "/static/img/home/Terrace.jpg",
+          "name": "Terrace",
           "description": ""
         }
       ]

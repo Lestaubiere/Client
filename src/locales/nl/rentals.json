@@ -24,18 +24,13 @@
       ],
       "slider": [
         {
-          "image_path": "/static/img/rentals/Mobilhome_living.jpg",
-          "name": "Keuken",
+          "image_path": "/static/img/rentals/Mobilhomes.jpg",
+          "name": "Mobilhomes",
           "description": ""
         },
         {
           "image_path": "/static/img/rentals/Mobilhome_eating.jpg",
           "name": "Eethoek",
-          "description": ""
-        },
-        {
-          "image_path": "/static/img/rentals/Mobilhome_exterior.jpg",
-          "name": "Buiten",
           "description": ""
         },
         {

@@ -9,7 +9,8 @@
         "Notre terrasse couverte par les plantantes est l’endroit idéal pour se détendre la journée. Avec une vue sur la piscine, le lac avec la plage et l’air de jeu.",
         "Au bar et en terrasse vous pouvez déguster un bon café, un délicieux cappuccino ou alors des boissons fraîches comme une bière ou une boisson gazeuse. L’après midi nous servons différents snacks ainsi que des paninis.",
         "Quelques jours pas semaines nous servons des menus variés en terrasse, et en pleine saison vous avez tous les jours la possibilité de déguster nos pizza faits maison ou alors de frites avec des snacks. Hors haute saison, ceci ce fait sur commande.",
-        "Durant toute la saison vous pouvez commander du pain frais quotidiennement."
+        "Durant toute la saison vous pouvez commander du pain frais quotidiennement.",
+        "Pour vos petites courses quotidiennes, vous trouverez une épicerie à 10 minutes à pied du camping."
       ],
       "slider": [
         {
@@ -30,6 +31,16 @@
         {
           "image_path": "/static/img/facilities/Bar.jpg",
           "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Bar_2.jpg",
+          "name": "Bar",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/facilities/Proxy.jpg",
+          "name": "Proxy",
           "description": ""
         }
       ]
