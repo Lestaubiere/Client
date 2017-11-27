@@ -2,7 +2,9 @@
   <div id="app" :class="menuIsOpen ? 'no-scroll' : ''">
     <l-header></l-header>
     <main>
-      <router-view></router-view>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
       <div :class="`overlay ${menuIsOpen ? 'overlay--is-active' : ''}`" @click.prevent="closeMenu"></div>
       <ImageModal />
     </main>
@@ -210,6 +212,19 @@
 
   .VueCarousel-inner {
     align-items: center;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition-property: opacity;
+    transition-duration: .15s;
+  }
+
+  .fade-enter-active {
+    transition-delay: .15s;
+  }
+
+  .fade-enter, .fade-leave-active {
+    opacity: 0
   }
 
   @media (max-width: 600px) {

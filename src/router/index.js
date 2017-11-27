@@ -1,13 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Meta from 'vue-meta';
+import smoothScroll from 'vue-smoothscroll';
+
+import { LOCALES } from '@/config/config';
 
 import Home from '@/components/pages/Home';
 import Contact from '@/components/pages/Contact';
 import LegalMentions from '@/components/pages/LegalMentions';
 import NotFound from '@/components/pages/NotFound';
-
-import { LOCALES } from '@/config/config';
 
 import NLroutes from './nl';
 import FRroutes from './fr';
@@ -15,6 +16,7 @@ import ENroutes from './en';
 
 Vue.use(Router);
 Vue.use(Meta);
+Vue.use(smoothScroll);
 
 const router = new Router({
   mode: 'history',
@@ -61,12 +63,18 @@ const router = new Router({
       redirect: '/:lang/404',
     },
   ],
-  scrollBehavior() {
-    return { x: 0, y: 0 };
-  },
 });
 
 router.beforeEach((to, from, next) => {
+  const scrollToElement = document.getElementById('secondary-menu');
+  if (scrollToElement) {
+    const secondaryMenuPosition = scrollToElement.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollToPosition = (secondaryMenuPosition.top + scrollTop) - 25;
+
+    Vue.prototype.$SmoothScroll(scrollToPosition, 500);
+  }
+
   if (LOCALES.includes(to.params.lang)) {
     next();
   } else {

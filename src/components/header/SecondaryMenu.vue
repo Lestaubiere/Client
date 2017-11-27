@@ -1,5 +1,5 @@
 <template>
-  <div class="secondary-menu">
+  <div id="secondary-menu" class="secondary-menu">
     <l-secondary-menu-item :label="$t('menu.campground.label')"
                            :path="$t('menu.campground.path')"
                            :name="'campground'"
