@@ -34,7 +34,7 @@
     </div>
     <div class="header__main-container container">
       <div class="header__left-container">
-        <p>Bienvenue au Camping Lestaubière</p>
+        <p id="header__title">Bienvenue au Camping Lestaubière</p>
       </div>
       <div class="header__right-container">
         <l-header-widget></l-header-widget>

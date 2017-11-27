@@ -66,13 +66,18 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
+  const screenWidth = document.documentElement.clientWidth;
   const scrollToElement = document.getElementById('secondary-menu');
-  if (scrollToElement) {
+  const mobileScrollToElement = document.getElementById('header__title');
+
+  if (scrollToElement && screenWidth > 800) {
     const secondaryMenuPosition = scrollToElement.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollToPosition = (secondaryMenuPosition.top + scrollTop) - 25;
 
     Vue.prototype.$SmoothScroll(scrollToPosition, 500);
+  } else if (mobileScrollToElement) {
+    Vue.prototype.$SmoothScroll(0, 500);
   }
 
   if (LOCALES.includes(to.params.lang)) {
