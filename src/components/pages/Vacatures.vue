@@ -25,6 +25,9 @@
           {{ paragraph }}
         </p>
       </div>
+      <div class="vacatures__image">
+        <img src="../../../static/img/vacature/Vacature.jpg" alt="Animation at Camping Lestaubière">
+      </div>
     </div>
   </div>
 </template>
@@ -67,6 +70,15 @@
 
   .vacatures__content-container {
     margin: 25px 0;
+  }
+
+  .vacatures__image {
+    max-width: 650px;
+    margin: 50px auto 0;
+  }
+
+  .vacatures__image img {
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   }
 
   @media (max-width: 600px) {
