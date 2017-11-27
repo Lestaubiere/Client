@@ -74,7 +74,7 @@
   .header {
     position: relative;
     margin-bottom: 200px;
-    background: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url('../../assets/photos/image_1.jpg') center / cover;
+    background: url('../../assets/photos/image_1.jpg') center / cover;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
 
@@ -93,7 +93,7 @@
   .header__top-bar {
     position: relative;
     margin-bottom: 75px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, .35);
   }
 
   .header__top-bar-container {
@@ -117,6 +117,7 @@
     display: flex;
     align-items: center;
     flex-basis: 65%;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, .5)
   }
 
   .header__right-container {
