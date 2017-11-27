@@ -169,7 +169,7 @@
 
   .directions__steps {
     padding: 10px;
-    max-height: 373px;
+    max-height: 365px;
     overflow-y: scroll;
   }
 

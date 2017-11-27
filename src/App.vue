@@ -58,6 +58,10 @@
     box-sizing: border-box;
   }
 
+  input {
+    margin: 0;
+  }
+
   button,
   [type=submit] {
     background: none;
