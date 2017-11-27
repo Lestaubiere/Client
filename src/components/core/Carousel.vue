@@ -64,4 +64,10 @@
     width: 16px;
     height: 16px;
   }
+
+  @media (max-width: 800px) {
+    .carousel {
+      margin-top: 35px;
+    }
+  }
 </style>
