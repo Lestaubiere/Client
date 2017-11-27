@@ -5,8 +5,10 @@
       <div class="header__mobile-menu-header">
         <l-language-picker></l-language-picker>
         <button class="header__mobile-menu-button header__mobile-menu-button--closed" @click.prevent="closeMenu">
-          <span></span>
-          <span></span>
+          <span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
       </div>
       <l-primary-menu :isMobile="true"></l-primary-menu>
@@ -14,9 +16,12 @@
     <div class="header__top-bar">
       <div class="header__top-bar-container container">
         <button class="header__mobile-menu-button" @click.prevent="openMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menu</span>
         </button>
         <div class="header__logo-container">
           <img src="../../assets/icons/logo.svg" alt="Logo Camping Lestaubière"/>
@@ -175,30 +180,41 @@
     position: absolute;
     left: 10px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
   }
 
   .header__mobile-menu-button.header__mobile-menu-button--closed {
     position: initial;
   }
 
-  .header__mobile-menu-button span {
+  .header__mobile-menu-button > span {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: .8rem;
+  }
+
+  .header__mobile-menu-button > span:last-of-type {
+    margin-left: 10px;
+  }
+
+  .header__mobile-menu-button span span {
     width: 30px;
     height: 3px;
     margin: 2px 0;
     background-color: #ffffff;
   }
 
-  .header__mobile-menu-button.header__mobile-menu-button--closed span {
+  .header__mobile-menu-button.header__mobile-menu-button--closed span span {
     background-color: #000000;
   }
 
-  .header__mobile-menu-button.header__mobile-menu-button--closed span:first-of-type {
+  .header__mobile-menu-button.header__mobile-menu-button--closed span span:first-of-type {
     transform: rotate(45deg);
     transform-origin: 10px 2px;
   }
 
-  .header__mobile-menu-button.header__mobile-menu-button--closed span:last-of-type {
+  .header__mobile-menu-button.header__mobile-menu-button--closed span span:last-of-type {
     transform: rotate(-45deg);
     transform-origin: 10px 2px;
   }
