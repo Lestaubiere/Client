@@ -123,7 +123,7 @@
     left: 0;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     .primary-menu {
       display: none;
     }

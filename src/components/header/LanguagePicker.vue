@@ -76,7 +76,7 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     .language-picker {
       position: initial;
     }
