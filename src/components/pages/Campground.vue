@@ -5,7 +5,7 @@
       <svg viewBox="0 0 1250 950"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
-        <image href="/static/img/phototour/Phototour.png" width="1250" height="950"/>
+        <image xlink:href="/static/img/phototour/Phototour.png" width="1250" height="950"/>
         <MapItem
           v-for="(item, index) in phototour"
           :key="index"
