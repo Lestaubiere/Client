@@ -1,9 +1,10 @@
 <template>
   <div class="slider">
-    <transition name="fade" mode="out-in">
-      <div class="slider__image-container" ref="image" :style="imageStyle">
+    <div class="slider__image-container" :style="imageStyle">
+      <transition name="fade" mode="out-in">
         <img
           class="slider__image"
+          ref="image"
           v-for="(image, index) in images"
           v-if="index === activeImageIndex"
           :key="index"
@@ -11,8 +12,8 @@
           :alt="image.description"
           @touchstart="handleTouchStart"
           @touchend="handleTouched">
-        </div>
-    </transition>
+      </transition>
+    </div>
     <div class="slider__navigation">
       <span
         v-for="(image, index) in images"
@@ -61,14 +62,13 @@
 
     mounted() {
       window.addEventListener('resize', this.handleResize);
-
       if (this.automated) {
         setInterval(this.changeCurrentImage, this.delay);
       }
     },
 
     beforeUpdate() {
-      this.imageHeight = this.$refs.image.clientHeight;
+      this.imageHeight = this.$refs.image[0].height;
     },
 
     beforeDestroy() {
@@ -101,7 +101,7 @@
       },
 
       handleResize() {
-        this.imageHeight = this.$refs.image.clientHeight;
+        this.imageHeight = this.$refs.image[0].height;
       },
 
       handleTouchStart(e) {
@@ -122,6 +122,10 @@
 </script>
 
 <style scoped>
+  .slider__image-container {
+    font-size: 0;
+  }
+
   .slider__image {
     box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   }
@@ -147,7 +151,7 @@
   }
 
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .3s
+    transition: opacity .2s
   }
 
   .fade-enter, .fade-leave-to {
