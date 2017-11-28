@@ -58,8 +58,10 @@
     box-sizing: border-box;
   }
 
-  input {
+  input, textarea {
     margin: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
   }
 
   button,
