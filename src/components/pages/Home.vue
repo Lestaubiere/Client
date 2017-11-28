@@ -19,12 +19,18 @@
     metaInfo() {
       return {
         title: this.title,
+        meta: [
+          { name: 'description', content: this.description },
+        ],
       };
     },
 
     computed: {
       title() {
         return this.$i18n.t('home.meta.title');
+      },
+      description() {
+        return this.$i18n.t('home.meta.description');
       },
       sections() {
         return this.$i18n.t('home.sections');
