@@ -8,7 +8,7 @@
     </label>
     <div class="input__item">
       <l-text :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_TEXT" />
-      <l-people-select :name="input.name" :required="input.required" v-if="input.type === TYPE_PEOPLE" />
+      <l-people-select :action="input.action" :required="input.required" v-if="input.type === TYPE_PEOPLE" />
       <l-number :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_NUMBER" />
       <l-email :name="input.name" :required="input.required" :action="input.action" v-if="input.type === TYPE_EMAIL" />
       <l-select :name="input.name" :required="input.required" :action="input.action" :options="input.options" v-if="input.type === TYPE_SELECT" />

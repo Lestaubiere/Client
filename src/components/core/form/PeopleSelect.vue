@@ -20,7 +20,7 @@
           initialView="year"
         />
       </span>
-      <button class="people-select__button button" :disabled="people.length >= 8" @click.prevent="handleAddClick">Voeg een persoon toe</button>
+      <button class="people-select__button button" :disabled="people.length >= 8" @click.prevent="handleAddClick">{{ action }}</button>
     </div>
   </div>
 </template>
@@ -43,6 +43,10 @@
     },
 
     props: {
+      action: {
+        type: String,
+        required: true,
+      },
       required: {
         type: Boolean,
         required: true,

@@ -103,6 +103,7 @@
               {
                 "name": "numberOfPeople",
                 "label": "Geboorte datums personen",
+                "action": "Voeg een persoon toe",
                 "type": "TYPE_PEOPLE",
                 "required": true
               }

@@ -103,6 +103,7 @@
               {
                 "name": "numberOfPeople",
                 "label": "Date de naissance des personnes",
+                "action": "Ajouter une personne",
                 "type": "TYPE_PEOPLE",
                 "required": true
               }
