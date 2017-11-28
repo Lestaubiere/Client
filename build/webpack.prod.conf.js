@@ -3,6 +3,7 @@ var path = require('path')
 var utils = require('./utils')
 var webpack = require('webpack')
 var config = require('../config')
+var paths = require('./paths')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -10,6 +11,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+var SitemapPlugin = require('sitemap-webpack-plugin').default
 var loadMinified = require('./load-minified')
 
 var env = config.build.env
@@ -103,7 +105,8 @@ var webpackConfig = merge(baseWebpackConfig, {
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: true,
       stripPrefix: 'dist/'
-    })
+    }),
+    new SitemapPlugin('https://camping-lestaubiere.fr', paths, { lastMod: true })
   ]
 })
 
