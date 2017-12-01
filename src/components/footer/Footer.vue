@@ -133,13 +133,24 @@
   }
 
   @media (max-width: 960px) {
-    .footer__widget-column--menu,
-    .footer__widget-column--contact {
+    .footer__container {
+      flex-wrap: wrap;
+    }
+
+    .footer__widget-column--menu {
       display: none;
     }
 
     .footer__widget-column {
-      flex-basis: 50%;
+      flex-basis: 45%;
+      order: 1;
+    }
+
+    .footer__widget-column--contact {
+      flex-basis: 100%;
+      margin-top: 20px;
+      text-align: center;
+      order: 10;
     }
   }
 
