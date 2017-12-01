@@ -6,7 +6,7 @@
     {
       "title": "Sport et Games",
       "content": [
-        "The campground offers you a variety of opportunities for sport and games. Both on one’s own initiative and invited by the Lestaubière team (daily at highseason).",
+        "The campsite offers you a variety of opportunities for sport and games. Both on one’s own initiative and invited by the Lestaubière team (daily at highseason).",
         "You will find available a multi sporting field (artificial grass), a beach-volleyball field and 2 (illuminated) “jeu-de-boules” courts and of course a table-tennis table.",
         "Our small gaming hall offers also some all weather facilities, including again a table-tennis table and a airhockey game.",
         "Our lake is waiting for the fishermen amongst you. Fishing competitions are organized regularly.",
@@ -37,6 +37,11 @@
         {
           "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volleyball",
+          "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Fishing.jpg",
+          "name": "Fishing",
           "description": ""
         }
       ]

@@ -1,11 +1,14 @@
 {
   "meta": {
-    "title": "Campground"
+    "title": "Campsite"
   },
   "sections": {
     "phototour": {
       "title": "Phototour",
       "subtitle": "Click on the dots to view a picture of that place"
+    },
+    "map": {
+      "title": "Map"
     }
   },
   "cards": [

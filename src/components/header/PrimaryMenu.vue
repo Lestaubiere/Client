@@ -6,10 +6,10 @@
       {{ $t("menu.home.label") }}
     </router-link>
     <router-link v-if="isMobile"
-                 :to="$t('menu.campground.path')"
+                 :to="$t('menu.campsite.path')"
                  class="primary-menu__item"
                  @click.native="handleClick">
-      {{ $t("menu.campground.label") }}
+      {{ $t("menu.campsite.label") }}
     </router-link>
     <router-link :to="$t('menu.leisure.path')"
                  class="primary-menu__item"

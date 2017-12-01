@@ -6,6 +6,9 @@
     "phototour": {
       "title": "Fototour",
       "subtitle": "Klik op de peilen om een photo van die locatie te zien"
+    },
+    "map": {
+      "title": "Plattegrond"
     }
   },
   "cards": [

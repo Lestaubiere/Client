@@ -1,7 +1,7 @@
 import * as menu from './menu.json';
 import * as header from './header.json';
 import * as home from './home.json';
-import * as campground from './campground.json';
+import * as campsite from './campsite.json';
 import * as leisure from './leisure.json';
 import * as facilities from './facilities.json';
 import * as rentals from './rentals.json';
@@ -17,7 +17,7 @@ export default {
   menu,
   header,
   home,
-  campground,
+  campsite,
   leisure,
   facilities,
   rentals,

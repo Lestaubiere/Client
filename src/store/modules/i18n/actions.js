@@ -18,7 +18,7 @@ const actions = {
 
     const currentRoute = router.history.current;
     if (currentRoute.meta[language]) {
-      router.push(`/${language}/${router.history.current.meta[language]}`);
+      router.push(`/${language}/${currentRoute.meta[language]}`);
     } else {
       router.push(`/${language}`);
     }
