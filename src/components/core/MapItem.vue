@@ -18,7 +18,6 @@
 
       transform: {
         type: String,
-        required: true,
       },
 
       cx: {
