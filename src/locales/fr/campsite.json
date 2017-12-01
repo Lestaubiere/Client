@@ -6,6 +6,9 @@
     "phototour": {
       "title": "Phototour",
       "subtitle": "Cliquez sur les flèches pour afficher une photo"
+    },
+    "map": {
+      "title": "Plan"
     }
   },
   "cards": [

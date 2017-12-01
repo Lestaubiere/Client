@@ -1,7 +1,7 @@
 <template>
   <div class="campsite container">
     <div class="campsite__section campsite__section--fototour">
-      <h1>{{ phototourSectionTitle }} - <span>{{ phototourSectionSubtitle }}</span></h1>
+      <h1>{{ $t('campsite.sections.phototour.title') }} - <span>{{ $t('campsite.sections.phototour.subtitle') }}</span></h1>
       <svg viewBox="0 0 1250 950"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -16,6 +16,10 @@
           :rx="item.rx"
           :ry="item.ry" />
       </svg>
+    </div>
+    <div class="campsite__section campsite__section--map">
+      <h1>{{ $t('campsite.sections.map.title') }}</h1>
+      <img src="/static/img/phototour/Map.png" />
     </div>
     <div class="separator" />
     <div class="campsite__section">
@@ -51,12 +55,6 @@
     computed: {
       metaTitle() {
         return this.$i18n.t('campsite.meta.title');
-      },
-      phototourSectionTitle() {
-        return this.$i18n.t('campsite.sections.phototour.title');
-      },
-      phototourSectionSubtitle() {
-        return this.$i18n.t('campsite.sections.phototour.subtitle');
       },
       cards() {
         return this.$i18n.t('campsite.cards');
@@ -105,9 +103,14 @@
     }
   }
 
+  @media (min-width: 801px) {
+    .campsite__section--map {
+      display: none;
+    }
+  }
+
   @media (max-width: 800px) {
-    .campsite__section--fototour,
-    .separator {
+    .campsite__section--fototour {
       display: none;
     }
 
