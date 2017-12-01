@@ -1,4 +1,4 @@
-import Campground from '@/components/pages/Campground';
+import Campsite from '@/components/pages/Campsite';
 import Leisure from '@/components/pages/Leisure';
 import Facilities from '@/components/pages/Facilities';
 import Rentals from '@/components/pages/Rentals';
@@ -11,10 +11,10 @@ const routes = [
   {
     path: '/:lang/camping',
     name: 'FR_Camping',
-    component: Campground,
+    component: Campsite,
     meta: {
       nl: 'camping',
-      en: 'campground',
+      en: 'campsite',
     },
   },
   {

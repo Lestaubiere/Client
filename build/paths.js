@@ -40,7 +40,7 @@ module.exports = [
     changeFreq: 'monthly'
   },
   {
-    path: '/en/campground',
+    path: '/en/campsite',
     priority: '0.6',
     changeFreq: 'monthly'
   },

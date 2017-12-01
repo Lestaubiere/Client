@@ -1,8 +1,8 @@
 <template>
   <div id="secondary-menu" class="secondary-menu">
-    <l-secondary-menu-item :label="$t('menu.campground.label')"
-                           :path="$t('menu.campground.path')"
-                           :name="'campground'"
+    <l-secondary-menu-item :label="$t('menu.campsite.label')"
+                           :path="$t('menu.campsite.path')"
+                           :name="'campsite'"
                            :color="'#78BF45'"></l-secondary-menu-item>
     <l-secondary-menu-item :label="$t('menu.rentals.label')"
                            :path="$t('menu.rentals.path')"

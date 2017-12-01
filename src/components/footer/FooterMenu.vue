@@ -6,9 +6,9 @@
                   class="footer-menu__item">
         {{ $t("menu.home.label") }}
       </router-link>
-      <router-link :to="$t('menu.campground.path')"
+      <router-link :to="$t('menu.campsite.path')"
                   class="footer-menu__item">
-        {{ $t("menu.campground.label") }}
+        {{ $t("menu.campsite.label") }}
       </router-link>
       <router-link :to="$t('menu.leisure.path')"
                   class="footer-menu__item">

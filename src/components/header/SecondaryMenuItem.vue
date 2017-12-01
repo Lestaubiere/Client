@@ -57,8 +57,8 @@
     transition: transform .3s ease;
   }
 
-  .secondary-menu-item__icon.secondary-menu-item__icon--campground {
-    background-image: url('../../assets/icons/campground.svg');
+  .secondary-menu-item__icon.secondary-menu-item__icon--campsite {
+    background-image: url('../../assets/icons/campsite.svg');
   }
 
   .secondary-menu-item__icon.secondary-menu-item__icon--rentals {

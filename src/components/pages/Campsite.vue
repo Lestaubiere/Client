@@ -1,6 +1,6 @@
 <template>
-  <div class="campground container">
-    <div class="campground__section campground__section--fototour">
+  <div class="campsite container">
+    <div class="campsite__section campsite__section--fototour">
       <h1>{{ phototourSectionTitle }} - <span>{{ phototourSectionSubtitle }}</span></h1>
       <svg viewBox="0 0 1250 950"
           xmlns="http://www.w3.org/2000/svg"
@@ -18,9 +18,9 @@
       </svg>
     </div>
     <div class="separator" />
-    <div class="campground__section">
-      <div class="campground__cards-container">
-        <card class="campground__card"
+    <div class="campsite__section">
+      <div class="campsite__cards-container">
+        <card class="campsite__card"
                 v-for="(card, index) in cards"
                 :key="index"
                 :title="card.name"
@@ -40,7 +40,7 @@
   import Card from '@/components/core/Card';
 
   export default {
-    name: 'l-campground',
+    name: 'l-campsite',
 
     metaInfo() {
       return {
@@ -50,16 +50,16 @@
 
     computed: {
       metaTitle() {
-        return this.$i18n.t('campground.meta.title');
+        return this.$i18n.t('campsite.meta.title');
       },
       phototourSectionTitle() {
-        return this.$i18n.t('campground.sections.phototour.title');
+        return this.$i18n.t('campsite.sections.phototour.title');
       },
       phototourSectionSubtitle() {
-        return this.$i18n.t('campground.sections.phototour.subtitle');
+        return this.$i18n.t('campsite.sections.phototour.subtitle');
       },
       cards() {
-        return this.$i18n.t('campground.cards');
+        return this.$i18n.t('campsite.cards');
       },
       phototour() {
         return phototour;
@@ -74,50 +74,50 @@
 </script>
 
 <style scoped>
-  .campground {
+  .campsite {
     padding: 0 25px;
   }
 
-  .campground h1 {
+  .campsite h1 {
     display: flex;
     align-items: center;
     margin-bottom: 75px;
   }
 
-  .campground h1 span {
+  .campsite h1 span {
     margin-left: 15px;
     font-size: 0.5em;
   }
 
-  .campground__cards-container {
+  .campsite__cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .campground__card {
+  .campsite__card {
     flex-basis: 30%;
   }
 
   @media (max-width: 960px) {
-    .campground__card {
+    .campsite__card {
       flex-basis: calc(50% - 100px);
     }
   }
 
   @media (max-width: 800px) {
-    .campground__section--fototour,
+    .campsite__section--fototour,
     .separator {
       display: none;
     }
 
-    .campground__card {
+    .campsite__card {
       flex-basis: 100%;
     }
   }
 
   @media (max-width: 600px) {
-    .campground {
+    .campsite {
       padding: 0 10px;
     }
   }

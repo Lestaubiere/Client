@@ -3,9 +3,9 @@
     "label": "Home",
     "path": "/en/"
   },
-  "campground": {
-    "label": "The campground",
-    "path": "/en/campground"
+  "campsite": {
+    "label": "The campsite",
+    "path": "/en/campsite"
   },
   "leisure": {
     "label": "Leisure",

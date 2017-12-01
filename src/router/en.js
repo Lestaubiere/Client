@@ -1,4 +1,4 @@
-import Campground from '@/components/pages/Campground';
+import Campsite from '@/components/pages/Campsite';
 import Leisure from '@/components/pages/Leisure';
 import Facilities from '@/components/pages/Facilities';
 import Rentals from '@/components/pages/Rentals';
@@ -9,17 +9,17 @@ import BookingMentions from '@/components/pages/BookingMentions';
 
 const routes = [
   {
-    path: '/:lang/campground',
-    name: 'EN_Campground',
-    component: Campground,
+    path: '/:lang/campsite',
+    name: 'EN_Campsite',
+    component: Campsite,
     meta: {
       nl: 'camping',
       fr: 'camping',
     },
   },
   {
-    path: '/campground',
-    redirect: '/en/campground',
+    path: '/campsite',
+    redirect: '/en/campsite',
   },
   {
     path: '/:lang/leisure',
