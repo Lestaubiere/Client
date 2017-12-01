@@ -15,7 +15,7 @@ deployment_to_staging:
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
     - ssh deploy@lestaubiere.bramvanosta.com /var/www/lestaubiere/scripts/installStaging.sh
   only:
-    - master
+    - development
   environment:
     name: staging
     url: https://lestaubiere.bramvanosta.com
