@@ -22,7 +22,8 @@
         <p class="paragraph"
             v-for="(paragraph, index) in vacaturesContentTwo"
             :key="index">
-          {{ paragraph }}
+          {{ paragraph.replace(/\{(mail)\}/g, '') }}
+          <a v-if="paragraph.match(/\{(mail)\}/g)" class="vacatures__link" href="mailto:lestaubiere@gmail.com">lestaubiere@gmail.com</a>
         </p>
       </div>
       <div class="vacatures__image">
@@ -79,6 +80,15 @@
 
   .vacatures__image img {
     box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .vacatures__link {
+    color: #D9237F;
+    text-decoration: none;
+  }
+
+  .vacatures__link:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 600px) {
