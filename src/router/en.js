@@ -14,7 +14,7 @@ const routes = [
     component: Campsite,
     meta: {
       nl: 'camping',
-      fr: 'camping',
+      fr: 'le-camping',
     },
   },
   {

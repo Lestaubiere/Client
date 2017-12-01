@@ -35,7 +35,7 @@ module.exports = [
     changeFreq: 'monthly'
   },
   {
-    path: '/fr/camping',
+    path: '/fr/le-camping',
     priority: '0.6',
     changeFreq: 'monthly'
   },

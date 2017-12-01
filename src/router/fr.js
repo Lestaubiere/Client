@@ -9,7 +9,7 @@ import BookingMentions from '@/components/pages/BookingMentions';
 
 const routes = [
   {
-    path: '/:lang/camping',
+    path: '/:lang/le-camping',
     name: 'FR_Camping',
     component: Campsite,
     meta: {
