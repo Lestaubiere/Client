@@ -38,6 +38,11 @@
           "image_path": "/static/img/leisure/Volleyball.jpg",
           "name": "Volleyball",
           "description": ""
+        },
+        {
+          "image_path": "/static/img/leisure/Fishing.jpg",
+          "name": "Fishing",
+          "description": ""
         }
       ]
     },

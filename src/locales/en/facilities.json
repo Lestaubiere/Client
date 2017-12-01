@@ -96,11 +96,6 @@
           "image_path": "/static/img/facilities/TV.jpg",
           "name": "TV",
           "description": ""
-        },
-        {
-          "image_path": "/static/img/facilities/Wifi.jpg",
-          "name": "Wifi",
-          "description": ""
         }
       ]
     }
