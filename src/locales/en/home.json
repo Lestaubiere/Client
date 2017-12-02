@@ -11,10 +11,18 @@
         "You have disposal of very spacious sites (all >160 m2) and modern sanitary. We provide you a nice terrace with a view at the pool (with paddling pool for the young children), the playground and the lake with its beach. During the season we offer animation for both children and adults, organised by the Lestaubière team, staffed by Dutch students.",
         "We also offer you different rental opportunities of camping. You can choose from our recent Mobil-homes and a number of completely equipped tents (“lodge and safari”).",
         "The camping is situated between the historical cities Bergerac and Perigueux (capital of the Department of Dordogne). Nearby you find several “wine chateaux”, caves, castles and the river Dordogne. To fulfil your human needs the famous French supermarkets are only at a short distance.",
+        "You can follow/like our {facebook} to keep up to date with the latest news about the campsite and its surroundings. During the season we also post here new photos on a regular basis.",
         "We are prepared to provide you a carefree and relaxed stay, so that you may return full of fresh energy.",
         "We are pleased to welcome you at Lestaubière; a jewel in the Dordogne by Dutch owners.",
         "Family van Osta"
       ],
+      "links": {
+        "facebook": {
+          "text": "Facebook page",
+          "link": "https://www.facebook.com/CampingLestaubiere/",
+          "target": "_blank"
+        }
+      },
       "slider": [
         {
           "image_path": "/static/img/home/Entry.jpg",

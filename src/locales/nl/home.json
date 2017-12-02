@@ -11,10 +11,18 @@
         "U heeft de beschikking over zeer ruime kampeerplaatsen (alle >160m2) met moderne sanitair en er is een prachtig terras met uitzicht op het zwembad met kinderbad, de speeltuin en het meer met het strandje. In het hoogseizoen is er een uitgebreid animatieprogramma voor kinderen en volwassenen, verzorgd door ons Lestaubière-team, bestaande uit Nederlandse studenten.",
         "Ook zijn er diverse accommodaties te huur op onze camping. Zo staan er op de camping 4 moderne mobilhomes en 12 compleet ingerichte tenten (safari/Lodge).",
         "De camping ligt tussen de historische steden Bergerac en Perigueux (hoofdstad van de Dordogne). Vlakbij zijn er wijnchateaux, grotten, kastelen en de rivier de Dordogne en voor de inwendige mens de bekende hypermarches op korte afstand.",
+        "Door onze {facebook} te liken/volgend kun je op de hoogte te blijven van laatste nieuwtjes over de camping en omgeving. Ook plaatsen we hier tijdens het seizoen regelmatig foto’s om zo alvast leuke sfeerimpressies te krijgen.",
         "Wij staan klaar om u een zorgeloze en ontspannen vakantie te bezorgen, zodat u weer vol energie naar huis gaat.",
         "We begroeten u graag op Lestaubière, een pareltje in de Dordogne met Nederlandse eigenaren.",
         "Familie van Osta"
       ],
+      "links": {
+        "facebook": {
+          "text": "facebookpagina",
+          "link": "https://www.facebook.com/CampingLestaubiere/",
+          "target": "_blank"
+        }
+      },
       "slider": [
         {
           "image_path": "/static/img/home/Entry.jpg",

@@ -10,7 +10,20 @@
       <p class="paragraph"
           v-for="(paragraph, index) in section.content"
           :key="index">
-        {{ paragraph }}
+        <span v-if="paragraph.match(/\{(.*?)\}/g)">
+          {{ paragraph.split(/\{(.*?)\}/g)[0] }}
+          <a
+            class="section__link"
+            :target="section.links[paragraph.split(/\{(.*?)\}/g)[1]].target"
+            :href="section.links[paragraph.split(/\{(.*?)\}/g)[1]].link"
+          >
+            {{ section.links[paragraph.split(/\{(.*?)\}/g)[1]].text }}
+          </a>
+          {{ paragraph.split(/\{(.*?)\}/g)[2] }}
+        </span>
+        <span v-else>
+          {{ paragraph }}
+        </span>
       </p>
       <ul class="list" v-if="Array.isArray(section.list)">
         <li class="list__item"
@@ -96,6 +109,15 @@
 
   .section__action:not(:last-of-type) {
     margin-right: 15px;
+  }
+
+  .section__link {
+    color: #D9237F;
+    text-decoration: none;
+  }
+
+  .section__link:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 960px) {
