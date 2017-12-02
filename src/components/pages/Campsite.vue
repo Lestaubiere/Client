@@ -1,7 +1,8 @@
 <template>
   <div class="campsite container">
     <div class="campsite__section campsite__section--fototour">
-      <h1>{{ $t('campsite.sections.phototour.title') }} - <span>{{ $t('campsite.sections.phototour.subtitle') }}</span></h1>
+      <h1>{{ $t('campsite.sections.phototour.title') }}</h1>
+      <p class="paragraph campsite__content">{{ $t('campsite.sections.phototour.content') }}</p>
       <svg viewBox="0 0 1250 950"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -79,6 +80,10 @@
   .campsite h1 {
     display: flex;
     align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .campsite__content {
     margin-bottom: 75px;
   }
 

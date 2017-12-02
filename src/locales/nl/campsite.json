@@ -5,7 +5,7 @@
   "sections": {
     "phototour": {
       "title": "Fototour",
-      "subtitle": "Klik op de peilen om een photo van die locatie te zien"
+      "content": "Door de pijlen op de plattegrond aan te klikken  kun je een (foto)tour maken over de camping. Zo krijg je een nog beter beeld van de camping."
     },
     "map": {
       "title": "Plattegrond"

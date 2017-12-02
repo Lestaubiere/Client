@@ -5,7 +5,7 @@
   "sections": {
     "phototour": {
       "title": "Phototour",
-      "subtitle": "Click on the dots to view a picture of that place"
+      "content": "Just click on the arrows to start the (photo)tour of the campsite. So you will have an even better picture of the site."
     },
     "map": {
       "title": "Map"

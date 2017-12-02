@@ -5,7 +5,7 @@
   "sections": {
     "phototour": {
       "title": "Phototour",
-      "subtitle": "Cliquez sur les flèches pour afficher une photo"
+      "content": "Cliquez sur les flèches du plan du camping pour faire une visite du camping afin d'avoir une meilleure vision de l'ambiance du camping."
     },
     "map": {
       "title": "Plan"
