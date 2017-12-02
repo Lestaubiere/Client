@@ -88,11 +88,6 @@
           "description": ""
         },
         {
-          "image_path": "/static/img/facilities/Games.jpg",
-          "name": "Jeux",
-          "description": ""
-        },
-        {
           "image_path": "/static/img/facilities/TV.jpg",
           "name": "Télévision",
           "description": ""

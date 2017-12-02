@@ -88,11 +88,6 @@
           "description": ""
         },
         {
-          "image_path": "/static/img/facilities/Games.jpg",
-          "name": "Recreatie",
-          "description": ""
-        },
-        {
           "image_path": "/static/img/facilities/TV.jpg",
           "name": "TV",
           "description": ""
