@@ -1,6 +1,6 @@
 const state = {
   loading: false,
-  title: '',
+  title: 'family',
   name: '',
   address: '',
   zipCode: '',
@@ -10,8 +10,8 @@ const state = {
   phoneNumber: '',
   people: [''],
   numberOfPets: '',
-  equipment: '',
-  electricity: '',
+  equipment: 'tent',
+  electricity: 'none',
   dateOfArrival: '',
   dateOfDeparture: '',
   comment: '',
