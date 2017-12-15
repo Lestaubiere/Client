@@ -135,7 +135,8 @@
       }
     },
     "availabilities": {
-      "title": "Beschikbaarheid van de mobilhomes",
+      "title": "Beschikbaarheid van onze mobilhomes in het hoogseizoen",
+      "subtitle": "In het voor-en na-seizoen zijn er nog ruim voldoende mogelijkheden.",
       "table": {
         "header": [
           {},

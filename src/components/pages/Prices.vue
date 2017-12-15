@@ -55,6 +55,7 @@
     <div class="separator"></div>
     <div class="prices__section">
       <h2>{{ availabilitiesSectionTitle }}</h2>
+      <p class="paragraph prices__section-subtitle">{{ availabilitiesSectionSubtitle }}</p>
       <l-availabilities-table :header="availabilitiesSectionTableHeader" :rows="availabilitiesSectionTableRows" />
     </div>
   </div>
@@ -113,6 +114,9 @@
       availabilitiesSectionTitle() {
         return this.$i18n.t('prices.sections.availabilities.title');
       },
+      availabilitiesSectionSubtitle() {
+        return this.$i18n.t('prices.sections.availabilities.subtitle');
+      },
       availabilitiesSectionTableHeader() {
         return this.$i18n.t('prices.sections.availabilities.table.header');
       },
@@ -147,6 +151,10 @@
     max-width: 800px;
     margin: 35px auto;
     text-align: center;
+  }
+
+  .prices__section-subtitle {
+    color: #F44336;
   }
 
   @media (max-width: 600px) {

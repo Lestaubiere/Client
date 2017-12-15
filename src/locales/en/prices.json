@@ -132,7 +132,8 @@
       }
     },
     "availabilities": {
-      "title": "Availability of the mobilhomes",
+      "title": "Availability of our mobilhomes in high season",
+      "subtitle": "In low season, we still have plenty of availabilities.",
       "table": {
         "header": [
           {},

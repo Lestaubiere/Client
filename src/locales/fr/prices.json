@@ -132,7 +132,8 @@
       }
     },
     "availabilities": {
-      "title": "Disponibilités des mobilhomes",
+      "title": "Disponibilités de nos mobilhomes en haute saison",
+      "subtitle": "En basse saison, nous avons encore de nombreuses disponibilités.",
       "table": {
         "header": [
           {},
