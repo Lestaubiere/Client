@@ -60,7 +60,9 @@ const actions = {
     formData.append('date_departure', moment(dateOfDeparture).format('DD-MM-YYYY'));
     formData.append('comment', comment);
     people.forEach((person) => {
-      formData.append('people[]', moment(person).format('DD-MM-YYYY'));
+      if (person !== '') {
+        formData.append('people[]', moment(person).format('DD-MM-YYYY'));
+      }
     });
 
     fetch(`${LESATUBIERE_API_URL}/booking`, { method: 'POST', body: formData })
