@@ -168,7 +168,7 @@
         "rows": [
           {
             "label": "Mobilhome 1",
-            "availabilities": [false, false, false, false, false, false, true, true]
+            "availabilities": [true, true, false, false, false, false, true, true]
           },
           {
             "label": "Mobilhome 2",
@@ -176,7 +176,7 @@
           },
           {
             "label": "Mobilhome 3",
-            "availabilities": [true, true, false, false, false, false, false, true]
+            "availabilities": [false, false, false, false, false, false, false, true]
           },
           {
             "label": "Mobilhome 4",
