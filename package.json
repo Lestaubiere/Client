@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "decode-google-map-polyline": "^1.0.1",
+    "es6-promise": "^4.2.4",
     "moment": "^2.19.2",
     "reset-css": "^2.2.1",
     "vue": "^2.3.3",
