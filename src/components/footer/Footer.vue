@@ -27,37 +27,26 @@
         <div class="footer__copyright">© 2017 - SARL Lestaubière</div>
       </div>
     </div>
-    <cookie-law :message="cookieMessage" :buttonText="cookieButton" />
+    <l-cookie-law />
   </footer>
 </template>
 
 <script>
-  import CookieLaw from 'vue-cookie-law';
-
   import LFooterMenu from '@/components/footer/FooterMenu';
   import LFooterContact from '@/components/footer/FooterContact';
   import LZooverWidget from '@/components/footer/ZooverWidget';
   import LFacebookWidget from '@/components/footer/FacebookWidget';
+  import LCookieLaw from '@/components/core/CookieLaw';
 
   export default {
     name: 'l-footer',
 
-    computed: {
-      cookieMessage() {
-        return this.$i18n.t('footer.cookie.message');
-      },
-
-      cookieButton() {
-        return this.$i18n.t('footer.cookie.button');
-      },
-    },
-
     components: {
-      CookieLaw,
       LFooterMenu,
       LFooterContact,
       LZooverWidget,
       LFacebookWidget,
+      LCookieLaw,
     },
   };
 </script>

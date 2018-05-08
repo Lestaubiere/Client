@@ -2,7 +2,8 @@
   "zoover": "https://www.zoover.nl/frankrijk/aquitaine/pont-saint-mamet-dordogne/lestaubiere/camping",
   "facebook": "Volg ons op Facebook",
   "cookie": {
-    "message": "Wij maken op deze website gebruik van cookies.",
-    "button": "Sluiten"
+    "message": "Wij maken op deze website gebruik van Google Analytics. Door dit te accepteren, machtigt u ons om een cookie te plaatsen.",
+    "denyButton": "Weigeren",
+    "acceptButton": "Accepteren"
   }
 }
