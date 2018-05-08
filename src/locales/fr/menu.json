@@ -37,7 +37,11 @@
   },
   "legalMentions": {
     "label": "Mentions légales",
-    "path": "/nl/mentions-legales"
+    "path": "/fr/mentions-legales"
+  },
+  "privacy": {
+    "label": "Privacy",
+    "path": "/fr/privacy"
   },
   "bookingMentions": {
     "label": "Conditions de réservation",

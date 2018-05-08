@@ -8,7 +8,8 @@
     "messages": {
       "initial": "Enter a departure to find the best route to Camping Lestaubière.",
       "not_found": "No directions were found from this departure.",
-      "error": "An error occured when trying to find the directions. Please try again later."
+      "error": "An error occured when trying to find the directions. Please try again later.",
+      "consent": "To use Google Maps you need to accept the usage of cookies. You can accept the usage of cookies {here}."
     }
   },
   "form": {

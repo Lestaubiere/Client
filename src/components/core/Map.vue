@@ -1,6 +1,6 @@
 <template>
   <div class="map-container">
-    <div class="map">
+    <div class="map" v-if="hasConsent">
       <gmap-map
         ref="map"
         :center="center"
@@ -17,6 +17,13 @@
           :path="decodedPath"
           :options="{ strokeColor: '#34b3fe', strokeWeight: 5 }" />
       </gmap-map>
+    </div>
+    <div class="map__consent" v-else>
+      <p>
+        {{ consentMessage[0] }}
+        <router-link class="map__link" :to="$t('menu.privacy.path')">{{ consentMessage[1] }}</router-link>
+        {{ consentMessage[2] }}
+      </p>
     </div>
     <l-directions />
   </div>
@@ -64,7 +71,13 @@
       decodedPath() {
         return decodePolyline(this.line);
       },
+
+      consentMessage() {
+        return this.$i18n.t('contact.map.messages.consent').split(/\{(.*?)\}/g);
+      },
+
       ...mapState({
+        hasConsent: state => state.app.hasConsent,
         markers: state => state.map.markers,
         line: state => state.map.line,
         bounds: state => state.map.bounds,
@@ -87,6 +100,30 @@
   .map {
     position: relative;
     flex-basis: calc(100% - 300px);
+    height: 450px;
+  }
+
+  .map__consent {
+    position: relative;
+    flex-basis: calc(100% - 300px);
+    height: 450px;
+    display: flex;
+    align-items: center;
+  }
+
+  .map__consent p {
+    margin: 0 35px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .map__link {
+    color: #D9237F;
+    text-decoration: none;
+  }
+
+  .map__link:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 960px) {

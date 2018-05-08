@@ -8,6 +8,7 @@ import { LOCALES } from '@/config/config';
 import Home from '@/components/pages/Home';
 import Contact from '@/components/pages/Contact';
 import LegalMentions from '@/components/pages/LegalMentions';
+import Privacy from '@/components/pages/Privacy';
 import NotFound from '@/components/pages/NotFound';
 
 import NLroutes from './nl';
@@ -51,6 +52,16 @@ const router = new Router({
         nl: 'mentions-legales',
         fr: 'mentions-legales',
         en: 'mentions-legales',
+      },
+    },
+    {
+      path: '/:lang/privacy',
+      name: 'Privacy',
+      component: Privacy,
+      meta: {
+        nl: 'privacy',
+        fr: 'privacy',
+        en: 'privacy',
       },
     },
     {

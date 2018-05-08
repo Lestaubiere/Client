@@ -8,7 +8,8 @@
     "messages": {
       "initial": "Entrez une adresse de départ et trouvez le meilleur itinéraire vers Camping Lestaubière.",
       "not_found": "Aucun itinéraire n'a été trouvé pour ce point de départ.",
-      "error": "Une erreur est survenue lors de la recherche d'un itinéraire. Veuillez réessayer plus tard."
+      "error": "Une erreur est survenue lors de la recherche d'un itinéraire. Veuillez réessayer plus tard.",
+      "consent": "Afin d'utiliser la fonctionnalité Google Maps, vous devez accepter l'utilisation des cookies. Vous pouvez accepter l'utilisation des cookies {ici}."
     }
   },
   "form": {

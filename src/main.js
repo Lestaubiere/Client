@@ -7,7 +7,6 @@ import App from '@/App';
 import router from '@/router';
 import store from '@/store';
 import i18n from '@/plugins/i18n';
-import googleMaps from '@/plugins/googleMaps';
 
 Vue.config.productionTip = false;
 
@@ -17,6 +16,5 @@ new Vue({
   router,
   store,
   i18n,
-  googleMaps,
   render: h => h(App),
 });

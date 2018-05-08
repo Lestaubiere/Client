@@ -23,6 +23,10 @@
                         class="footer__link">
               {{ $t("menu.legalMentions.label") }}
             </router-link>
+          <router-link :to="$t('menu.privacy.path')"
+                        class="footer__link">
+              {{ $t("menu.privacy.label") }}
+            </router-link>
         </div>
         <div class="footer__copyright">© 2017 - SARL Lestaubière</div>
       </div>
@@ -79,6 +83,7 @@
   }
 
   .footer__link {
+    margin-right: 25px;
     color: rgba(255, 255, 255, .25);
     text-decoration: none;
   }

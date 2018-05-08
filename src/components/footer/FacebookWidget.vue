@@ -28,29 +28,53 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
+
   import { FB_APP_ID } from '@/config/config';
 
   export default {
     name: 'l-facebook-widget',
 
-    mounted() {
-      window.fbAsyncInit = () => {
-        FB.init({
-          appId: FB_APP_ID,
-          xfbml: true,
-          version: 'v2.11',
-        });
-      };
+    computed: {
+      ...mapState({
+        hasConsent: state => state.app.hasConsent,
+      }),
+    },
 
-      // eslint-disable-next-line func-names
-      (function (d, s, id) {
-        let js = {};
-        const fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = '//connect.facebook.net/en_US/sdk.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+    watch: {
+      hasConsent(newConsent, oldConsent) {
+        if (!oldConsent && newConsent) {
+          this.loadFacebook();
+        }
+      },
+    },
+
+    mounted() {
+      if (this.hasConsent) {
+        this.loadFacebook();
+      }
+    },
+
+    methods: {
+      loadFacebook() {
+        window.fbAsyncInit = () => {
+          FB.init({
+            appId: FB_APP_ID,
+            xfbml: true,
+            version: 'v2.11',
+          });
+        };
+  
+        // eslint-disable-next-line func-names
+        (function (d, s, id) {
+          let js = {};
+          const fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = '//connect.facebook.net/en_US/sdk.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      },
     },
   };
 </script>

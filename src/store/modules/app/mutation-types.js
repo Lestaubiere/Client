@@ -1,0 +1,2 @@
+export const ACCEPT_CONSENT = 'ACCEPT_CONSENT';
+export const DENY_CONSENT = 'DENY_CONSENT';

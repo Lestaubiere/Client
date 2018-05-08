@@ -43,6 +43,10 @@
     "label": "Mentions légales",
     "path": "/nl/mentions-legales"
   },
+  "privacy": {
+    "label": "Privacy",
+    "path": "/nl/privacy"
+  },
   "bookingMentions": {
     "label": "Reserverings Voorwaarden",
     "path": "/nl/reserverings-voorwaarden"

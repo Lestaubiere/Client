@@ -9,7 +9,8 @@
     "messages": {
       "initial": "Vul een vertrekpunt in en vind de beste route naar Camping Lestaubière.",
       "not_found": "Er kon geen route gevonden worden vanaf het gekozen vertrekpunt.",
-      "error": "Er is iets mis gegaan met het vinden van een route. Probeer later opnieuw."
+      "error": "Er is iets mis gegaan met het vinden van een route. Probeer later opnieuw.",
+      "consent": "Om gebruik te maken van Google Maps dient u het gebruik van cookies te accepteren. U kunt het gebruik van cookies {hier} accepteren."
     }
   },
   "form": {

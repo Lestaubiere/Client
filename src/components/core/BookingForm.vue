@@ -12,6 +12,8 @@
         {{ conditions[0] }}
         <router-link :to="$t('menu.bookingMentions.path')">{{ conditions[1] }}</router-link>
         {{ conditions[2] }}
+        <router-link :to="$t('menu.privacy.path')">{{ conditions[3] }}</router-link>
+        {{ conditions[4] }}
       </p>
       <div class="booking-form__actions">
         <div class="booking-form__loader">

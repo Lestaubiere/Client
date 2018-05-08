@@ -1,7 +1,11 @@
 <template>
   <transition appear name="slideFromBottom">
     <div class="cookie-law" v-if="isOpen">
-      <div class="cookie-law__content">{{ message }}</div>
+      <div class="cookie-law__content">
+        {{ message[0] }}
+        <router-link class="map__link" :to="$t('menu.privacy.path')">{{ message[1] }}</router-link>
+        {{ message[2] }}
+      </div>
       <div class="cookie-law__actions">
         <button class="cookie-law__button" @click="handleDeny">{{ denyButton }}</button>
         <button class="cookie-law__button" @click="handleAccept">{{ acceptButton }}</button>
@@ -12,12 +16,13 @@
 
 <script>
   import Vue from 'vue';
+  import { mapActions, mapState } from 'vuex';
   import VueAnalytics from 'vue-analytics';
+  import * as VueGoogleMaps from 'vue2-google-maps';
   import Cookies from 'js-cookie';
 
   import router from '@/router';
-
-  import { GA_PROPERTY, GA_COOKIE_NAMES } from '@/config/config';
+  import { GOOGLEMAPS_API_KEY } from '@/config/config';
 
   export default {
     name: 'l-cookie-law',
@@ -30,7 +35,7 @@
 
     computed: {
       message() {
-        return this.$i18n.t('footer.cookie.message');
+        return this.$i18n.t('footer.cookie.message').split(/\{(.*?)\}/g);
       },
 
       denyButton() {
@@ -40,16 +45,28 @@
       acceptButton() {
         return this.$i18n.t('footer.cookie.acceptButton');
       },
+
+      ...mapState({
+        hasConsent: state => state.app.hasConsent,
+      }),
+    },
+
+    watch: {
+      hasConsent(newConsent, oldConsent) {
+        if (!oldConsent && newConsent) {
+          this.startServices();
+        }
+      },
     },
 
     mounted() {
       const consentCookie = Cookies.getJSON('hasConsent');
       const doNotTrack = navigator.doNotTrack || navigator.msDoNotTrack;
 
-      if (doNotTrack === 'yes' || doNotTrack === '1' || consentCookie === false) {
+      if (this.hasConsent) {
+        this.startServices();
+      } else if (doNotTrack === 'yes' || doNotTrack === '1' || consentCookie === false) {
         this.deny();
-      } else if (consentCookie === true) {
-        this.startGoogleAnalytics();
       } else if (doNotTrack === 'no' || doNotTrack === '0') {
         this.accept();
       } else {
@@ -59,22 +76,23 @@
 
     methods: {
       accept() {
-        Cookies.set('hasConsent', true, { expires: 365 });
-
-        this.startGoogleAnalytics();
+        this.acceptConsent();
       },
 
       deny() {
-        Cookies.set(`ga-disable-${GA_PROPERTY}`, true, { expires: 395 });
-        window[`ga-disable-${GA_PROPERTY}`] = true;
-        Cookies.set('hasConsent', false, { expires: 395 });
-        GA_COOKIE_NAMES.forEach(cookieName => Cookies.remove(cookieName));
+        this.denyConsent();
       },
 
-      startGoogleAnalytics() {
+      startServices() {
         Vue.use(VueAnalytics, {
           id: 'UA-39908849-3',
           router,
+        });
+
+        Vue.use(VueGoogleMaps, {
+          load: {
+            key: GOOGLEMAPS_API_KEY,
+          },
         });
       },
 
@@ -87,6 +105,11 @@
         this.isOpen = false;
         this.accept();
       },
+
+      ...mapActions({
+        acceptConsent: 'acceptConsent',
+        denyConsent: 'denyConsent',
+      }),
     },
   };
 </script>
@@ -113,6 +136,15 @@
     margin-right: 35px;
     color: #ffffff;
     line-height: 26px;
+  }
+
+  .cookie-law__content a {
+    color: #D9237F;
+    text-decoration: none;
+  }
+
+  .cookie-law__content a:hover {
+    text-decoration: underline;
   }
 
   .cookie-law__actions {
