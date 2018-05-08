@@ -1,4 +1,5 @@
-import 'es6-promise/auto';
+import 'babel-polyfill';
+import 'whatwg-fetch';
 
 import Vue from 'vue';
 
@@ -6,7 +7,6 @@ import App from '@/App';
 import router from '@/router';
 import store from '@/store';
 import i18n from '@/plugins/i18n';
-import analytics from '@/plugins/analytics';
 import googleMaps from '@/plugins/googleMaps';
 
 Vue.config.productionTip = false;
@@ -17,7 +17,6 @@ new Vue({
   router,
   store,
   i18n,
-  analytics,
   googleMaps,
   render: h => h(App),
 });
