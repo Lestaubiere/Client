@@ -1,7 +1,7 @@
 export const GOOGLEMAPS_API_KEY = 'AIzaSyBrXiLQPyH1nDSwB5iKtbw4rrIeHbgCkBU';
 export const LESTAUBIERE_COORDINATES = { lat: 44.992392, lng: 0.598711 };
 
-export const GA_PROPERTY = 'UA-39908849-3';
+export const GA_PROPERTY = 'UA-39908849-2';
 export const GA_COOKIE_NAMES = ['__utma', '__utmb', '__utmc', '__utmz', '_ga', '_gat', '_gid'];
 
 export const FB_APP_ID = '236774400075192';
