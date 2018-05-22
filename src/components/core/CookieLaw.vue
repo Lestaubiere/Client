@@ -22,7 +22,7 @@
   import Cookies from 'js-cookie';
 
   import router from '@/router';
-  import { GOOGLEMAPS_API_KEY } from '@/config/config';
+  import { GOOGLEMAPS_API_KEY, GA_PROPERTY } from '@/config/config';
 
   export default {
     name: 'l-cookie-law',
@@ -85,7 +85,7 @@
 
       startServices() {
         Vue.use(VueAnalytics, {
-          id: 'UA-39908849-3',
+          id: GA_PROPERTY,
           router,
         });
 
