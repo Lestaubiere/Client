@@ -183,13 +183,21 @@
     transition: transform .4s ease-in;
   }
 
+  @media (max-width: 1100px) {
+    .cookie-law {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cookie-law__content {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
   @media (max-width: 800px) {
     .cookie-law__content {
       line-height: 24px;
-    }
-
-    .cookie-law__actions {
-      margin: 5px 0 0;
     }
 
     .cookie-law__button {

@@ -176,5 +176,9 @@
     .privacy {
       padding: 0 10px;
     }
+
+    .privacy__actions button {
+      margin: 5px 0;
+    }
   }
 </style>
