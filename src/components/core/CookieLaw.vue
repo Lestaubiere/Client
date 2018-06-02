@@ -17,7 +17,6 @@
 <script>
   import Vue from 'vue';
   import { mapActions, mapState } from 'vuex';
-  import VueAnalytics from 'vue-analytics';
   import * as VueGoogleMaps from 'vue2-google-maps';
   import Cookies from 'js-cookie';
 
@@ -84,11 +83,6 @@
       },
 
       startServices() {
-        Vue.use(VueAnalytics, {
-          id: GA_PROPERTY,
-          router,
-        });
-
         Vue.use(VueGoogleMaps, {
           load: {
             key: GOOGLEMAPS_API_KEY,
