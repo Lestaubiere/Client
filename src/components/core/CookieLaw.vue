@@ -20,8 +20,7 @@
   import * as VueGoogleMaps from 'vue2-google-maps';
   import Cookies from 'js-cookie';
 
-  import router from '@/router';
-  import { GOOGLEMAPS_API_KEY, GA_PROPERTY } from '@/config/config';
+  import { GOOGLEMAPS_API_KEY } from '@/config/config';
 
   export default {
     name: 'l-cookie-law',
