@@ -13,8 +13,8 @@
         </ul>
       </div>
       <div class="prices__action-container"
-         v-for="(action, index) in pitchSectionActions"
-         :key="index">
+          v-for="(action, index) in pitchSectionActions"
+          :key="index">
         <router-link v-if="action.page"
                       class="button"
                       :to="`${action.page}`" >
@@ -43,8 +43,8 @@
         </p>
       </div>
       <div class="prices__action-container"
-         v-for="(action, index) in mobilhomeSectionActions"
-         :key="index">
+          v-for="(action, index) in mobilhomeSectionActions"
+          :key="index">
         <router-link v-if="action.page"
                       class="button"
                       :to="`${action.page}`" >
@@ -55,7 +55,7 @@
     <div class="separator"></div>
     <div class="prices__section">
       <h2>{{ availabilitiesSectionTitle }}</h2>
-      <p class="paragraph prices__section-subtitle">{{ availabilitiesSectionSubtitle }}</p>
+      <!-- <p class="paragraph prices__section-subtitle">{{ availabilitiesSectionSubtitle }}</p> -->
       <l-availabilities-table :header="availabilitiesSectionTableHeader" :rows="availabilitiesSectionTableRows" />
     </div>
   </div>

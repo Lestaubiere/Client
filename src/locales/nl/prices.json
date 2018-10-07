@@ -6,7 +6,7 @@
     "pitch": {
       "title": "Tarieven kampeerplaats",
       "list": [
-        "In de periode tot 7 juli en vervolgens weer vanaf 25 augustus op vertoon van ACSI-card of ANWB-CampingKeycard geldt het speciale overnachtingstarief van €17,00 (incl. campingplaats, 2 personen, elektra), met speciale actie 7=6, 14=12, 21=18 etc..!",
+        "In de periode tot 7 juli en vervolgens weer vanaf 25 augustus op vertoon van ACSI-card of ANWB-CampingKeycard geldt het speciale overnachtingstarief van €18,00 (incl. campingplaats, 2 personen, elektra), met speciale actie 7=6, 14=12, 21=18 etc..!",
         "Wij vragen een aanbetaling van 25% van de totale verblijfskosten.",
         "Reserveringskosten bedragen €20,- per boeking/gezin.",
         "De resterende verblijfkosten dienen bij aankomst betaald te worden of, indien gewenst, voor aankomstdatum te worden overgemaakt naar onze betaalrekening in Nederland: ABN AMRO rekening NL89ABNA0495987506 tnv B.F.M VAN OSTA, Roosendaal, Nederland.",
@@ -23,23 +23,23 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["14/07 - 25/08"]
+            "dates": ["13/07 - 24/08"]
           },
           {
             "label": "Middenseizoen",
-            "dates": ["23/06 - 14/07"]
+            "dates": ["23/06 - 13/07"]
           },
           {
             "label": "Laagseizoen",
-            "dates": ["15/04 - 23/06", "25/08 - 30/09"]
+            "dates": ["15/04 - 22/06", "24/08 - 30/09"]
           }
         ],
         "rows": [
           [
             "Kampeerplaats (excl. personen)",
-            "€13,00",
+            "€14,00",
             "€10,00",
-            "€7,00"
+            "€8,00"
           ],
           [
             "Personen (7 jaar en ouder)",
@@ -73,9 +73,15 @@
           ],
           [
             "Toeristenbelasting > 18j",
-            "€0,44",
-            "€0,44",
-            "€0,44"
+            "€0,50",
+            "€0,50",
+            "€0,50"
+          ],
+          [
+            "Milieuheffing p/p",
+            "€0,25",
+            "€0,25",
+            "€0,25"
           ]
         ]
       }
@@ -89,7 +95,7 @@
         "In laag-en middenseizoen zijn in overleg afwijkende perioden en aankomstdagen mogelijk, met een minimaal verblijf van 4 nachten.",
         "Toeristenbelasting voor personen vanaf 18jr en ouder is €0,44 (2018) p.p. per nacht.",
         "Een bedlinnenpakket is te huur voor €8,00 pp.",
-        "Eind-schoonmaakkosten (verplicht) voor de mobilhomes zijn: €45,00",
+        "Eind-schoonmaakkosten (verplicht) voor de mobilhomes zijn: €50,00",
         "Aanbetaling van 25% van de totale huursom bij reservering; het restant bedrag dient 6 weken voor aankomst betaald te worden."
       ],
       "content": [
@@ -107,7 +113,7 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["14/07 - 25/08"]
+            "dates": ["13/07 - 24/08"]
           },
           {
             "label": "Middenseizoen",
@@ -121,15 +127,27 @@
         "rows": [
           [
             "Mobilhome (5 personen)",
-            "€850,00 /week",
-            "€80,00 /nacht",
-            "€60,00 /nacht"
+            "€890,00 /week",
+            "€85,00 /nacht",
+            "€65,00 /nacht"
           ],
           [
             "Bijzettentje",
             "gratis",
             "gratis",
             "gratis"
+          ],
+          [
+            "Toeristenbelasting > 18j",
+            "€0,50",
+            "€0,50",
+            "€0,50"
+          ],
+          [
+            "Milieu heffing p/p",
+            "€0,25",
+            "€0,25",
+            "€0,25"
           ]
         ]
       }
@@ -168,19 +186,19 @@
         "rows": [
           {
             "label": "Mobilhome 1",
-            "availabilities": [false, false, false, false, false, false, true, true]
+            "availabilities": [true, true, true, true, true, true, true, true]
           },
           {
             "label": "Mobilhome 2",
-            "availabilities": [false, false, false, false, false, false, true, true]
+            "availabilities": [true, true, true, true, true, true, true, true]
           },
           {
             "label": "Mobilhome 3",
-            "availabilities": [false, false, false, false, false, false, false, true]
+            "availabilities": [true, true, true, true, true, true, true, true]
           },
           {
             "label": "Mobilhome 4",
-            "availabilities": [true, false, false, false, false, false, false, true]
+            "availabilities": [true, true, true, true, true, true, true, true]
           }
         ]
       }
