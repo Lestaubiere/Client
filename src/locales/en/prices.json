@@ -195,7 +195,7 @@
           },
           {
             "label": "Mobilhome 4",
-            "availabilities": [true, true, true, false, true, true, true, true]
+            "availabilities": [true, true, true, false, false, false, true, true]
           }
         ]
       }
