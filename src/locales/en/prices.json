@@ -151,54 +151,7 @@
     },
     "availabilities": {
       "title": "Availability of our mobilhomes in high season",
-      "subtitle": "In low season, we still have plenty of availabilities.",
-      "table": {
-        "header": [
-          {},
-          {
-            "label": "06/07 - 13/07"
-          },
-          {
-            "label": "13/07 - 20/07"
-          },
-          {
-            "label": "20/07 - 27/07"
-          },
-          {
-            "label": "27/07 - 03/08"
-          },
-          {
-            "label": "03/08 - 10/08"
-          },
-          {
-            "label": "10/08 - 17/08"
-          },
-          {
-            "label": "17/08 - 24/08"
-          },
-          {
-            "label": "24/08 - 31/08"
-          }
-        ],
-        "rows": [
-          {
-            "label": "Mobilhome 1",
-            "availabilities": [true, true, true, false, false, false, false, true]
-          },
-          {
-            "label": "Mobilhome 2",
-            "availabilities": [true, true, false, false, false, true, true, true]
-          },
-          {
-            "label": "Mobilhome 3",
-            "availabilities": [true, false, false, false, false, false, true, true]
-          },
-          {
-            "label": "Mobilhome 4",
-            "availabilities": [true, true, true, false, false, false, false, true]
-          }
-        ]
-      }
+      "subtitle": "In low season, we still have plenty of availabilities."
     }
   }
 }

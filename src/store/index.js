@@ -10,6 +10,7 @@ import weather from './modules/weather';
 import contact from './modules/contact';
 import zoover from './modules/zoover';
 import booking from './modules/booking';
+import availabilities from './modules/availabilities';
 
 Vue.use(Vuex);
 
@@ -26,6 +27,7 @@ export default new Vuex.Store({
     contact,
     zoover,
     booking,
+    availabilities,
   },
   strict: debug,
 });
