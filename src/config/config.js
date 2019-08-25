@@ -16,10 +16,6 @@ export const FB_APP_ID = '236774400075192';
 
 export const LESATUBIERE_API_URL = 'https://api.lestaubiere.com/v1';
 
-// The month of JS Date objects start at 0, so for example the month 3 is really March (4).
-export const OPENING_DATE = new Date(2020, 3, 15);
-export const CLOSING_DATE = new Date(2020, 8, 30);
-
 export const LOCALES = ['nl', 'fr', 'en'];
 
 export const ERROR_404 = 'ERROR_404';

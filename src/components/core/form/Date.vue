@@ -16,75 +16,93 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex';
-  import Datepicker from 'vuejs-datepicker';
+import { mapState } from 'vuex';
+import Datepicker from 'vuejs-datepicker';
+import moment from 'moment';
 
-  import { OPENING_DATE, CLOSING_DATE } from '@/config/config';
+const currentDate = moment();
 
-  export default {
-    name: 'l-date',
+const openingDate = moment(`${currentDate.year()}-04-05`);
+const closingDate = moment(`${currentDate.year()}-09-30`);
+const nextOpeningDate = openingDate.clone().add(1, 'y');
+const nextClosingDate = closingDate.clone().add(1, 'y');
 
-    data() {
-      return {
-        disabled: {
-          to: OPENING_DATE,
-          from: CLOSING_DATE,
-        },
-      };
+let startDate = currentDate;
+
+if (currentDate.isSameOrBefore(openingDate)) {
+  startDate = openingDate;
+} else if (currentDate.isSameOrAfter(closingDate)) {
+  startDate = nextOpeningDate;
+}
+
+export default {
+  name: 'l-date',
+
+  data() {
+    return {
+      disabled: {
+        to: startDate.toDate(),
+        from: nextClosingDate.toDate(),
+        ranges: [
+          {
+            from: closingDate.toDate(),
+            to: nextOpeningDate.toDate(),
+          },
+        ],
+      },
+      openingDate: startDate,
+    };
+  },
+
+  props: {
+    name: {
+      type: String,
+      required: true,
     },
-
-    props: {
-      name: {
-        type: String,
-        required: true,
-      },
-      required: {
-        type: Boolean,
-        required: true,
-      },
-      action: {
-        type: String,
-        required: true,
-      },
+    required: {
+      type: Boolean,
+      required: true,
     },
-
-    computed: {
-      value() {
-        return this.$store.state.booking[this.name];
-      },
-      openingDate() {
-        return OPENING_DATE;
-      },
-      ...mapState({
-        lang: state => state.i18n.lang,
-      }),
+    action: {
+      type: String,
+      required: true,
     },
+  },
 
-    methods: {
-      handleChange(value) {
-        this.$store.dispatch(this.action, value);
-      },
+  computed: {
+    value() {
+      return this.$store.state.booking[this.name];
     },
+    ...mapState({
+      lang: state => state.i18n.lang,
+    }),
+  },
 
-    components: {
-      Datepicker,
+  methods: {
+    handleChange(value) {
+      this.$store.dispatch(this.action, value);
     },
-  };
+  },
+
+  components: {
+    Datepicker,
+  },
+};
 </script>
 
 <style>
-  .datepicker {
-    flex-grow: 1;
-  }
+.datepicker {
+  flex-grow: 1;
+}
 
-  .datepicker > div:not(.vdp-datepicker__calendar) {
-    display: flex;
-  }
+.datepicker > div:not(.vdp-datepicker__calendar) {
+  display: flex;
+}
 
-  .datepicker input {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid rgba(0, 0, 0, .1);
-  }
+.datepicker input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 </style>
