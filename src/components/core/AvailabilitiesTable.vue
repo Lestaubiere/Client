@@ -5,7 +5,7 @@
         <span class="table__header-label"></span>
       </div>
       <div class="table__header-item" v-for="(column, index) in columns" :key="index">
-        <span class="table__header-label">{{ column }}</span>
+        <span class="table__header-label">{{ column.replace('-', ' - ') }}</span>
       </div>
     </div>
     <div class="table__content">

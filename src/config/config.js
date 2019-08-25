@@ -2,14 +2,23 @@ export const GOOGLEMAPS_API_KEY = 'AIzaSyBrXiLQPyH1nDSwB5iKtbw4rrIeHbgCkBU';
 export const LESTAUBIERE_COORDINATES = { lat: 44.992392, lng: 0.598711 };
 
 export const GA_PROPERTY = 'UA-39908849-2';
-export const GA_COOKIE_NAMES = ['__utma', '__utmb', '__utmc', '__utmz', '_ga', '_gat', '_gid'];
+export const GA_COOKIE_NAMES = [
+  '__utma',
+  '__utmb',
+  '__utmc',
+  '__utmz',
+  '_ga',
+  '_gat',
+  '_gid',
+];
 
 export const FB_APP_ID = '236774400075192';
 
 export const LESATUBIERE_API_URL = 'https://api.lestaubiere.com/v1';
 
-export const OPENING_DATE = new Date(2019, 3, 15);
-export const CLOSING_DATE = new Date(2019, 8, 30);
+// The month of JS Date objects start at 0, so for example the month 3 is really March (4).
+export const OPENING_DATE = new Date(2020, 3, 15);
+export const CLOSING_DATE = new Date(2020, 8, 30);
 
 export const LOCALES = ['nl', 'fr', 'en'];
 
