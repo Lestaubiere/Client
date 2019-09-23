@@ -23,66 +23,26 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["13/07 - 24/08"]
+            "dates": ["11/07 - 22/08"]
           },
           {
             "label": "Middenseizoen",
-            "dates": ["23/06 - 13/07"]
+            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
           },
           {
             "label": "Laagseizoen",
-            "dates": ["15/04 - 22/06", "24/08 - 30/09"]
+            "dates": ["15/04 - 27/06", "29/08 - 30/09"]
           }
         ],
         "rows": [
-          [
-            "Kampeerplaats (excl. personen)",
-            "€14,00",
-            "€10,00",
-            "€8,00"
-          ],
-          [
-            "Personen (7 jaar en ouder)",
-            "€8,25",
-            "€6,25",
-            "€5,25"
-          ],
-          [
-            "Kinderen (tot 7 jaar)",
-            "€5,25",
-            "€4,25",
-            "€3,25"
-          ],
-          [
-            "Elektriciteit 6A",
-            "€4,50",
-            "€4,50",
-            "€4,50"
-          ],
-          [
-            "Elektriciteit 10A",
-            "€5,50",
-            "€5,50",
-            "€5,50"
-          ],
-          [
-            "Hond",
-            "€3,50",
-            "€1,50",
-            "€1,50"
-          ],
-          [
-            "Toeristenbelasting > 18j",
-            "€0,50",
-            "€0,50",
-            "€0,50"
-          ],
-          [
-            "Milieuheffing p/p",
-            "€0,25",
-            "€0,25",
-            "€0,25"
-          ]
+          ["Kampeerplaats (excl. personen)", "€14,00", "€10,00", "€8,00"],
+          ["Personen (7 jaar en ouder)", "€8,25", "€6,25", "€5,25"],
+          ["Kinderen (tot 7 jaar)", "€5,25", "€4,25", "€3,25"],
+          ["Elektriciteit 6A", "€4,50", "€4,50", "€4,50"],
+          ["Elektriciteit 10A", "€5,50", "€5,50", "€5,50"],
+          ["Hond", "€3,50", "€1,50", "€1,50"],
+          ["Toeristenbelasting > 18j", "€0,50", "€0,50", "€0,50"],
+          ["Milieuheffing p/p", "€0,25", "€0,25", "€0,25"]
         ]
       }
     },
@@ -112,15 +72,15 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["13/07 - 24/08"]
+            "dates": ["11/07 - 22/08"]
           },
           {
             "label": "Middenseizoen",
-            "dates": ["23/06 - 14/07", "25/08 - 01/09"]
+            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
           },
           {
             "label": "Laagseizoen (*)",
-            "dates": ["15/04 - 23/06", "01/09 - 30/09"]
+            "dates": ["15/04 - 27/06", "29/08 - 30/09"]
           }
         ],
         "rows": [
@@ -130,24 +90,9 @@
             "€85,00 /nacht",
             "€65,00 /nacht"
           ],
-          [
-            "Bijzettentje",
-            "gratis",
-            "gratis",
-            "gratis"
-          ],
-          [
-            "Toeristenbelasting > 18j",
-            "€0,50",
-            "€0,50",
-            "€0,50"
-          ],
-          [
-            "Milieuheffing p/p",
-            "€0,25",
-            "€0,25",
-            "€0,25"
-          ]
+          ["Bijzettentje", "gratis", "gratis", "gratis"],
+          ["Toeristenbelasting > 18j", "€0,50", "€0,50", "€0,50"],
+          ["Milieuheffing p/p", "€0,25", "€0,25", "€0,25"]
         ]
       }
     },
