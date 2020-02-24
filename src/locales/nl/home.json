@@ -69,14 +69,24 @@
         "url": "http://www.campingcard.nl/nl/nl/europa/frankrijk/aquitanie/dordogne/camping-lestaubiere-109670/"
       },
       {
-        "name": "CampingKey",
-        "image_path": "static/img/carousel/nl/CampingKey_2017.svg",
-        "url": "http://www.campingkeyeurope.com/nl"
+        "name": "Campsited",
+        "image_path": "static/img/carousel/nl/Campsited.png",
+        "url": "https://www.campsited.com/campsites/france/new-aquitaine/dordogne/camping-lestaubiere"
       },
       {
-        "name": "MiniCampingCard",
-        "image_path": "static/img/carousel/nl/miniCampingCard_2017.png",
-        "url": "http://www.minicampingcard.eu/camping/camping-lestaubiere/#info"
+        "name": "MyCamping",
+        "image_path": "static/img/carousel/nl/MyCamping.png",
+        "url": "https://www.mycamping.com/france/douville/camping-lestaubiere"
+      },
+      {
+        "name": "UCamping",
+        "image_path": "static/img/carousel/nl/UCamping.png",
+        "url": "https://www.ucamping.com/de/frankreich/douville/camping-lestaubiere"
+      },
+      {
+        "name": "KleineFranseCampings",
+        "image_path": "static/img/carousel/nl/KleineFranseCampings.png",
+        "url": "https://kleinefransecampings.nl/camping/lestaubiere/"
       },
       {
         "name": "Zoover",

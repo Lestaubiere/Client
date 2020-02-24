@@ -74,9 +74,19 @@
         "url": "http://www.zoover.co.uk/france/aquitaine/pont-saint-mamet-dordogne/lestaubiere/campsite"
       },
       {
-        "name": "CampingKey",
-        "image_path": "static/img/carousel/en/CampingKey_2017.svg",
-        "url": "http://www.campingkeyeurope.com/en"
+        "name": "Campsited",
+        "image_path": "static/img/carousel/en/Campsited.png",
+        "url": "https://www.campsited.com/campsites/france/new-aquitaine/dordogne/camping-lestaubiere"
+      },
+      {
+        "name": "MyCamping",
+        "image_path": "static/img/carousel/en/MyCamping.png",
+        "url": "https://www.mycamping.com/france/douville/camping-lestaubiere"
+      },
+      {
+        "name": "UCamping",
+        "image_path": "static/img/carousel/en/UCamping.png",
+        "url": "https://www.ucamping.com/de/frankreich/douville/camping-lestaubiere"
       },
       {
         "name": "ANWB Erkende Camping",
