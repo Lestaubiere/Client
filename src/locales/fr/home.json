@@ -63,9 +63,9 @@
         "url": "http://www.campingcard.fr/fr/fr/europe/france/aquitaine/dordogne/camping-lestaubiere-109670/?campName=lestaubiere"
       },
       {
-        "name": "Campsited",
-        "image_path": "static/img/carousel/fr/Campsited.png",
-        "url": "https://www.campsited.com/fr/campsites/france/new-aquitaine/dordogne/camping-lestaubiere"
+        "name": "ANCV",
+        "image_path": "static/img/carousel/fr/ancv.jpg",
+        "url": "https://www.ancv.com/"
       },
       {
         "name": "MyCamping",
