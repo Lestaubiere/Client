@@ -222,6 +222,7 @@
     ],
     "button": "Envoyer la réservation",
     "conditions": "En envoyant ce formulaire, je déclare avoir lu et accepté les {conditions de réservation} et les {conditions de confidentialité}.",
+    "info": "Suite à la situation actuelle liée à la crise sanitaire, vous pouvez maintenant réserver sans engagement. Nous ne demandons donc pas d'acompte sur votre séjour.",
     "messages": {
       "valid": "Nous avond bien reçu votre réservation. Nous allons la traiter dans les plus brefs délais. Si après 48h vous n'avez toujours pas reç de réponse de notre part, veuillez nous contacter par mail: lestaubiere@gmail.com ou par téléphone: 05 53 82 98 15.",
       "ERROR_500": "Il y a eu une erreur lors de la validation de la réservations. Veuillez essayer plus tard ou nous contacter par mail: lestaubiere@gmail.com ou par téléphone: 05 53 82 98 15.",

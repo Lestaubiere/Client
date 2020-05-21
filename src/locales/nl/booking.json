@@ -221,6 +221,7 @@
       }
     ],
     "button": "Stuur reservering",
+    "info": "Gezien de omstandigheden kun je nu geheel vrijblijvend reserveren; het doen van een aanbetaling is dan ook niet nodig",
     "conditions": "Door dit formulier te verzenden verklaar ik de {reserveringsvoorwaarden} en {privacyvoorwaarden} te hebben gelezen en hiermee akkoord ga.",
     "messages": {
       "valid": "Wij hebben uw reservering ontvangen. Wij zullen deze zo snel mogelijk behandelen. Mocht u na 48 uur nog geen bevestiging hebben ontvangen van ons, gelieve contact op te nemen via mail naar lestaubiere@gmail.com of telefoon: +33 5 53 82 98 15.",
