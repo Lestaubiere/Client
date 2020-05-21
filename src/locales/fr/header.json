@@ -3,9 +3,9 @@
     "opening": "Ouverture",
     "closing": "Fermeture",
     "opening_day": "15",
-    "opening_month": "Avril",
-    "closing_day": "30",
-    "closing_month": "Septembre",
+    "opening_month": "Juin",
+    "closing_day": "31",
+    "closing_month": "Octobre",
     "weather": "Météo d'aujourd'hui"
   }
 }
