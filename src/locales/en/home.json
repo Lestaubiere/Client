@@ -54,6 +54,14 @@
         "image_path": "static/img/carousel/en/Classement_Etoiles_2017.png"
       },
       {
+        "name": "Kenmerk Corona Voorwaarden",
+        "image_path": "static/img/carousel/en/Kenmerk_Corona_Voorwaarden.png"
+      },
+      {
+        "name": "Kenmerk Label Corona",
+        "image_path": "static/img/carousel/en/Kenmerk_label_Corona.png"
+      },
+      {
         "name": "Perigord",
         "image_path": "static/img/carousel/en/Perigord_2017.png",
         "url": "https://www.dordogne-perigord-tourisme.fr/sejourner/campings/detail/?ido=douville-lestaubiere-HPAAQU024FS00005"

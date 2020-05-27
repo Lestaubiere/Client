@@ -54,6 +54,14 @@
         "image_path": "static/img/carousel/nl/Classement_Etoiles_2017.png"
       },
       {
+        "name": "Kenmerk Corona Voorwaarden",
+        "image_path": "static/img/carousel/nl/Kenmerk_Corona_Voorwaarden.png"
+      },
+      {
+        "name": "Kenmerk Label Corona",
+        "image_path": "static/img/carousel/nl/Kenmerk_label_Corona.png"
+      },
+      {
         "name": "ANWB Erkende Camping",
         "image_path": "static/img/carousel/nl/ANWB_ErkendeCamping_2017.png",
         "url": "http://www.anwbcamping.nl/frankrijk/aquitanie/dordogne/camping-lestaubiere-douville/overzicht.html"
