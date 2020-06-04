@@ -47,7 +47,7 @@
       }
     },
     "mobilhome": {
-      "title": "Tarifs mobilhome",
+      "title": "Tarifs mobilhome / tente safari",
       "list": [
         "Ces tarifs sont valables pour 5 personnes et sont inclusif un lit etude chaise pour bébé. Les tarifs pour une personne supplémentaire sont de €8,00 pour un adulte (plus de 7 ans) et €5,00 pour un enfant, et par jour.",
         "Les frais de réservations sont €20,- par réservation/famille.",
@@ -61,7 +61,7 @@
       ],
       "actions": [
         {
-          "title": "Réserver un mobilhome",
+          "title": "Réserver un mobilhome / une tente safari",
           "page": "/fr/reserver"
         }
       ],
@@ -83,7 +83,7 @@
         ],
         "rows": [
           [
-            "Mobilhome (5 personnes)",
+            "Mobilhome / tente safari (5 personnes)",
             "€890,00 /semaine",
             "€85,00 /nuit",
             "€65,00 /nuit"
@@ -95,7 +95,7 @@
       }
     },
     "availabilities": {
-      "title": "Disponibilités de nos mobilhomes en haute saison",
+      "title": "Disponibilités de nos mobilhomes / tentes safari en haute saison",
       "subtitle": "En basse saison, nous avons encore de nombreuses disponibilités."
     }
   }

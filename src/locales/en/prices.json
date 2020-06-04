@@ -47,12 +47,12 @@
       }
     },
     "mobilhome": {
-      "title": "Tarfifs mobilhome",
+      "title": "Tarfifs mobilhome / safari tent",
       "list": [
         "The prices for the rental accommodation are valid for 5 persons and are including baby bed en children’s chair. Tariff for each extra person is €8,00 or €5,00 per day.",
         "Bookings costs are €20,- a booking/family.",
         "A bed linen set is for rent for €8,00 p.p.",
-        "Final clean up for the mobilehomes: €50,00",
+        "Final clean up for the mobilhomes: €50,00",
         "Down payment of 25% of the total rental fee at booking; the remaining to be paid 6 weeks before arrival."
       ],
       "content": [
@@ -61,7 +61,7 @@
       ],
       "actions": [
         {
-          "title": "Book a mobilhome",
+          "title": "Book a mobilhome / safari tent",
           "page": "/en/booking"
         }
       ],
@@ -83,7 +83,7 @@
         ],
         "rows": [
           [
-            "Mobilhome (5 persons)",
+            "Mobilhome / safari tent (5 persons)",
             "€890,00 /week",
             "€85,00 /night",
             "€65,00 /night"
@@ -95,7 +95,7 @@
       }
     },
     "availabilities": {
-      "title": "Availability of our mobilhomes in high season",
+      "title": "Availability of our mobilhomes / safari tents in high season",
       "subtitle": "In low season, we still have plenty of availabilities."
     }
   }

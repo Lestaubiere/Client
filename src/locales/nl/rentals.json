@@ -50,8 +50,12 @@
       ],
       "actions": [
         {
-          "title": "Greencamp website",
-          "url": "https://www.greencamp.nl/campings/lestaubiere/"
+          "title": "Tarieven en beschikbaarheid",
+          "page": "/nl/tarieven"
+        },
+        {
+          "title": "Reserveren",
+          "page": "/nl/reserveren"
         }
       ],
       "slider": [
@@ -76,8 +80,12 @@
       ],
       "actions": [
         {
-          "title": "Villatent website",
-          "url": "http://www.villatent.nl/camping/lestaubiere/"
+          "title": "Tarieven en beschikbaarheid",
+          "page": "/nl/tarieven"
+        },
+        {
+          "title": "Reserveren",
+          "page": "/nl/reserveren"
         }
       ],
       "slider": [

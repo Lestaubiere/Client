@@ -47,7 +47,7 @@
       }
     },
     "mobilhome": {
-      "title": "Tarieven mobilhome",
+      "title": "Tarieven mobilhome / safaritent",
       "list": [
         "De tarieven voor de verhuuraccommodaties gelden voor 5 personen en zijn incl. babybedje en kinderstoel.Tarief voor extra persoon is €8,00 (7 jaar en ouder) of €5,00 pp/dag (tot 7 jaar).",
         "Reserveringskosten bedragen €20,-per boeking/gezin.",
@@ -63,7 +63,7 @@
       ],
       "actions": [
         {
-          "title": "Reserveer een mobilhome",
+          "title": "Reserveer een mobilhome / safaritent",
           "page": "/nl/reserveren"
         }
       ],
@@ -85,7 +85,7 @@
         ],
         "rows": [
           [
-            "Mobilhome (5 personen)",
+            "Mobilhome / safaritent (5 personen)",
             "€890,00 /week",
             "€85,00 /nacht",
             "€65,00 /nacht"
@@ -97,7 +97,7 @@
       }
     },
     "availabilities": {
-      "title": "Beschikbaarheid van onze mobilhomes in het hoogseizoen",
+      "title": "Beschikbaarheid van onze mobilhomes / safaritenten in het hoogseizoen",
       "subtitle": "In het voor-en na-seizoen zijn er nog ruim voldoende mogelijkheden."
     }
   }
