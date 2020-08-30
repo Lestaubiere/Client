@@ -23,7 +23,7 @@ import moment from 'moment';
 const currentDate = moment();
 
 const openingDate = moment(`${currentDate.year()}-06-02`);
-const closingDate = moment(`${currentDate.year()}-10-31`);
+const closingDate = moment(`${currentDate.year()}-09-30`);
 const nextOpeningDate = openingDate.clone().add(1, 'y');
 const nextClosingDate = closingDate.clone().add(1, 'y');
 
@@ -74,7 +74,7 @@ export default {
       return this.$store.state.booking[this.name];
     },
     ...mapState({
-      lang: state => state.i18n.lang,
+      lang: (state) => state.i18n.lang,
     }),
   },
 
