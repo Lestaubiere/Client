@@ -6,7 +6,7 @@
     "pitch": {
       "title": "Tarifs emplacements",
       "list": [
-        "Pour les adhérents de la carte ACSI nous vous proposons le tarif de €18,00 par nuit (emplacement, 2 personnes et électricité) en basse et moyenne saison(jusqu’au le 7 juillet). Nous avons également l’offre spéciale de 7=6, 14=12, 21=18 etc… !",
+        "Pour les adhérents de la carte ACSI nous vous proposons le tarif de €18,00 par nuit (emplacement, 2 personnes et électricité) en basse et moyenne saison (jusqu’au le 10 juillet). Nous avons également l’offre spéciale de 7=6, 14=12, 21=18 etc… !",
         "Nous demandons un paiement à l’avance de 25% du prix du séjour.",
         "Le reste des frais sont à payer à l’arrivée, ou si désiré, il est également possible de transférer la somme avant l’arrivée sur notre compte (RIB 30004 00712 00010183976 12 / BNP PARIBAS BERGERAC).",
         "Les frais de réservation sont €20,- par réservation/famille.",
@@ -23,33 +23,33 @@
           {},
           {
             "label": "Haute saison",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Moyenne saison",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["26/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Basse saison",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
-          ["Emplacement", "€14,00", "€10,00", "€8,00"],
+          ["Emplacement", "€15,00", "€10,00", "€8,00"],
           ["Personne (> 7 ans)", "€8,25", "€6,25", "€5,25"],
           ["Personne (< 7 ans)", "€5,25", "€4,25", "€3,25"],
-          ["Electricité 6A", "€4,50", "€4,50", "€4,50"],
-          ["Electricité 10A", "€5,50", "€5,50", "€5,50"],
+          ["Electricité 6A", "€4,75", "€4,75", "€4,75"],
+          ["Electricité 10A", "€5,75", "€5,75", "€5,75"],
           ["Animaux de compagnie", "€3,50", "€1,50", "€1,50"],
           ["Taxe de séjour (> 18 ans)", "€0,50", "€0,50", "€0,50"],
-          ["Taxe environnementale p/p", "€0,25", "€0,25", "€0,25"]
+          ["Taxe environnementale p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "mobilhome": {
-      "title": "Tarifs mobilhome / tente safari",
+      "title": "Tarifs mobilhome",
       "list": [
-        "Ces tarifs sont valables pour 5 personnes et sont inclusif un lit etude chaise pour bébé. Les tarifs pour une personne supplémentaire sont de €8,00 pour un adulte (plus de 7 ans) et €5,00 pour un enfant, et par jour.",
+        "Ces tarifs sont valables pour 5 personnes et sont inclusif un lit etude chaise pour bébé. Les tarifs pour une personne supplémentaire sont de €8,25 pour un adulte (plus de 7 ans) et €5,25 pour un enfant, et par jour.",
         "Les frais de réservations sont €20,- par réservation/famille.",
         "Il est également possible de louer les draps pour €8,00 par personne.",
         "Les frais de nettoyages sont de €50,00 (obligatoire).",
@@ -61,7 +61,7 @@
       ],
       "actions": [
         {
-          "title": "Réserver un mobilhome / une tente safari",
+          "title": "Réserver un mobilhome",
           "page": "/fr/reserver"
         }
       ],
@@ -70,32 +70,32 @@
           {},
           {
             "label": "Haute saison",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Moyenne saison",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["26/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Basse saison (*)",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
           [
-            "Mobilhome / tente safari (5 personnes)",
-            "€890,00 /semaine",
-            "€85,00 /nuit",
-            "€65,00 /nuit"
+            "Mobilhome (5 personnes)",
+            "€910,00 /semaine",
+            "€90,00 /nuit",
+            "€70,00 /nuit"
           ],
           ["Tente supplémentaire", "gratuit", "gratuit", "gratuit"],
           ["Taxe de séjour (> 18 ans)", "€0,50", "€0,50", "€0,50"],
-          ["Taxe environnementale p/p", "€0,25", "€0,25", "€0,25"]
+          ["Taxe environnementale p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "availabilities": {
-      "title": "Disponibilités de nos mobilhomes / tentes safari en haute saison",
+      "title": "Disponibilités de nos mobilhomes en haute saison",
       "subtitle": "En basse saison, nous avons encore de nombreuses disponibilités."
     }
   }

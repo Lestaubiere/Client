@@ -6,7 +6,7 @@
     "pitch": {
       "title": "Tarrifs campsite pitches",
       "list": [
-        "During low and mid season(until the 7th of July), on presentation of ACSI-card, the fee of €18,00 (incl. camping pitch, 2 persons, power) applies, with the special promotion 7=6, 14=12, 21=18 etc…!",
+        "During low and mid season (until the 10th of July), on presentation of ACSI-card, the fee of €18,00 (incl. camping pitch, 2 persons, power) applies, with the special promotion 7=6, 14=12, 21=18 etc…!",
         "We ask a down payment of 25% of the total costs.",
         "The remaining sum has to be paid on arrival day.",
         "Bookings costs are €20,00 a booking/family.",
@@ -23,33 +23,33 @@
           {},
           {
             "label": "High season",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Mid season",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["26/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Low season",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
-          ["Pitch", "€14,00", "€10,00", "€8,00"],
+          ["Pitch", "€15,00", "€10,00", "€8,00"],
           ["Persons (> 7 years)", "€8,25", "€6,25", "€5,25"],
           ["Persons (< 7 years)", "€5,25", "€4,25", "€3,25"],
-          ["Electricity 6A", "€4,50", "€4,50", "€4,50"],
-          ["Electricity 10A", "€5,50", "€5,50", "€5,50"],
+          ["Electricity 6A", "€4,75", "€4,75", "€4,75"],
+          ["Electricity 10A", "€5,75", "€5,75", "€5,75"],
           ["Pets", "€3,50", "€1,50", "€1,50"],
           ["Tourist taxt (> 18 years)", "€0,50", "€0,50", "€0,50"],
-          ["Environmental tax p/p", "€0,25", "€0,25", "€0,25"]
+          ["Environmental tax p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "mobilhome": {
-      "title": "Tarfifs mobilhome / safari tent",
+      "title": "Tarfifs mobilhome",
       "list": [
-        "The prices for the rental accommodation are valid for 5 persons and are including baby bed en children’s chair. Tariff for each extra person is €8,00 or €5,00 per day.",
+        "The prices for the rental accommodation are valid for 5 persons and are including baby bed en children’s chair. Tariff for each extra person is €8,25 or €5,25 per day.",
         "Bookings costs are €20,- a booking/family.",
         "A bed linen set is for rent for €8,00 p.p.",
         "Final clean up for the mobilhomes: €50,00",
@@ -61,7 +61,7 @@
       ],
       "actions": [
         {
-          "title": "Book a mobilhome / safari tent",
+          "title": "Book a mobilhome",
           "page": "/en/booking"
         }
       ],
@@ -70,32 +70,32 @@
           {},
           {
             "label": "High season",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Mid season",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["28/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Low season (*)",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
           [
-            "Mobilhome / safari tent (5 persons)",
-            "€890,00 /week",
-            "€85,00 /night",
-            "€65,00 /night"
+            "Mobilhome (5 persons)",
+            "€910,00 /week",
+            "€90,00 /night",
+            "€70,00 /night"
           ],
           ["Additional small tent", "free", "free", "free"],
           ["Tourist taxt (> 18 years)", "€0,50", "€0,50", "€0,50"],
-          ["Environmental tax p/p", "€0,25", "€0,25", "€0,25"]
+          ["Environmental tax p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "availabilities": {
-      "title": "Availability of our mobilhomes / safari tents in high season",
+      "title": "Availability of our mobilhomes in high season",
       "subtitle": "In low season, we still have plenty of availabilities."
     }
   }

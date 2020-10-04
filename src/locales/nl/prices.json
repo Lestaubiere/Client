@@ -6,7 +6,7 @@
     "pitch": {
       "title": "Tarieven kampeerplaats",
       "list": [
-        "In de periode tot 7 juli en vervolgens weer vanaf 25 augustus op vertoon van ACSI-card of ANWB-CampingKeycard geldt het speciale overnachtingstarief van €18,00 (incl. campingplaats, 2 personen, elektra), met speciale actie 7=6, 14=12, 21=18 etc..!",
+        "In de periode tot 10 juli en vervolgens weer vanaf 28 augustus op vertoon van ACSI-card of ANWB-CampingKeycard geldt het speciale overnachtingstarief van €18,00 (incl. campingplaats, 2 personen, elektra), met speciale actie 7=6, 14=12, 21=18 etc..!",
         "Wij vragen een aanbetaling van 25% van de totale verblijfskosten.",
         "Reserveringskosten bedragen €20,- per boeking/gezin.",
         "De resterende verblijfkosten dienen bij aankomst betaald te worden of, indien gewenst, voor aankomstdatum te worden overgemaakt naar onze betaalrekening in Nederland: ABN AMRO rekening NL89ABNA0495987506 tnv B.F.M VAN OSTA, Roosendaal, Nederland.",
@@ -23,36 +23,36 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Middenseizoen",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["26/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Laagseizoen",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
-          ["Kampeerplaats (excl. personen)", "€14,00", "€10,00", "€8,00"],
+          ["Kampeerplaats (excl. personen)", "€15,00", "€10,00", "€8,00"],
           ["Personen (7 jaar en ouder)", "€8,25", "€6,25", "€5,25"],
           ["Kinderen (tot 7 jaar)", "€5,25", "€4,25", "€3,25"],
-          ["Elektriciteit 6A", "€4,50", "€4,50", "€4,50"],
-          ["Elektriciteit 10A", "€5,50", "€5,50", "€5,50"],
+          ["Elektriciteit 6A", "€4,75", "€4,75", "€4,75"],
+          ["Elektriciteit 10A", "€5,75", "€5,75", "€5,75"],
           ["Hond", "€3,50", "€1,50", "€1,50"],
           ["Toeristenbelasting > 18j", "€0,50", "€0,50", "€0,50"],
-          ["Milieuheffing p/p", "€0,25", "€0,25", "€0,25"]
+          ["Milieuheffing p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "mobilhome": {
-      "title": "Tarieven mobilhome / safaritent",
+      "title": "Tarieven mobilhome",
       "list": [
-        "De tarieven voor de verhuuraccommodaties gelden voor 5 personen en zijn incl. babybedje en kinderstoel.Tarief voor extra persoon is €8,00 (7 jaar en ouder) of €5,00 pp/dag (tot 7 jaar).",
+        "De tarieven voor de verhuuraccommodaties gelden voor 5 personen en zijn incl. babybedje en kinderstoel. Tarief voor extra persoon is €8,25 (7 jaar en ouder) of €5,25 pp/dag (tot 7 jaar).",
         "Reserveringskosten bedragen €20,-per boeking/gezin.",
         "In het hoogseizoen loopt huurperiode van zaterdag tot zaterdag.",
-        "In laag-en middenseizoen zijn in overleg afwijkende perioden en aankomstdagen mogelijk, met een minimaal verblijf van 4 nachten.",
+        "In laag-en middenseizoen zijn in overleg afwijkende perioden en aankomstdagen mogelijk, met een minimaal verblijf van 3 nachten.",
         "Een bedlinnenpakket is te huur voor €8,00 pp.",
         "Eind-schoonmaakkosten (verplicht) voor de mobilhomes zijn: €50,00",
         "Aanbetaling van 25% van de totale huursom bij reservering; het restant bedrag dient 6 weken voor aankomst betaald te worden."
@@ -63,7 +63,7 @@
       ],
       "actions": [
         {
-          "title": "Reserveer een mobilhome / safaritent",
+          "title": "Reserveer een mobilhome",
           "page": "/nl/reserveren"
         }
       ],
@@ -72,32 +72,32 @@
           {},
           {
             "label": "Hoogseizoen",
-            "dates": ["11/07 - 22/08"]
+            "dates": ["10/07 - 21/08"]
           },
           {
             "label": "Middenseizoen",
-            "dates": ["27/06 - 11/07", "22/08 - 29/08"]
+            "dates": ["26/06 - 10/07", "21/08 - 28/08"]
           },
           {
             "label": "Laagseizoen (*)",
-            "dates": ["15/04 - 27/06", "29/08 - 31/10"]
+            "dates": ["15/04 - 26/06", "28/08 - 30/09"]
           }
         ],
         "rows": [
           [
-            "Mobilhome / safaritent (5 personen)",
-            "€890,00 /week",
-            "€85,00 /nacht",
-            "€65,00 /nacht"
+            "Mobilhome (5 personen)",
+            "€910,00 /week",
+            "€90,00 /nacht",
+            "€70,00 /nacht"
           ],
           ["Bijzettentje", "gratis", "gratis", "gratis"],
           ["Toeristenbelasting > 18j", "€0,50", "€0,50", "€0,50"],
-          ["Milieuheffing p/p", "€0,25", "€0,25", "€0,25"]
+          ["Milieuheffing p/p", "€0,50", "€0,50", "€0,50"]
         ]
       }
     },
     "availabilities": {
-      "title": "Beschikbaarheid van onze mobilhomes / safaritenten in het hoogseizoen",
+      "title": "Beschikbaarheid van onze mobilhomes in het hoogseizoen",
       "subtitle": "In het voor-en na-seizoen zijn er nog ruim voldoende mogelijkheden."
     }
   }

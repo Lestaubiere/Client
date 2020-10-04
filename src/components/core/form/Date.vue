@@ -74,7 +74,7 @@ export default {
       return this.$store.state.booking[this.name];
     },
     ...mapState({
-      lang: (state) => state.i18n.lang,
+      lang: state => state.i18n.lang,
     }),
   },
 
